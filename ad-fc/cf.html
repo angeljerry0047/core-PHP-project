@@ -1,0 +1,790 @@
+<HTML>
+<HEAD>
+<TITLE>Commodities Futures</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<STYLE TYPE="TEXT/CSS">
+<!--
+
+A { text-decoration: none }
+
+
+A {color:#003366; font-family: Helvetica, Arial; font-size: 12px; text-decoration: none;}
+A:hover {color:#FF6600; font-family: Helvetica, Arial; font-size: 12px; text-decoration: underline;}
+
+td {font-family: Helvetica, Arial; font-size: 11px;}
+.linkcell { padding-left: 10px; font-family: Helvetica, Arial; font-size: 10px;}
+hr {  color: #000000}
+
+//.unnamed1 {  font-family: Arial, Helvetica, sans-serif; font-size: small}
+-->
+
+
+</STYLE>
+<script language="JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function checkAll(myForm)
+{
+   if (myForm==1)
+       setTimeout("myClear(1)",5000); 
+   if (myForm==2)
+       setTimeout("myClear(2)",5000); 
+   if (myForm==3)
+       setTimeout("myClear(3)",5000); 
+   return true;
+}
+
+function myClear(myForm)
+{
+   if (myForm==1)
+   {
+      document.myRedirect.acct.value='';
+   }
+   if (myForm==2)
+   {
+      document.formLOGON.userid.value='';document.formLOGON.password.value='';   
+   }
+   if (myForm==3)
+   {
+      document.LOGON.client_id.value='';document.LOGON.password.value='';
+   }
+   return true;
+}
+//-->
+</script>
+<script language="JavaScript">
+document.oncontextmenu = function(){return false}
+if(document.layers) {
+    window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = function(e){
+        if(e.target==document)return false;
+    }
+}
+else {
+    document.onmousedown = function(){return false}
+}
+
+document.onmouseup = document.selection.empty;
+
+
+function change(){
+document.getElementById('cal').src="http://www.thectr.com/2004/multi.php?req="+document.form1.information.value;
+window.status="Finance";
+}
+
+</script>
+<style>
+<!--
+
+.menuskin{
+position:absolute;
+width:230px;
+background-color:FFFFFF;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+visibility:hidden;
+}
+
+.menuskin a{
+text-decoration:none;
+color:black;
+padding-left:5px;
+padding-right:5px;
+}
+
+#mouseoverstyle{
+background-color:014684;
+}
+
+#mouseoverstyle a{
+color:white;
+}
+-->
+</style>
+
+<script language="JavaScript1.2">
+
+//Pop-it menu- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var linkset=new Array()
+//SPECIFY MENU SETS AND THEIR LINKS. FOLLOW SYNTAX LAID OUT
+
+/*linkset[0]='<div class="menuitems"><a href="calendar.php">Calendar</a></div>';
+linkset[0]+='<div class="menuitems"><a href="margin.php">Margin</a></div>';
+linkset[0]+='<div class="menuitems"><a href="fin_news.php">Financial News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_news.php">Futures News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="usda.php">USDA Reports</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_charts.php">Futures Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="open.php">Opening Call</a></div>';*/
+linkset[0]='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+
+linkset[1]='<div class="menuitems"><a href="afcs.html">Active Futures Contrcats Specifications</a></div>';
+linkset[1]+='<div class="menuitems"><a href="fnltd.html">First Notice and Last Trading Day</a></div>';
+linkset[1]+='<div class="menuitems"><a href="uf.html">Understandind futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="os.html">Options Strategies</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ot.html">Order Types</a></div>';
+linkset[1]+='<div class="menuitems"><a href="oae.html">Orders Accepted by exchanges</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ff.html">Financial Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cf.html">Commodities Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/analysis_publications/oil_market_basics/default.htm" target="_blank">Oil Market Basics</a></div>';
+linkset[1]+='<div class="menuitems"><a href="indices.php">US Economic indices</a></div>';
+linkset[1]+='<div class="menuitems"><a href="principles.php">Elliott Wave Principles</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cfg.html">Commodity Futures Glossary</a></div>';
+
+////No need to edit beyond here
+
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var ns6=document.getElementById&&!document.all
+var ns4=document.layers
+
+function showmenu(e,which){
+
+if (!document.all&&!document.getElementById&&!document.layers)
+return
+
+clearhidemenu()
+
+menuobj=ie4? document.all.popmenu : ns6? document.getElementById("popmenu") : ns4? document.popmenu : ""
+menuobj.thestyle=(ie4||ns6)? menuobj.style : menuobj
+
+if (ie4||ns6)
+menuobj.innerHTML=which
+else{
+menuobj.document.write('<layer name=gui bgColor=#E6E6E6 width=165 onmouseover="clearhidemenu()" onmouseout="hidemenu()">'+which+'</layer>')
+menuobj.document.close()
+}
+
+menuobj.contentwidth=(ie4||ns6)? menuobj.offsetWidth : menuobj.document.gui.document.width
+menuobj.contentheight=(ie4||ns6)? menuobj.offsetHeight : menuobj.document.gui.document.height
+eventX=ie4? event.clientX : ns6? e.clientX : e.x
+eventY=ie4? event.clientY : ns6? e.clientY : e.y
+
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie4? document.body.clientWidth-eventX : window.innerWidth-eventX
+var bottomedge=ie4? document.body.clientHeight-eventY : window.innerHeight-eventY
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<menuobj.contentwidth)
+//move the horizontal position of the menu to the left by it's width
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX-menuobj.contentwidth : ns6? window.pageXOffset+eventX-menuobj.contentwidth : eventX-menuobj.contentwidth
+else
+//position the horizontal position of the menu where the mouse was clicked
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX : ns6? window.pageXOffset+eventX : eventX
+
+//same concept with the vertical position
+if (bottomedge<menuobj.contentheight)
+menuobj.thestyle.top=ie4? document.body.scrollTop+eventY-menuobj.contentheight : ns6? window.pageYOffset+eventY-menuobj.contentheight : eventY-menuobj.contentheight
+else
+menuobj.thestyle.top=ie4? document.body.scrollTop+event.clientY : ns6? window.pageYOffset+eventY : eventY
+menuobj.thestyle.visibility="visible"
+return false
+}
+
+function contains_ns6(a, b) {
+//Determines if 1 element in contained in another- by Brainjar.com
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function hidemenu(){
+if (window.menuobj)
+menuobj.thestyle.visibility=(ie4||ns6)? "hidden" : "hide"
+}
+
+function dynamichide(e){
+if (ie4&&!menuobj.contains(e.toElement))
+hidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+hidemenu()
+}
+
+function delayhidemenu(){
+if (ie4||ns6||ns4)
+delayhide=setTimeout("hidemenu()",500)
+}
+
+function clearhidemenu(){
+if (window.delayhide)
+clearTimeout(delayhide)
+}
+
+function highlightmenu(e,state){
+if (document.all)
+source_el=event.srcElement
+else if (document.getElementById)
+source_el=e.target
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+else{
+while(source_el.id!="popmenu"){
+source_el=document.getElementById? source_el.parentNode : source_el.parentElement
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=hidemenu
+
+</script>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;
+    mso-font-charset:2;
+    mso-generic-font-family:auto;
+    mso-font-pitch:variable;
+    mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-parent:"";
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:normal;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman";
+    mso-fareast-font-family:"Times New Roman";
+    color:windowtext;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+h1
+    {margin-top:18.75pt;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    mso-outline-level:1;
+    font-size:13.0pt;
+    font-family:Arial;
+    color:#3D5B7B;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+h2
+    {margin-top:0cm;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    mso-outline-level:2;
+    font-size:11.5pt;
+    font-family:"Times New Roman";
+    color:#555555;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+h3
+    {mso-style-next:Normal;
+    margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:3.0pt;
+    margin-left:0cm;
+    line-height:normal;
+    mso-pagination:widow-orphan;
+    page-break-after:avoid;
+    mso-outline-level:3;
+    font-size:13.0pt;
+    font-family:Arial;
+    color:windowtext;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+a:link, span.MsoHyperlink
+    {color:#617DA7;
+    text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+    {color:purple;
+    text-underline:single;}
+span.Hyperlink9
+    {mso-style-name:Hyperlink9;
+    color:#617DA7;
+    text-decoration:underline;
+    text-underline:single;}
+span.SpellE
+    {mso-style-name:"";
+    mso-spl-e:yes;}
+span.GramE
+    {mso-style-name:"";
+    mso-gram-e:yes;}
+@page Section1
+    {size:612.0pt 792.0pt;
+    margin:72.0pt 90.0pt 72.0pt 90.0pt;
+    mso-header-margin:36.0pt;
+    mso-footer-margin:36.0pt;
+    mso-paper-source:0;}
+div.Section1
+    {page:Section1;}
+ /* List Definitions */
+ @list l0
+    {mso-list-id:1826584281;
+    mso-list-template-ids:1226187716;}
+@list l0:level1
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0B7;
+    mso-level-tab-stop:36.0pt;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    mso-ansi-font-size:10.0pt;
+    font-family:Symbol;}
+ol
+    {margin-bottom:0cm;}
+ul
+    {margin-bottom:0cm;}
+-->
+</style>
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<div align="left">
+  <TABLE WIDTH=985 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+        <TR> 
+      <TD COLSPAN=8 height="23" width="982"> <IMG SRC="images/top_bar.gif" WIDTH="100%" ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top"> <p align="right"> </TD>
+      <TD width="145" valign="middle"> 
+        <p align="center"><img src="images/adfc-white.png" width="150" height="215"> 
+      </TD>
+      <TD COLSPAN=5 height="177" width="100%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="662" height="177">
+          <img src="images/adfc-banner.jpg" width="100%" />
+      </TD>
+   <!--   <TD width="178" valign="middle"> <img src="images/adfc-white.png" width="" height="90"></TD> -->
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" BGCOLOR=#FFFFFF> 
+        <div align="right"> 
+          <!--<table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+<tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="http://www.ad-fc.net/images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>-->
+          <table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>
+          <br>
+          <p align="left">&nbsp;</p>
+        </div></TD>
+      <TD width="2" height="451" background="images/line1.gif"> <IMG SRC="images/line1.gif" width=2 height=238 ALT=""></TD>
+      <TD valign="top" height="451" bgcolor="F8FBFE" width="708"> 
+        <table width="584" border="0" cellspacing="2" cellpadding="2" height="3019">
+          <tr> 
+            <td width="100%" valign="top"> <div align="right"> </div>
+              <div align="center"> 
+                <center>
+                  <table border="0" cellpadding="0" cellspacing="0" width="95%">
+                    <tr> 
+                      <td width="700"> 
+                        <div class=Section1> 
+                          <h1><font size="+2">What Are Commodities?</font></h1>
+                          <p><font size="+1">Commodities are broadly defined as 
+                            natural resources, chemicals and physical products 
+                            you can touch, taste, smell, grow, mine, consume or 
+                            deliver. </font></p>
+                          <p><font size="+1">From their origins in the 1800s until 
+                            the 1970s, futures markets and commodities markets 
+                            were one in the same; financial futures are a modern-day 
+                            invention. To confuse things slightly, today the term 
+                            &quot;commodity&quot; is still often used as a broad 
+                            industry term describing all futures contracts, including 
+                            financials. For example, &quot;commodity trading advisor&quot; 
+                            is used to define an individual or firm who operates 
+                            a managed futures program, even though many of them 
+                            trade exclusively in the financial futures markets 
+                            such as interest rates or stock indexes.</font></p>
+                          <p><font size="+1">Physical commodities are the roots 
+                            of the futures industry and still play a valuable 
+                            role in the global marketplace, even though the most 
+                            highly-traded futures today are financial contracts 
+                            such as U.S. Treasury notes, Eurodollars, and Standard 
+                            &amp; Poor's 500R.</font></p>
+                          <p><font size="+1">The most popular physical commodities 
+                            contracts can be broken down into several broad categories: 
+                            metals, energy, grains, livestock, and food and fiber. 
+                            These are not paper assets, and in general, are produced 
+                            and consumed at a price based on the forces of supply 
+                            and demand.</font></p>
+                          <p><font size="+1">A commodity futures contract represents 
+                            an agreement to buy or sell a specific type and grade 
+                            of commodity for delivery at a specific time in the 
+                            future at an agreed upon place at a market-determined 
+                            price. In reality, commodity futures rarely lead to 
+                            the delivery of an actual product, because the contract 
+                            positions are typically closed out before the delivery 
+                            date.</font></p>
+                          <p><font size="+1">History of Commodities Exchanges</font></p>
+                          <p><font size="+1">The futures markets were developed 
+                            initially to help agricultural producers and consumers 
+                            manage the price risks they faced harvesting, marketing 
+                            and processing food crops each year. The modern futures 
+                            industry still serves those markets.</font></p>
+                          <p><font size="+1">The world's oldest established futures 
+                            exchange, the Chicago Board of Trade, was founded 
+                            in 1848 by 82 Chicago merchants. The first of what 
+                            were then called &quot;to arrive&quot; contracts were 
+                            flour, timothy seed and hay, which came into use in 
+                            1849. &quot;Forward&quot; contracts on corn came into 
+                            use in 1851 and gained popularity among merchants 
+                            and food processors.</font></p>
+                          <p><font size="+1">Meanwhile, what is now the nation's 
+                            largest futures exchange, the Chicago Mercantile Exchange, 
+                            was founded as the Chicago Butter and Egg Board in 
+                            1898. At that time, trading was offered in - you guessed 
+                            it - butter and eggs. </font></p>
+                          <p><font size="+1">Other prominent U.S. commodities 
+                            exchanges were formed before or just after the turn 
+                            of the century, and also had their roots in agriculture. 
+                            At one time, you could trade on the National Metal 
+                            Exchange, the Rubber Exchange of New York, the National 
+                            Raw Silk Exchange, and the New York Hide Exchange. 
+                            Small exchanges like these ultimately merged to become 
+                            the exchanges we have today.</font></p>
+                          <p><font size="+1">Types of Commodity Futures</font></p>
+                          <p><font size="+1">The most popular physical commodities 
+                            contracts can be broken down into several broad categories: 
+                            metals, energy, grains, livestock, and food and fiber. 
+                            There are some modern additions to commodity futures 
+                            that are unique, such as chemicals and fertilizer 
+                            futures, but the most popular contracts fit under 
+                            the broad categories listed here and are mainly subject 
+                            to price fluctuations based on supply and demand factors 
+                            in consuming and producing countries. </font></p>
+                          <p><font size="+1">Metals</font></p>
+                          <p><font size="+1">The major metals futures contracts 
+                            include copper, gold, platinum, palladium and silver. 
+                            Their uses include industrial purposes, in construction, 
+                            and for jewelry. Geopolitical and economic factors 
+                            in the dominant producing and consuming countries 
+                            affect price action, but each also has its own unique 
+                            fundamental influences. In the copper market, building 
+                            construction is the largest demand source. Copper 
+                            is also used for electrical and electronic products, 
+                            transportation and industrial machinery manufacturing. 
+                            The price of copper is therefore sensitive to statistics 
+                            related to economic growth, particularly reports such 
+                            as housing starts. For that reason, participants in 
+                            financial markets often also look to price action 
+                            in copper futures as a gauge of general economic trends. 
+                            In another example, gold has long been used as a hedge 
+                            against political and economic uncertainties, and 
+                            many central banks back their currency with gold reserves.</font></p>
+                          <p><font size="+1">The metals listed here trade primary 
+                            on the New York Mercantile Exchange. The Chicago Board 
+                            of Trade's E-cbotR electronic platform also lists 
+                            mini-gold and silver contracts.</font></p>
+                          <p><font size="+1">Energy</font></p>
+                          <p><font size="+1">The most popular energy futures contracts 
+                            are crude oil, gasoline, heating oil and natural gas. 
+                            These natural resource markets have become one of 
+                            the most important gauges of world economic and political 
+                            developments, and are therefore heavily influenced 
+                            by disruptions in producing nations. The value of 
+                            the U.S. dollar is significant because much of the 
+                            world's crude is priced in dollars. U.S. energy prices 
+                            are also quite sensitive to statistical reports detailing 
+                            production, imports and especially stocks. These markets 
+                            are also subject to seasonal fluctuations - mild weather 
+                            may lessen the need for heating oil, while summer 
+                            tends to bring greater gasoline demand for driving 
+                            season.</font></p>
+                          <p><font size="+1">These products trade on the New York 
+                            Mercantile Exchange. </font></p>
+                          <p><font size="+1">Learn More About Energy </font></p>
+                          <p><font size="+1">If you'd like to learn more about 
+                            the oil markets, check out &quot;Oil Market Basics,&quot; 
+                            a comprehensive online course brought to you by the 
+                            U.S. Energy Information Administration. Learn about 
+                            the supply and demand factors unique to this market 
+                            as well as how to track trends. There are over 400 
+                            links to EIA data and other resources you need to 
+                            make the most informed trading decisions.</font></p>
+                          <p><font size="+1">Grains/Soy</font></p>
+                          <p><font size="+1">Grains and soybeans are essential 
+                            to food and feed supplies, and prices are especially 
+                            sensitive to weather conditions in growing areas at 
+                            key times during a crop's development and to economic 
+                            conditions that affect demand. The major futures contracts 
+                            in this category are corn, soybeans, soybean oil, 
+                            soybean meal and wheat. Reports from the U.S. Department 
+                            of Agriculture are closely watched, and summarize 
+                            key factors influencing supply and demand including 
+                            current production and carryover supply from the prior 
+                            season. Each product has its own unique fundamental 
+                            factors, depending on their use for human or animal 
+                            consumption, or for industrial needs.</font></p>
+                          <p><font size="+1">These products are traded in the 
+                            U.S. at the Chicago Board of Trade, Kansas City Board 
+                            of Trade, and Minneapolis Grain Exchange.</font></p>
+                          <p><font size="+1">Livestock</font></p>
+                          <p><font size="+1">Futures on live cattle, feeder cattle, 
+                            lean hogs and pork bellies are all traded at the Chicago 
+                            Mercantile Exchange. Their prices are affected by 
+                            consumer demand, competing protein sources, price 
+                            of feed, and factors that influence the number of 
+                            animals born and sent to market, such as disease and 
+                            weather. </font></p>
+                          <p><font size="+1">Food and Fiber</font></p>
+                          <p><font size="+1">The food and fiber category includes 
+                            cocoa, coffee, cotton, frozen concentrated orange 
+                            juice (FCOJ) and sugar. In addition to global consumer 
+                            demand, the usual growing factors such as disease, 
+                            insects and drought affect prices for all of these 
+                            commodities. FCOJ prices, however, are particularly 
+                            sensitive to weather conditions. A frost or freeze 
+                            in Florida or Brazil during the growing season can 
+                            have a disastrous affect on both the current crop 
+                            size and long-term production prospects. International 
+                            exchange rates affect all of these global products, 
+                            as well as factors like tariffs and geopolitical events 
+                            in producing nations. These markets are traded at 
+                            the New York Mercantile Exchange and New York Board 
+                            of Trade.</font></p>
+                          <p><font size="+1">Who Participates in Commodities Markets?</font></p>
+                          <p><font size="+1">There are two basic types of participants 
+                            in the commodities markets - hedgers and speculators. 
+                            The hedgers are those seeking to minimize and manage 
+                            price risk, while speculators are those willing to 
+                            take on risk in the hope of making a profit.</font></p>
+                          <p><font size="+1">As an example of a hedger, you might 
+                            be a large corn farmer wanting to sell your product 
+                            at the highest possible price. However, unpredictable 
+                            weather may create risk, as well as excess supply 
+                            that could drive prices down. You could take a short 
+                            position in corn futures, and if prices fall, you 
+                            could then buy back the futures at a lower price than 
+                            you previously had sold them. This would help you 
+                            offset the loss from your cash crop and help minimize 
+                            your risk. Of course, if prices rose, you'd lose money 
+                            on the futures transaction, but the idea is to use 
+                            futures as a hedge.</font></p>
+                          <p><font size="+1">The speculator could take the opposite 
+                            side of this futures transaction. That participant 
+                            would bear the risk that prices are going to rise 
+                            in hopes of generating a profit on the long futures 
+                            position. Most likely, this type of speculator has 
+                            no actual stake in the business, other than buying 
+                            and selling in the futures market. A commercial food 
+                            producer in need of the raw product (a breakfast cereal 
+                            processor, for example) may also take the other side 
+                            of the short hedger's trade to offset the risk of 
+                            paying higher prices for the commodity. If the price 
+                            of corn rises, the commercial food producer could 
+                            still capture a profit from the futures position, 
+                            even though he'd be paying more for the actual corn.</font></p>
+                          <p><font size="+1">An individual trader who commits 
+                            his or her own capital to act as speculator on a particular 
+                            exchange is known as a local. Typically, these individuals 
+                            provide market liquidity by constantly buying and 
+                            selling throughout the trading session and are viewed 
+                            as important participants in the market by shouldering 
+                            risk. While the term local has been used to designate 
+                            those trading in the open-outcry markets, this era 
+                            of electronic trading is making the phrase a little 
+                            obsolete. However, their function as liquidity providers 
+                            is equally important in electronic markets. The Commodity 
+                            Futures Trading Commission defines this new breed 
+                            of electronic traders &quot;E-locals,&quot; but they 
+                            are often more simply known as independent traders.</font></p>
+                          <p>&nbsp;</p>
+                        </div>
+                        </td>
+                    </tr>
+                  </table>
+                  <p>&nbsp;</p>
+                </center>
+              </div></td>
+          </tr>
+        </table></TD>
+      <TD width="172" height="451" background="images/line2.gif"> <IMG SRC="images/line2.gif" width=3 height=238 ALT=""></TD>
+      <TD valign="top" height="451" width="29"> 
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td valign="top" width="100%"> </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td width="100%" rowspan="3" valign="top">
+              
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%" height="41"></td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%">&nbsp;</td>
+            <td width="100%" valign="top"></td>
+          </tr>
+        </table>
+      </TD>
+      <TD width="2" height="451" background="images/line3.gif"> <IMG SRC="images/line3.gif" width=2 height=238 ALT=""></TD>
+      <TD width="6" align="center" valign="top" bgcolor="F8FBFE"> 
+        <div align="left">
+          <table width="100%" border="0">
+            <tr> 
+              <td align="center"><div align="left"><strong></strong></div></td>
+            </tr>
+          </table>
+        </div>
+        
+      </TD>
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" bgcolor="#E6F1FE">&nbsp; </TD>
+      <TD COLSPAN=5 bgcolor="#E6F1FE" height="1"> <table width="119%" border="0" cellspacing="0" cellpadding="0" height="24">
+          <tr> 
+            <td width="81%" height="24"> <div align="center"> 
+                <center>
+                  <table width="315" border="0" cellspacing="2" cellpadding="2">
+                    <tr> 
+                      <td width="305"> <p align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#003366">©2019                              
+                          ADFC&nbsp;</font></p></td>                             
+                    </tr>
+                  </table>
+                </center>
+              </div></td>
+            <td width="19%" height="24"> <div align="right"></div></td>                      
+          </tr>
+        </table></TD>
+      <TD width="6"></TD>
+    </TR>
+    <TR> 
+      <TD COLSPAN=7 height="1"> </TD>
+      <TD width="6"></TD>
+    </TR>
+  </TABLE>
+</div>
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)">
+</div>
+</BODY>
+</HTML>

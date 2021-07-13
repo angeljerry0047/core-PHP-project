@@ -1,0 +1,277 @@
+<br />
+<b>Notice</b>:  Undefined index:  HTTP_USER_AGENT in <b>/nfs/c05/h02/mnt/73526/domains/uploadrobots.com/html/file.php</b> on line <b>24</b><br />
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"> 
+	<head> 
+		<title>My Files: Upload Robots</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="description" content="Upload Robots is an easy to use free uploading site. Upload music, documents, pictures in seconds using our secure uploading service" /> 
+		<meta name="keywords" content="free, fast, secure, upload, uploading, upload pictures, upload documents, upload robots" />
+		<meta name="Robots" content="All" /> 
+		<meta name="author" content="admin@uploadrobots.com" /> 
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" /> 
+		<link rel="stylesheet" href="css/front_global.css" type="text/css" media="screen" /> 
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" /> 
+		<!--[if IE 7]><link rel="stylesheet" href="css/ie/main_ie.css" type="text/css" media="screen" /><![endif]--> 
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/color.js"></script>				
+		<script type="text/javascript" src="js/all.js"></script>		
+		<script type="text/javascript" src="js/front.js"></script>		
+		<script type="text/javascript" src="js/preview.js"></script>			
+		<script type="text/javascript" src="js/SHA1.js"></script>	
+		<script type="text/javascript">
+		logged_in=false;selected_id=49900;
+					selected_type='f';tmp_r=0;		</script>			
+		<script type="text/javascript" src="js/jquery_imports.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head> 
+	<body>
+		<iframe name="ajax_frame" id="ajax_frame"></iframe> 
+		<div class="cont_t">
+			<div id="wrap_t" class="wrapper"> 
+				<div class="wrapper" id="wrap_t">
+		<div id="nav">
+								<div id="nav">
+						<a href="/free" >Sign Up</a>
+						<a href="/feature-tour" >Feature Tour</a>
+						<a href="/upgrade" >Pro Accounts</a>
+						<a href="/blog" >Blog</a>
+						<a href="/about" >About</a>
+						<a href="/contact" >Contact</a>
+						<a> | </a>
+						<a href="#" id="login">Login</a>
+						<a href="/team-david-merfield" style="display:none">David Merfield</a>
+					</div>
+						</div>
+				<script type="text/javascript" src="js/bg.js"></script>	
+		<div id="l_holder">
+			<input type="text" id="l_user" class="l_in_i" value="Username"/><input type="password" id="l_pass" class="l_in_i" value="password"/><input type="button" value="Log In" id="l_go" class="l_in_s"/><input type="button" value="Cancel" id="l_close" class="l_in_c"/>
+			<br/>
+			<span id="l_error">
+				Error:
+			</span>
+		</div> 
+				<div id="logo">
+			<a href="http://uploadrobots.com"></a>
+		</div>
+	</div>			</div>
+		</div>
+		<div class="cont_m" style="background-image:none"> 
+			<div class="wrapper"> 
+				<div id="banner_ad" style="margin: 0 0 24px">
+				<!-- Begin: AdBrite, Generated: 2010-03-23 19:43:29  
+<script type="text/javascript">
+var AdBrite_Title_Color = '0000FF';
+var AdBrite_Text_Color = '000000';
+var AdBrite_Background_Color = 'FFFFFF';
+var AdBrite_Border_Color = 'CCCCCC';
+var AdBrite_URL_Color = '008000';
+try{var AdBrite_Iframe=window.top!=window.self?2:1;var AdBrite_Referrer=document.referrer==''?document.location:document.referrer;AdBrite_Referrer=encodeURIComponent(AdBrite_Referrer);}catch(e){var AdBrite_Iframe='';var AdBrite_Referrer='';}
+</script>
+<span style="white-space:nowrap;"><script type="text/javascript">document.write(String.fromCharCode(60,83,67,82,73,80,84));document.write(' src="http://ads.adbrite.com/mb/text_group.php?sid=1576538&zs=3732385f3930&ifr='+AdBrite_Iframe+'&ref='+AdBrite_Referrer+'" type="text/javascript">');document.write(String.fromCharCode(60,47,83,67,82,73,80,84,62));</script>
+<a target="_top" href="http://www.adbrite.com/mb/commerce/purchase_form.php?opid=1576538&afsid=1"><img src="http://files.adbrite.com/mb/images/adbrite-your-ad-here-leaderboard.gif" style="background-color:#CCCCCC;border:none;padding:0;margin:0;" alt="Your Ad Here" width="14" height="90" border="0" /></a></span>
+<!-- End: AdBrite -->
+
+				</div>	
+				<div id="content_top">
+					<form enctype="multipart/form-data" action="" name="upload_form" method="post" id="upload_form" target="ajax_frame">			 					
+						<input type="file" name="file" realid="1" class="add_file"/>		
+					</form>
+					<a class="button" id="b_right" href="#">Create a new group</a>
+					<span id="notify">Just a test notification</span>
+					<a class="button" id="b_left" href="#">Choose file to upload</a>
+				</div> 
+				<div class="clear"></div>
+				<div id="c_m_w">
+				<div id="preview">
+					<div id="p_no">
+						<div id="p_no_1">File <span id="p_no_name">loading..</span> isn't here</div>
+						<div id="p_no_2">Either you have an incorrect link or it has been deleted</div>
+					</div>
+					<div id="p_file">
+						<div class="preview_l">
+							<div class="p_g"> 
+								<div class="pt">
+									<div class="gname">Preview <span class="p_fname">loading..</span></div>
+									<a class="pt_e">&nbsp;</a>
+								</div> 
+								<div class="clear"></div> 
+								<div class="gc"> 
+									<div id="p_left">
+										<div id="p_box">
+											<img src="imgs/loading.gif" />
+										</div>
+									</div>						
+									<div class="clear"></div>							
+								</div>
+							<img src="imgs/ru_fo.jpg" alt="" />
+							<a class="pb_e">&nbsp;</a>
+							</div>
+						</div>
+						<div class="preview_r">
+							<div class="p_g"> 
+							<div class="pt">
+								<div class="gname p_fname">loading..</div>
+								<a class="pt_e">&nbsp;</a>
+							</div> 
+							<div class="clear"></div> 
+							<div class="gc"> 
+								<div class="f">														
+									<div> 
+										<span class="p_light">File Size:</span>
+										<span id="p_size" class="p_finfo">loading..</span> 
+									</div>							
+									<div class="clear"></div> 
+								</div>
+								<div class="f falt">	
+									<div> 
+										<span class="p_light">File Type:</span>
+										<span id="p_type" class="p_finfo">loading..</span> 											
+									</div>
+									<div class="clear"></div> 		
+								</div>
+								<div class="f">	
+									<div> 
+										<span class="p_light">Uploader:</span>
+										<span id="p_user" class="p_finfo">loading..</span> 										
+									</div>
+									<div class="clear"></div> 							
+								</div>
+								<div class="f falt">														
+									<div> 
+										<span class="p_light">Uploaded:</span> 
+										<span id="p_date" class="p_finfo">loading..</span> 
+									</div>
+									<div class="clear"></div> 							
+								</div>					
+								<div class="clear"></div>
+								<div id="p_share">
+									<div id="share_title">File Link:</div>
+									<input type="text" id="share_link" readonly=true value="loading url.."/>
+								</div>
+								<div class="clear"></div>
+																<div class="clear"></div>
+								<div class="dumr">
+									<a href="#" id="p_download" class="r_b">Download File</a>
+								</div>
+							</div>
+								<img src="imgs/ru_fo.jpg" alt="" />
+								<a class="pb_e"></a>
+							</div> 
+						</div>
+					</div>
+					<div id="p_group">
+						<div class="preview_l">
+							<div class="p_g"> 
+								<div class="pt">
+									<div class="gname">Click File To Start Instant Download</div>
+									<a class="pt_e">&nbsp;</a>
+								</div> 
+								<div class="clear"></div> 
+								<div class="gc" id="preview_g_files"> 
+									<div class="f">	
+										<div class="fmain">	
+											<div class="fleft"> 
+												<span class="fname">loading files.</span> 
+											</div>
+											<div class="fm">
+												<span class="fsize"></span>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div> 
+								</div>
+							<img src="imgs/ru_fo.jpg" alt="" />
+							<a class="pb_e">&nbsp;</a>
+							</div>
+						</div>
+						<div class="preview_r">
+							<div class="p_g"> 
+							<div class="pt">
+								<div class="gname" id="gname_g">loading..</div>
+								<a class="pt_e">&nbsp;</a>
+							</div> 
+							<div class="clear"></div> 
+							<div class="gc"> 
+								<div id="p_share">
+									<div id="share_title">File Link:</div>
+									<input type="text" id="share_link_g" readonly=true value="loading url.."/>
+								</div>
+								<div class="clear"></div>
+																<div class="clear"></div>
+								<div class="dumr">
+									<a href="#" id="p_download_g" class="r_b">Download Group As .Zip</a>
+								</div>
+							</div>
+								<img src="imgs/ru_fo.jpg" alt="" />
+								<a class="pb_e"></a>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div id="c_m_w">
+				<div id="content_main" style="display:none">
+									</ul> 
+			</div>
+			</div>
+			</div>
+			<div id="b_s">
+			</div>
+			<div id="f_w">
+			<div id="footer"> 
+				&copy; 2009 Upload Robots  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="/terms">Terms & Conditions</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="/support">Support</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="/contact">Contact</a>
+											</div>
+			</div>
+			
+		</div> 
+		<li class="model" id="g_model"> 
+			<div class="gt"> 
+				<div class="gtright"> 
+										<a href="#" class="g_t_i gview"><img src="imgs/g_t_i_min.png" alt="" /></a> 
+					<a href="#" class="g_t_i gdelete"><img src="imgs/g_t_i_d.png" alt="" /></a> 
+				</div> 
+				<a href="#" class="gname"></a> 
+				<input type="text" class="grename"/> 
+			</div> 
+			<div class="clear"></div> 
+			<div class="gc"> 
+				<div class="g_default">This group is empty, drag and drop a file here.</div>
+			</div> 
+			<img src="imgs/ru_fo.jpg" alt="" />				
+		</li> 
+		<li class="model" id="f_model"> 
+			<div class="fmain">		
+				<div class="fleft"> 
+					<span class="fname"></span> 
+				</div>
+				<div class="fm">
+				<span class="fsize">loading..</span>
+				</div>
+				<div class="fright">
+				<span class="ftype">loading..</span>
+				</div>
+			</div>
+			<div class="fdel">
+				<a href="#" class="fdelete"><img src="imgs/g_t_i_d.png" alt="" /></a> 
+			</div>
+			<div class="clear"></div> 
+		</li> 
+		<div id="temp_f_model" class="model"> 
+			<div class="temp_f_left">		
+				<span class="temp_fname">image_001</span> 				
+				<div class="clear"></div>				
+			</div>
+			<div class="temp_f_right">
+				<div class="progress_full"> 				
+					<div class="progress_inner"> 
+	 				</div>
+				</div> 		
+				<div class="temp_fdel"> 
+					<a href="#" class="temp_fdelete"><img src="imgs/g_t_i_d.png" alt="" /></a> 
+				</div> 			
+			</div>
+			<div class="clear"></div>
+		</div> 
+			<script src="/mint/?js" type="text/javascript"></script>
+	</body> 
+</html> 
+

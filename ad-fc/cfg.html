@@ -1,0 +1,2050 @@
+<HTML>
+<HEAD>
+<TITLE>Commodity Futures Glossary</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<STYLE TYPE="TEXT/CSS">
+<!--
+
+A { text-decoration: none }
+
+
+A {color:#003366; font-family: Helvetica, Arial; font-size: 12px; text-decoration: none;}
+A:hover {color:#FF6600; font-family: Helvetica, Arial; font-size: 12px; text-decoration: underline;}
+
+td {font-family: Helvetica, Arial; font-size: 11px;}
+.linkcell { padding-left: 10px; font-family: Helvetica, Arial; font-size: 10px;}
+hr {  color: #000000}
+
+//.unnamed1 {  font-family: Arial, Helvetica, sans-serif; font-size: small}
+-->
+
+
+</STYLE>
+<script language="JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function checkAll(myForm)
+{
+   if (myForm==1)
+       setTimeout("myClear(1)",5000); 
+   if (myForm==2)
+       setTimeout("myClear(2)",5000); 
+   if (myForm==3)
+       setTimeout("myClear(3)",5000); 
+   return true;
+}
+
+function myClear(myForm)
+{
+   if (myForm==1)
+   {
+      document.myRedirect.acct.value='';
+   }
+   if (myForm==2)
+   {
+      document.formLOGON.userid.value='';document.formLOGON.password.value='';   
+   }
+   if (myForm==3)
+   {
+      document.LOGON.client_id.value='';document.LOGON.password.value='';
+   }
+   return true;
+}
+//-->
+</script>
+<script language="JavaScript">
+document.oncontextmenu = function(){return false}
+if(document.layers) {
+    window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = function(e){
+        if(e.target==document)return false;
+    }
+}
+else {
+    document.onmousedown = function(){return false}
+}
+
+document.onmouseup = document.selection.empty;
+
+
+function change(){
+document.getElementById('cal').src="http://www.thectr.com/2004/multi.php?req="+document.form1.information.value;
+window.status="Finance";
+}
+
+</script>
+<style>
+<!--
+
+.menuskin{
+position:absolute;
+width:230px;
+background-color:FFFFFF;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+visibility:hidden;
+}
+
+.menuskin a{
+text-decoration:none;
+color:black;
+padding-left:5px;
+padding-right:5px;
+}
+
+#mouseoverstyle{
+background-color:014684;
+}
+
+#mouseoverstyle a{
+color:white;
+}
+-->
+</style>
+
+<script language="JavaScript1.2">
+
+//Pop-it menu- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var linkset=new Array()
+//SPECIFY MENU SETS AND THEIR LINKS. FOLLOW SYNTAX LAID OUT
+/*
+linkset[0]='<div class="menuitems"><a href="http://www.ad-fc.net/calendar.php">Calendar</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/margin.php">Margin</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/fin_news.php">Financial News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/futures_news.php">Futures News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/usda.php">USDA Reports</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/futures_charts.php">Futures Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/forex_charts.php">Forex Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="http://www.ad-fc.net/open.php">Opening Call</a></div>';*/
+linkset[0]='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+
+linkset[1]='<div class="menuitems"><a href="afcs.html">Active Futures Contrcats Specifications</a></div>';
+linkset[1]+='<div class="menuitems"><a href="fnltd.html">First Notice and Last Trading Day</a></div>';
+linkset[1]+='<div class="menuitems"><a href="uf.html">Understandind futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="os.html">Options Strategies</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ot.html">Order Types</a></div>';
+linkset[1]+='<div class="menuitems"><a href="oae.html">Orders Accepted by exchanges</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ff.html">Financial Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cf.html">Commodities Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/analysis_publications/oil_market_basics/default.htm" target="_blank">Oil Market Basics</a></div>';
+linkset[1]+='<div class="menuitems"><a href="indices.php">US Economic indices</a></div>';
+linkset[1]+='<div class="menuitems"><a href="principles.php">Elliott Wave Principles</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cfg.html">Commodity Futures Glossary</a></div>';
+
+
+////No need to edit beyond here
+
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var ns6=document.getElementById&&!document.all
+var ns4=document.layers
+
+function showmenu(e,which){
+
+if (!document.all&&!document.getElementById&&!document.layers)
+return
+
+clearhidemenu()
+
+menuobj=ie4? document.all.popmenu : ns6? document.getElementById("popmenu") : ns4? document.popmenu : ""
+menuobj.thestyle=(ie4||ns6)? menuobj.style : menuobj
+
+if (ie4||ns6)
+menuobj.innerHTML=which
+else{
+menuobj.document.write('<layer name=gui bgColor=#E6E6E6 width=165 onmouseover="clearhidemenu()" onmouseout="hidemenu()">'+which+'</layer>')
+menuobj.document.close()
+}
+
+menuobj.contentwidth=(ie4||ns6)? menuobj.offsetWidth : menuobj.document.gui.document.width
+menuobj.contentheight=(ie4||ns6)? menuobj.offsetHeight : menuobj.document.gui.document.height
+eventX=ie4? event.clientX : ns6? e.clientX : e.x
+eventY=ie4? event.clientY : ns6? e.clientY : e.y
+
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie4? document.body.clientWidth-eventX : window.innerWidth-eventX
+var bottomedge=ie4? document.body.clientHeight-eventY : window.innerHeight-eventY
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<menuobj.contentwidth)
+//move the horizontal position of the menu to the left by it's width
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX-menuobj.contentwidth : ns6? window.pageXOffset+eventX-menuobj.contentwidth : eventX-menuobj.contentwidth
+else
+//position the horizontal position of the menu where the mouse was clicked
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX : ns6? window.pageXOffset+eventX : eventX
+
+//same concept with the vertical position
+if (bottomedge<menuobj.contentheight)
+menuobj.thestyle.top=ie4? document.body.scrollTop+eventY-menuobj.contentheight : ns6? window.pageYOffset+eventY-menuobj.contentheight : eventY-menuobj.contentheight
+else
+menuobj.thestyle.top=ie4? document.body.scrollTop+event.clientY : ns6? window.pageYOffset+eventY : eventY
+menuobj.thestyle.visibility="visible"
+return false
+}
+
+function contains_ns6(a, b) {
+//Determines if 1 element in contained in another- by Brainjar.com
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function hidemenu(){
+if (window.menuobj)
+menuobj.thestyle.visibility=(ie4||ns6)? "hidden" : "hide"
+}
+
+function dynamichide(e){
+if (ie4&&!menuobj.contains(e.toElement))
+hidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+hidemenu()
+}
+
+function delayhidemenu(){
+if (ie4||ns6||ns4)
+delayhide=setTimeout("hidemenu()",500)
+}
+
+function clearhidemenu(){
+if (window.delayhide)
+clearTimeout(delayhide)
+}
+
+function highlightmenu(e,state){
+if (document.all)
+source_el=event.srcElement
+else if (document.getElementById)
+source_el=e.target
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+else{
+while(source_el.id!="popmenu"){
+source_el=document.getElementById? source_el.parentNode : source_el.parentElement
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=hidemenu
+
+</script>
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+
+<div align="left">
+  <TABLE WIDTH=985 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<!--    <TR> 
+      <TD COLSPAN=8 height="23" width="972"> <IMG SRC="images/top_bar.gif" WIDTH=100% HEIGHT=23 ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top" height="464"> <p align="right"> </TD>
+      <TD width="153" valign="middle" height="183"> <p align="center"><img src="images/adf.jpg" width="145" height="90"> 
+      </TD>
+      <TD COLSPAN=5 height="183"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="662" height="177">
+          <param name="movie" value="images/movie2.swf">
+          <param name="quality" value="high">
+          <embed src="images/movie2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="662" height="177"></embed></object></TD>
+      <TD valign="middle" height="183">&nbsp; </TD>
+    </TR>-->
+    <TR> 
+      <TD COLSPAN=8 height="23" width="982"> <IMG SRC="images/top_bar.gif" WIDTH="100%" ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top"> <p align="right"> </TD>
+      <TD width="145" valign="middle"> 
+        <p align="center"><img src="images/adfc-white.png" width="150" height="215"> 
+      </TD>
+      <TD COLSPAN=5 height="177" width="100%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="662" height="177">
+          <img src="images/adfc-banner.jpg" width="100%" />
+      </TD>
+   <!--   <TD width="178" valign="middle"> <img src="images/adfc-white.png" width="" height="90"></TD> -->
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" BGCOLOR=#FFFFFF> 
+        <div align="right"> 
+        <!--  <table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+<tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="http://www.ad-fc.net/images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#444">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>-->
+          <table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>
+          <br>
+          <p align="left">&nbsp;</p>
+        </div></TD>
+      <TD width="2" height="451" background="images/line1.gif"> <IMG SRC="images/line1.gif" width=2 height=238 ALT=""></TD>
+      <TD valign="top" height="451" bgcolor="F8FBFE" width="352"> 
+        <table width="345" border="0" cellspacing="2" cellpadding="2" height="65">
+          <tr> 
+            <td width="100%" valign="top"> <div align="right"> </div>
+              <div align="center"> 
+                <center>
+                  <table border="0" cellpadding="0" cellspacing="0" width="95%">
+                    <tr> 
+                      <td width="700">
+                      <img src="images/line1.gif" width='700' height='1'>
+
+
+
+<TABLE width="100%" BORDERCOLORLIGHT="#006600" BORDERCOLORDARK="#006600" BORDER="5" bgcolor="#FFFFEF" ALIGN="CENTER" CELLSPACING="5" CELLPADDING="3"><tr><td align="left" valign="top"><P><br><br><br><center><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG><h1>Commodity Futures Glossary</h1></STRONG></FONT></center><blockquote><P><strong><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>The purpose of this glossary is to help you with a better understanding of the futures market.  The definitions are not intended to state or suggest the correct legal significance of any word or phrase.</STRONG></FONT>
+<P><A href="#a"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>A</STRONG></FONT></A> <A href="#b"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>B</STRONG></FONT></A> <A href="#c"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>C</STRONG></FONT></A> <A href="#d"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>D</STRONG></FONT></A> <A href="#e"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>E</STRONG></FONT></A> <A href="#f"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>F</STRONG></FONT></A> <A href="#g"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>G</STRONG></FONT></A> <A href="#h"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>H</STRONG></FONT></A> <A href="#i"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>I</STRONG></FONT></A> <A href="#j"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>J</STRONG></FONT></A> <A href="#k"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>K</STRONG></FONT></A> <A href="#l"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>L</STRONG></FONT></A> <A href="#m"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>M</STRONG></FONT></A> <A href="#n"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>N</STRONG></FONT></A> <A href="#o"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>O</STRONG></FONT></A> <A href="#p"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>P</STRONG></FONT></A> <A href="#q"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Q</STRONG></FONT></A> <A href="#r"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>R</STRONG></FONT></A> <A href="#s"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>S</STRONG></FONT></A> <A href="#t"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>T</STRONG></FONT></A> <A href="#u"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>U</STRONG></FONT></A> <A href="#v"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>V</STRONG></FONT></A> <A href="#w"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>W</STRONG></FONT></A> <A href="#x"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>X</STRONG></FONT></A> <A  href="#y"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Y</STRONG></FONT></A> <A href="#z"><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Z</STRONG></FONT></A><P><A name=a><TABLE width="90%" class="std"><TR><TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>A</STRONG></FONT></CENTER></TD></TR></TABLE></A><A name=accrued.interest></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Accrued Interest: Interest earned between the most recent interest payment and the present date but not yet paid to the lender.</STRONG></FONT></TD></TR></TABLE><A name=actuals></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Actuals: See <A href="#cash.commodity">Cash Commodity</A>.</STRONG></FONT></TD></TR></TABLE><A name=add-on.method></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Add-on Method: A method of paying interest where the interest is added onto the principal at maturity or interest payment dates.</STRONG></FONT></TD></TR></TABLE><A 
+name=adjusted.futures.price></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Adjusted Futures Price: The cash-price equivalent reflected in the current futures price. This is calculated by taking the futures price times the conversion factor for the particular financial instrument (e.g., bond or note) being delivered.</STRONG></FONT></TD></TR></TABLE><A name=against.actuals></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Against Actuals: See <A href="#exchange.for.physicals">Exchange  For Physicals</A>.</STRONG></FONT></TD></TR></TABLE><A name=arbitrage></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Arbitrage: The      simultaneous purchase and sale of similar commodities in different markets to take advantage of a price discrepancy.</STRONG></FONT></TD></TR></TABLE><A name=arbitration></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Arbitration: The       procedure of settling disputes between members, or between members and customers.</STRONG></FONT></TD></TR></TABLE><A name=assign></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Assign: To make an option seller perform his obligation to assume a short futures position (as a seller of a call option) or a long futures position (as a seller of a put option).</STRONG></FONT></TD></TR></TABLE><A name=associated.person></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Associated Person (AP): An individual who solicits orders, customers, or customer funds (or who supervises persons performing such duties) on behalf of a Futures Commission Merchant, an Introducing Broker, a Commodity Trading Adviser, or a Commodity Pool Operator.</STRONG></FONT></TD></TR></TABLE><A name=associate.membership.></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Associate Membership (CBOT): A Chicago Board of Trade membership that allows an individual  to trade financial instrument futures and other designated markets.</STRONG></FONT> </TD></TR></TABLE><A name=at-the-money.option></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>At-the-Money Option: An option with a strike price that is equal, or approximately equal, to the current market price of the underlying futures contract.</STRONG></FONT></TD></TR></TABLE><A name=b><TABLE width="90%" class="std"><TR><TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>B</STRONG></FONT></CENTER></TD></TR></TABLE></A><A name=balance.of.payment></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Balance of Payment: A summary of the international transactions of a country over a period of time including commodity and service transactions, capital transactions, and gold movements.</STRONG></FONT></TD></TR></TABLE><A name=bar.chart></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bar Chart: A chart that graphs the high, low, and settlement prices for a specific trading session over a given period of time.</STRONG></FONT></TD></TR></TABLE><A name=basis></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Basis: The difference between the current cash price and the futures price of the same commodity. Unless otherwise specified, the price of the nearby futures contract month is generally used to calculate the basis.</STRONG></FONT></TD></TR></TABLE><A name=bear></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bear: Someone who thinks market prices will decline.</STRONG></FONT></TD></TR></TABLE><A name=bear.market></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bear Market: A period of declining market prices.</STRONG></FONT></TD></TR></TABLE><A 
+name=bear.spread></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bear Spread: In most commodities and financial instruments, the term refers to selling the nearby contract month, and buying the deferred contract, to profit from a change in the price relationship.</STRONG></FONT></TD></TR></TABLE><A name=bid></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bid: An expression indicating a desire to buy a commodity at a given price; opposite of offer.</STRONG></FONT></TD></TR></TABLE><A 
+name=board.of.trade.clearing.corporation></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Board of Trade Clearing Corporation: An independent corporation that settles all trades made at the Chicago Board of Trade acting as a guarantor for all       trades cleared by it, reconciles all clearing member firm accounts each day to ensure that all gains have been credited and all losses have been collected, and sets and adjusts clearing member firm margins for changing market conditions. Also referred to as clearing corporation. See <A href="#clearinghouse">Clearinghouse</A>.</STRONG></FONT></TD></TR></TABLE><A name=book.entry.securities></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Book Entry       Securities: Electronically recorded securities that include each creditor's name, address, Social Security or tax identification number, and dollar amount loaned, (i.e., no certificates are issued to bond holders, instead, the transfer agent electronically credits interest payments to each creditor's bank account on a designated date).</STRONG></FONT></TD></TR></TABLE><A name=broker></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Broker: A company or individual that executes futures and options orders on behalf of financial and commercial institutions and/or the general public.</STRONG></FONT></TD></TR></TABLE><A name=brokerage.fee></A>
+<TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Brokerage Fee: See <A href="#commission.fee">Commission Fee</A>.</STRONG></FONT></TD></TR></TABLE><A name=brokerage.house></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Brokerage House: See <A href="#futures.commission.merchant">Futures       Commission Merchant</A>.</STRONG></FONT></TD></TR></TABLE><A name=bull></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bull: Someone who   thinks market prices will rise.</STRONG></FONT></TD></TR></TABLE><A name=bull.market></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bull Market: A period of rising market prices.</STRONG></FONT></TD></TR></TABLE><A name=bull.spread></A>
+<TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Bull Spread: In most commodities and financial instruments, the term refers to buying the nearby month, and selling the deferred month, to profit from the change in the price relationship.</STRONG></FONT></TD></TR></TABLE><A name=butterfly.spread></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Butterfly Spread: The placing of two interdelivery spreads in opposite directions with the center delivery month common to both spreads.</STRONG></FONT></TD></TR></TABLE><A name=buying.hedge></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Buying Hedge: See <A href="#purchasing.hedge">Purchasing Hedge</A>.</STRONG></FONT></TD></TR></TABLE><A name=c><TABLE width="90%" class="std">  <TR><TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>C</STRONG></FONT></CENTER></TD></TR></TABLE></A><A name=calendar.spread></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Calendar Spread: See Interdelivery Spread and Horizontal Spread.</STRONG></FONT></TD></TR></TABLE><A name=call.option></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Call Option: An option that gives the buyer the right, but not the obligation, to purchase (go "long") the underlying futures contract at the strike price on or before the expiration date.</STRONG></FONT></TD></TR></TABLE><A name=canceling.order></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Canceling Order: An order that deletes a customer's previous order.</STRONG></FONT></TD></TR></TABLE><A name=carrying.charge></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Carrying Charge: For physical commodities such as grains and metals, the cost of storage space, insurance, and finance charges incurred by holding a physical commodity. In interest rate futures markets, it refers to the differential between the yield on a cash instrument and the cost of funds necessary to buy the instrument. Also referred to as cost of carry or carry.</STRONG></FONT></TD></TR></TABLE><A name=carryover></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Carryover: Grain and oilseed commodities not consumed during the marketing year and remaining in storage at year's end. These stocks are "carried over'' into the next marketing year and added to the stocks produced during that crop year.</STRONG></FONT></TD></TR></TABLE><A name=cash.commodity></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cash Commodity: An actual physical commodity someone is buying or selling, e.g., soybeans, corn, gold, silver, Treasury bonds, etc. Also referred to as actuals.</STRONG></FONT></TD></TR></TABLE><A name=cash.contract></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cash Contract: A sales agreement for either immediate or future delivery of the actual    product.</STRONG></FONT> </TD></TR></TABLE><A name=cash.market></A><TABLE width="90%" class="std"><TR>   <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cash Market: A place where people buy and sell the actual commodities, i.e., grain elevator, bank, etc. See Spot and Forward Contract.</STRONG></FONT></TD></TR></TABLE><A name=cash.settlement></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cash Settlement:      Transactions generally involving index-based futures contracts that are settled in cash based on the actual value of the index on the last trading day, in contrast to those that specify the delivery of a commodity or financial instrument.</STRONG></FONT> </TD></TR></TABLE><A name=certificate.of.deposit></A>
+<TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Certificate of Deposit (CD): A time deposit with a specific maturity evidenced by a       certificate.</STRONG></FONT> </TD></TR></TABLE><A name=charting></A><TABLE width="90%" class="std"><TR>   <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Charting: The use of charts to analyze market behavior and anticipate future price movements. Those who use charting as a trading method plot such factors as high, low, and settlement prices; average price movements; volume; and open interest. Two basic price charts are bar charts and point-and-figure charts. See <A href="#technical.analysis">Technical Analysis</A>.</STRONG></FONT></TD></TR></TABLE><A name=cheap></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cheap:       Colloquialism implying that a commodity is underpriced.</STRONG></FONT></TD></TR></TABLE><A name=cheapest.to.deliver></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cheapest to Deliver: A method to determine which particular cash debt instrument  is most profitable to deliver against a futures contract.</STRONG></FONT></TD></TR></TABLE><A name=clear></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Clear: The process by which a clearinghouse maintains records of all trades and settles   margin flow on a daily mark-to-market basis for its clearing member.</STRONG></FONT></TD></TR></TABLE><A name=clearing.corporation></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Clearing Corporation: See <A href="#board.of.trade.clearing.corporation">Board of Trade Clearing Corporation</A>.</STRONG></FONT></TD></TR></TABLE><A 
+name=clearinghouse></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Clearinghouse: An agency or separate corporation of a futures exchange that is responsible for settling trading accounts, clearing trades, collecting and maintaining margin monies, regulating delivery, and reporting trading data.  Clearinghouses act as third parties to all futures and options contracts  acting as a buyer to every clearing member seller and a seller to every Clearing member buyer.</STRONG></FONT></TD></TR></TABLE><A name=clearing.margin></A><TABLE width="90%" class="std">  <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Clearing Margin:      Financial safeguards to ensure that clearing members (usually companies or  corporations) perform on their customers' open futures and options  contracts. Clearing margins are distinct from customer margins that  individual buyers and sellers of futures and options contracts are required to deposit with brokers. See <A href="#customer.margin">Customer  Margin</A>.</STRONG></FONT></TD></TR></TABLE><A name=clearing.member></A><TABLE width="90%" class="std"> <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Clearing Member: A  member of an exchange clearinghouse. Memberships in clearing organizations  are usually held by companies. Clearing members are responsible for the    financial commitments of customers that clear through their firm.</STRONG></FONT> </TD></TR></TABLE><A name=closing.price></A><TABLE width="90%" class="std"> <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Closing Price: See <A 
+      href="#settlement.price">Settlement  Price</A>.</STRONG></FONT></TD></TR></TABLE><A name=closing.range></A><TABLE width="90%" class="std"><TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Closing Range: A range of prices at which buy and sell transactions took place during the  market close.</STRONG></FONT></TD></TR></TABLE><A name=com.membership.></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>COM Membership      (CBOT): A Chicago Board of Trade membership that allows an individual to trade contracts listed in the commodity options market category.</STRONG></FONT></TD></TR></TABLE><A name=commission.fee></A>
+<TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commission Fee: A fee charged by a broker for executing a transaction. Also referred to as      brokerage fee.</STRONG></FONT></TD></TR></TABLE><A name=commission.house></A><TABLE width="90%" class="std"><TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commission House: 
+ See Futures Commission Merchant (FCM).</STRONG></FONT></TD></TR></TABLE><A name=commodity></A>
+<TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commodity: An article of commerce or a product that can be used for commerce. In a  narrow sense, products traded on an authorized commodity exchange. The types of commodities include agricultural products, metals, petroleum, foreign currencies, and financial instruments and indexes, to name a few.</STRONG></FONT> </TD></TR></TABLE><A name=commodity.credit.corporation></A><TABLE width="90%" class="std">  <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commodity Credit     Corporation (CCC): A branch of the U.S. Department of Agriculture,  established in 1933, that supervises the government's farm loan and  subsidy programs.</STRONG></FONT></TD></TR></TABLE><A name=commodity.futures.trading.commission></A><TABLE width="90%" class="std"> <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commodity Futures Trading Commission (CFTC): A federal regulatory agency established  under the Commodity Futures Trading Commission Act, as amended in 1974, that oversees futures trading in the United States. The commission is  comprised of five commissioners, one of whom is designated as chairman, all appointed by the President subject to Senate confirmation, and is    independent of all cabinet departments.</STRONG></FONT></TD></TR></TABLE><A name=commodity.pool></A>
+<TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commodity Pool: An enterprise in which funds contributed by a number of persons are combined    for the purpose of trading futures contracts or commodity options.</STRONG></FONT></TD></TR></TABLE><A name=commodity.pool.operator></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commodity Pool Operator (CPO): An individual or organization that operates or solicits funds for a commodity pool.</STRONG></FONT></TD></TR></TABLE><A 
+name=commodity.trading.adviser></A><TABLE width="90%" class="std">  <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Commodity Trading Adviser (CTA): A person who, for compensation or profit, directly or indirectly advises others as to the value or the advisability of buying or selling futures contracts or commodity options. Advising indirectly includes exercising trading authority over a customer's account as well as providing recommendations through written publications or other media.</STRONG></FONT></TD></TR></TABLE><A name=computerized.trading.reconstruction.(ctr).system></A><TABLE width="90%" class="std"> <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Computerized Trading Reconstruction (CTR) System: A Chicago Board of Trade computerized      surveillance program that pinpoints in any trade the traders, the contract, the quantity, the price, and time of execution to the nearest minute.</STRONG></FONT></TD></TR></TABLE><A name=concurrent.indicators></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Concurrent Indicators: See <A href="#lagging.indicators">Lagging Indicators</A>.</STRONG></FONT></TD></TR></TABLE><A name=consumer.price.index></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Consumer Price Index (CPI): A major inflation measure computed by the U.S. Department of Commerce. It measures the change in prices of a fixed market basket of some 385 goods and services in the previous month.</STRONG></FONT> </TD></TR></TABLE><A name=contract.grades></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Contract Grades:  See <A  href="#deliverable.grades">Deliverable Grades</A>.</STRONG></FONT></TD></TR></TABLE><A name=contract.month></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Contract Month: See <A href="#delivery.month">Delivery Month</A>.</STRONG></FONT></TD></TR></TABLE><A name=controlled.account></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Controlled Account: See <A href="#discretionary.account">Discretionary Account</A>.</STRONG></FONT></TD></TR></TABLE><A name=convergence></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Convergence: A term referring to cash and futures prices tending to come together (i.e., the basis approaches zero) as the futures contract nears expiration.</STRONG></FONT> </TD></TR></TABLE><A name=conversion.factor></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Conversion Factor: A factor used to equate the price of T-bond and T-note futures contracts with the various cash T-bonds and T-notes eligible for delivery. This factor is based on the relationship of the cash-instrument coupon to the     required 8 percent deliverable grade of a futures contract as well as taking into account the cash instrument's maturity or call.</STRONG></FONT></TD></TR></TABLE><A name=cost.of.carry></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cost of Carry (or Carry): See <A href="#carrying.charge">Carrying Charge</A>.</STRONG></FONT></TD></TR></TABLE><A name=coupon></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Coupon: The interest rate on a debt instrument expressed in terms of a percent on an annualized basis that the issuer guarantees to pay the holder until maturity.</STRONG></FONT></TD></TR></TABLE><A name=crop.(marketing).year></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Crop (Marketing) Year: The time span from harvest to harvest for agricultural  commodities. The crop marketing year varies slightly with each ag commodity, but it tends to begin at harvest and end before the next year's  harvest, e.g., the marketing year for soybeans begins September 1 and ends August 31. The futures contract month of November represents the first  major new-crop marketing month, and the contract month of July represents the last major old-crop marketing month for soybeans.</STRONG></FONT></TD></TR></TABLE><A name=crop.reports></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Crop Reports: Reports compiled by the U.S. Department of Agriculture on various ag commodities that are released throughout the year. Information in the  reports includes estimates on planted acreage, yield, and expected  production, as well as comparison of production from previous years.</STRONG></FONT>       </TD></TR></TABLE><A name=cross-hedging></A><TABLE width="90%" class="std"> <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Cross-Hedging: Hedging a cash commodity using a different but related futures contract when there is no futures contract for the cash commodity being hedged and the cash and futures markets follow similar price trends (e.g., using soybean meal futures to hedge fish meal).</STRONG></FONT></TD></TR></TABLE><A name=crush.spread></A><TABLE width="90%" class="std"> <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Crush Spread: The       purchase of soybean futures and the simultaneous sale of soybean oil and meal futures. See <A       href="#reverse.crush">Reverse  Crush</A>.</STRONG></FONT></TD></TR></TABLE><A name=current.yield></A>
+<TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Current Yield: The ratio of the coupon to the current market price of the debt instrument.</STRONG></FONT>  </TD></TR></TABLE><A name=customer.margin></A><TABLE width="90%" class="std"><TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Customer Margin: Within the futures industry, financial guarantees required of both buyers and sellers of futures contracts and sellers of options contracts to ensure fulfillment of contract obligations. FCMs are responsible for overseeing customer margin accounts. Margins are determined on the basis of market risk and contract value. Also referred to as performance-bond  margin. See <A href="#clearing.margin">Clearing  Margin</A>.</STRONG></FONT></TD></TR></TABLE><A name=d><TABLE width="90%" class="std"><TR><TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>D</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=daily.trading.limit></A><TABLE width="90%" class="std"> <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Daily Trading Limit: The maximum price range set by the exchange each day for a contract. Day Traders: Speculators who take positions in futures or options contracts and liquidate them prior to the close of the same trading day.</STRONG></FONT></TD></TR></TABLE><A 
+name=deferred.(delivery).month></A><TABLE width="90%" class="std"> <TR>  <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Deferred (Delivery)  Month: The more distant month(s) in which futures trading is taking place, as distinguished from the nearby (delivery) month.</STRONG></FONT> </TD></TR></TABLE><A name=deliverable.grades></A><TABLE width="90%" class="std"> <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Deliverable Grades: The standard grades of commodities or instruments listed in the rules of the exchanges that must be met when delivering cash     commodities against futures contracts. Grades are often accompanied by a schedule of discounts and premiums allowable for delivery of commodities  of lesser or greater quality than the standard called for by the exchange.  Also referred to as contract grades.</STRONG></FONT></TD></TR></TABLE><A 
+name=delivery></A><TABLE width="90%" class="std"> <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Delivery: The transfer of the cash commodity from the seller of a futures contract to the buyer of a futures contract. Each futures exchange has specific procedures for delivery of a cash commodity. Some futures contracts, such  as stock index contracts, are cash settled.</STRONG></FONT></TD></TR></TABLE><A name=delivery.day></A><TABLE width="90%" class="std"><TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Delivery Day: The   third day in the delivery process at the Chicago Board of Trade, when the buyer's clearing firm presents the delivery notice with a certified check for the amount due at the office of the seller's clearing firm.</STRONG></FONT>
+  </TD></TR></TABLE><A name=delivery.month></A><TABLE width="90%" class="std"> <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Delivery Month: A specific month in which delivery may take place under the terms of a futures contract. Also referred to as contract month.</STRONG></FONT> </TD></TR></TABLE><A name=delivery.points></A><TABLE width="90%" class="std">
+  <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Delivery Points:      The locations and facilities designated by a futures exchange where stocks of a commodity may be delivered in fulfillment of a futures contract, under procedures established by the exchange.</STRONG></FONT> </TD></TR></TABLE><A name=delta></A><TABLE width="90%" class="std">    <TR> <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Delta: A measure of how much an option premium changes, given a unit change in the  underlying futures price. Delta often is interpreted as the probability  that the option will be in-the-money by expiration.</STRONG></FONT> </TD></TR></TABLE><A name=demand,.law.of></A><TABLE width="90%" class="std"> <TR>    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Demand, Law of: The relationship between product demand and price.</STRONG></FONT> </TD></TR></TABLE><A name=differentials></A><TABLE width="90%" class="std">
+    <TR>    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Differentials: 
+      Price differences between classes, grades, and delivery locations of 
+      various stocks of the same commodity.</STRONG></FONT></TD></TR></TABLE><A 
+name=discount.method></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Discount Method: A 
+      method of paying interest by issuing a security at less than par and 
+      repaying par value at maturity. The difference between the higher par 
+      value and the lower purchase price is the interest.</STRONG></FONT> 
+</TD></TR></TABLE><A name=discount.rate></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Discount Rate: The 
+      interest rate charged on loans by the Federal Reserve to member banks. 
+      Discretionary Account: An arrangement by which the holder of the account 
+      gives written power of attorney to another person, often his broker, to 
+      make trading decisions. Also known as a controlled or managed account.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=discretionary.account></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Discretionary 
+      Account: An arrangement by which the holder of the account gives 
+      written power of attorney to person, often his broker, to make trading 
+      decisions. Also known as a controlled or managed account.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=e>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>E</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=econometrics></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Econometrics: The 
+      application of statistical and mathematical methods in the field of 
+      economics to test and quantify economic theories and the solutions to 
+      economic problems.</STRONG></FONT></TD></TR></TABLE><A 
+name=equilibrium.price></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Equilibrium Price: 
+      The market price at which the quantity supplied of a commodity equals the 
+      quantity demanded.</STRONG></FONT></TD></TR></TABLE><A name=eurodollars></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Eurodollars: U.S. 
+      dollars on deposit with a bank outside of the United States and, 
+      consequently, outside the jurisdiction of the United States. The bank 
+      could be either a foreign bank or a subsidiary of a U.S. bank.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=european.terms></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>European Terms: A 
+      method of quoting exchange rates, which measures the amount of foreign 
+      currency needed to buy one U.S. dollar, i.e., foreign currency unit per 
+      dollar. See <A 
+      href="#reciprocal.of.european.terms">Reciprocal 
+      of European Terms</A>.</STRONG></FONT></TD></TR></TABLE><A 
+name=exchange.for.physicals></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Exchange For Physicals 
+      (EFP): A transaction generally used by two hedgers who want to 
+      exchange futures for cash positions. Also referred to as against actuals 
+      or versus cash.</STRONG></FONT></TD></TR></TABLE><A name=exercise></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Exercise: The 
+      action taken by the holder of a call option if he wishes to purchase the 
+      underlying futures contract or by the holder of a put option if he wishes 
+      to sell the underlying futures contract.</STRONG></FONT></TD></TR></TABLE><A 
+name=exercise.price></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Exercise Price: 
+      See <A 
+      href="#strike.price">Strike 
+      Price</A>.</STRONG></FONT></TD></TR></TABLE><A name=expanded.trading.hours></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Expanded Trading 
+      Hours: Additional trading hours of specific futures and options 
+      contracts at the Chicago Board of Trade that overlap with business hours 
+      in other time zones.</STRONG></FONT></TD></TR></TABLE><A 
+name=expiration.date></A>
+<TABLE width="90%" class="std">  
+  <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Expiration Date: 
+      Options on futures generally expire on a specific date during the month 
+      preceding the futures contract delivery month. For example, an option on a 
+      March futures contract expires in February but is referred to as a March 
+      option because its exercise would result in a March futures contract 
+      position.</STRONG></FONT> </TD></TR></TABLE><A name=extrinsic.value></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Extrinsic Value: 
+      See <A 
+      href="#time.value">Time 
+      Value</A>.</STRONG></FONT></TD></TR></TABLE><A name=f>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>F</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=face.value></A>
+<TABLE width="90%" class="std">
+ 
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Face Value: The 
+      amount of money printed on the face of the certificate of a security; the 
+      original dollar amount of indebtedness incurred.</STRONG></FONT>
+</TD></TR></TABLE><A name=federal.funds></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Federal Funds: 
+      Member bank deposits at the Federal Reserve; these funds are loaned by 
+      member banks to other member banks.</STRONG></FONT></TD></TR></TABLE><A 
+name=federal.funds.rate></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Federal Funds 
+      Rate: The rate of interest charged for the use of federal funds.</STRONG></FONT>
+      </TD></TR></TABLE><A name=federal.housing.administration></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Federal Housing 
+      Administration (FHA): A division of the U.S. Department of Housing and 
+      Urban Development that insures residential mortgage loans and sets 
+      construction standards.</STRONG></FONT></TD></TR></TABLE><A 
+name=federal.reserve.system></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Federal Reserve 
+      System: A central banking system in the United States, created by the 
+      Federal Reserve Act in 1913, designed to assist the nation in attaining 
+      its economic and financial goals. The structure of the Federal Reserve 
+      System includes a Board of Governors, the Federal Open Market Committee, 
+      and 12 Federal Reserve Banks.</STRONG></FONT></TD></TR></TABLE><A 
+name=feed.ratio></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Feed Ratio: A 
+      ratio used to express the relationship of feeding costs to the dollar 
+      value of livestock. See Hog/Corn Ratio and Steer/Corn Ratio.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=fill-or-kill></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Fill-or-Kill: A 
+      customer order that is a price limit order that must be filled immediately 
+      or canceled.</STRONG></FONT></TD></TR></TABLE><A 
+name=financial.analysis.auditing.compliance.tracking.system></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Financial Analysis 
+      Auditing Compliance Tracking System (FACTS): The National Futures 
+      Association's computerized system of maintaining financial records of its 
+      member firms and monitoring their financial conditions.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=financial.instrument></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Financial 
+      Instrument: There are two basic types: (1) a debt instrument, which is 
+      a loan with an agreement to pay back funds with interest; (2) an equity 
+      security, which is a share or stock in a company.</STRONG></FONT> 
+</TD></TR></TABLE><A name=first.notice.day></A>
+<TABLE width="90%" class="std">
+    <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>First Notice Day: 
+      According to Chicago Board of Trade rules, the first day on which a notice 
+      of intent to deliver a commodity in fulfillment of a given month's futures 
+      contract can be made by the clearinghouse to a buyer. The clearinghouse 
+      also informs the sellers who they have been matched up with.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=floor.broker></A>
+<TABLE width="90%" class="std">
+    <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Floor Broker (FB): 
+      An individual who executes orders for the purchase or sale of any 
+      commodity futures or options contract on any contract market for any other 
+      person.</STRONG></FONT></TD></TR></TABLE><A name=floor.trader></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Floor Trader (FT): 
+      An individual who executes trades for the purchase or sale of any 
+      commodity futures or options contract on any contract market for such 
+      individual's own account.</STRONG></FONT></TD></TR></TABLE><A 
+name=foreign.exchange.market></A>
+<TABLE width="90%" class="std">
+    <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Foreign Exchange 
+      Market: See <A 
+      href="#forex.market">Forex 
+      Market</A>.</STRONG></FONT></TD></TR></TABLE><A name=forex.market></A>
+<TABLE width="90%" class="std">
+  
+  <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Forex Market: An 
+      over-the-counter market where buyers and sellers conduct foreign exchange 
+      business by telephone and other means of communication. Also referred to 
+      as foreign exchange market.</STRONG></FONT></TD></TR></TABLE><A 
+name=forward.(cash).contract></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Forward (Cash) 
+      Contract: A cash contract in which a seller agrees to deliver a 
+      specific cash commodity to a buyer sometime in the future. Forward 
+      contracts, in contrast to futures contracts, are privately negotiated and 
+      are not standardized.</STRONG></FONT></TD></TR></TABLE><A 
+name=full.carrying.charge.market></A>
+<TABLE width="90%" class="std">
+    <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Full Carrying Charge 
+      Market: A futures market where the price difference between delivery 
+      months reflects the total costs of interest, insurance, and storage.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=full.membership.></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Full Membership 
+      (CBOT): A Chicago Board of Trade membership that allows an individual 
+      to trade all futures and options contracts listed by the exchange.</STRONG></FONT> 
+    </TD></TR></TABLE><A name=fundamental.analysis></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Fundamental 
+      Analysis: A method of anticipating future price movement using supply 
+      and demand information.</STRONG></FONT></TD></TR></TABLE><A 
+name=futures.commission.merchant></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Futures Commission 
+      Merchant (FCM): An individual or organization that solicits or accepts 
+      orders to buy or sell futures contracts or options on futures and accepts 
+      money or other assets from customers to support such orders. Also referred 
+      to as commission house or wire house.</STRONG></FONT></TD></TR></TABLE><A 
+name=futures.contract></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Futures Contract: 
+      A legally binding agreement, made on the trading floor of a futures 
+      exchange, to buy or sell a commodity or financial instrument sometime in 
+      the future. Futures contracts are standardized according to the quality, 
+      quantity, and delivery time and location for each commodity. The only 
+      variable is price, which is discovered on an exchange trading floor.</STRONG></FONT>
+      </TD></TR></TABLE><A name=futures.exchange></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Futures Exchange: 
+      A central marketplace with established rules and regulations where buyers 
+      and sellers meet to trade futures and options on futures contracts.</STRONG></FONT>
+    </TD></TR></TABLE><A name=g>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>G</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=gamma></A>
+<TABLE width="90%" class="std">
+ 
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Gamma: A 
+      measurement of how fast delta changes, given a unit change in the 
+      underlying futures price.</STRONG></FONT></TD></TR></TABLE><A 
+name=gim.membership.></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>GIM Membership 
+      (CBOT): A Chicago Board of Trade membership that allows an individual 
+      to trade all futures contracts listed in the government instrument market 
+      category.</STRONG></FONT></TD></TR></TABLE><A name=globexR></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>GLOBEXR: A global 
+      after-hours electronic trading system.</STRONG></FONT></TD></TR></TABLE><A 
+name=grain.terminal></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Grain Terminal: 
+      Large grain elevator facility with the capacity to ship grain by rail 
+      and/or barge to domestic or foreign markets.</STRONG></FONT></TD></TR></TABLE><A 
+name=gross.domestic.product></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Gross Domestic Product 
+      (GDP): The value of all final goods and services produced by an 
+      economy over a particular time period, normally a year.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=gross.national.product></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Gross National Product 
+      (GNP): Gross Domestic Product plus the income accruing to domestic 
+      residents as a result of investments abroad less income earned in domestic 
+      markets accruing to foreigners abroad.</STRONG></FONT></TD></TR></TABLE><A 
+name=gross.processing.margin></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Gross Processing 
+      Margin (GPM): The difference between the cost of soybeans and the 
+      combined sales income of the processed soybean oil and meal.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=h>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>H</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=hedger></A>
+<TABLE width="90%" class="std">
+ 
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Hedger: An 
+      individual or company owning or planning to own a cash commodity corn, 
+      soybeans, wheat, U.S. Treasury bonds, notes, bills, etc. and concerned 
+      that the cost of the commodity may change before either buying or selling 
+      it in the cash market. A hedger achieves protection against changing cash 
+      prices by purchasing (selling) futures contracts of the same or similar 
+      commodity and later offsetting that position by selling (purchasing) 
+      futures contracts of the same quantity and type as the initial 
+      transaction.</STRONG></FONT></TD></TR></TABLE><A name=hedging></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Hedging: The 
+      practice of offsetting the price risk inherent in any cash market position 
+      by taking an equal but opposite position in the futures market. Hedgers 
+      use the futures markets to protect their businesses from adverse price 
+      changes. See Selling (Short) Hedge and Purchasing (Long) Hedge.</STRONG></FONT>
+  </TD></TR></TABLE><A name=high></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>High: The highest 
+      price of the day for a particular futures contract.</STRONG></FONT> 
+</TD></TR></TABLE><A name=hog/corn.ratio></A>
+<TABLE width="90%" class="std">
+    <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Hog/Corn Ratio: 
+      The relationship of feeding costs to the dollar value of hogs. It is 
+      measured by dividing the price of hogs ($/hundredweight) by the price of 
+      corn ($/bushel). When corn prices are high relative to pork prices, fewer 
+      units of corn equal the dollar value of 100 pounds of pork. Conversely, 
+      when corn prices are low in relation to pork prices, more units of corn 
+      are required to equal the value of 100 pounds of pork. See <A 
+      href="#feed.ratio">Feed 
+      Ratio</A>.</STRONG></FONT></TD></TR></TABLE><A name=holder></A>
+<TABLE width="90%" class="std">
+    <TR><TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Holder: See <A 
+      href="#option.buyer">Option 
+      Buyer</A>.</STRONG></FONT></TD></TR></TABLE><A name=horizontal.spread></A>
+<TABLE width="90%" class="std">
+    <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Horizontal Spread: 
+      The purchase of either a call or put option and the simultaneous sale of 
+      the same type of option with typically the same strike price but with a 
+      different expiration month. Also referred to as a calendar spread.</STRONG></FONT> 
+    </TD></TR></TABLE><A name=i>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>I</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=idem.membership.></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>IDEM Membership 
+      (CBOT): A Chicago Board of Trade membership of trading privileges for 
+      futures contracts in the index, debt, and energy markets category (gold, 
+      municipal bond index, 30-day fed funds, and stock index futures).</STRONG></FONT>
+    </TD></TR></TABLE><A name=initial.margin></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Initial Margin: 
+      See <A 
+      href="#original.margin">Original 
+      Margin</A>.</STRONG></FONT></TD></TR></TABLE><A name=intercommodity.spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Intercommodity 
+      Spread: The purchase of a given delivery month of one futures market 
+      and the simultaneous sale of the same delivery month of a different, but 
+      related, futures market.</STRONG></FONT></TD></TR></TABLE><A 
+name=interdelivery.spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Interdelivery 
+      Spread: The purchase of one delivery month of a given futures contract 
+      and simultaneous sale of another delivery month of the same commodity on 
+      the same exchange. Also referred to as an intramarket or calendar spread.</STRONG></FONT>
+      </TD></TR></TABLE><A name=intermarket.spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Intermarket 
+      Spread: The sale of a given delivery month of a futures contract on 
+      one exchange and the simultaneous purchase of the same delivery month and 
+      futures contract on another exchange.</STRONG></FONT></TD></TR></TABLE><A 
+name=in-the-money.option></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>In-the-Money 
+      Option: An option having intrinsic value. A call option is 
+      in-the-money if its strike price is below the current price of the 
+      underlying futures contract. A put option is in-the-money if its strike 
+      price is above the current price of the underlying futures contract. See 
+      <A 
+      href="#intrinsic.value">Intrinsic 
+      Value</A>.</STRONG></FONT></TD></TR></TABLE><A name=intramarket.spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Intramarket 
+      Spread: See <A 
+      href="#interdelivery.spread">Interdelivery 
+      Spread</A>.</STRONG></FONT></TD></TR></TABLE><A name=intrinsic.value></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Intrinsic Value: 
+      The amount by which an option is in-the-money. See <A 
+      href="#in-the-money.option">In-the-Money 
+      Option</A>.</STRONG></FONT></TD></TR></TABLE><A name=introducing.broker></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Introducing Broker 
+      (IB): A person or organization that solicits or accepts orders to buy 
+      or sell futures contracts or commodity options but does not accept money 
+      or other assets from customers to support such orders.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=inverted.market></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Inverted Market: A 
+      futures market in which the relationship between two delivery months of 
+      the same commodity is abnormal.</STRONG></FONT></TD></TR></TABLE><A 
+name=invisible.supply></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Invisible Supply: 
+      Uncounted stocks of a commodity in the hands of wholesalers, 
+      manufacturers, and producers that cannot be identified accurately; stocks 
+      outside commercial channels but theoretically available to the market.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=j>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>J</STRONG></FONT></CENTER></TD></TR></TABLE></A><A name=k>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>K</STRONG></FONT></CENTER></TD></TR></TABLE></A><A name=l>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>L</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=lagging.indicators></A>
+<TABLE width="90%" class="std">
+ 
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Lagging 
+      Indicators: Market indicators showing the general direction of the 
+      economy and confirming or denying the trend implied by the leading 
+      indicators. Also referred to as concurrent indicators.</STRONG></FONT>
+  </TD></TR></TABLE><A name=last.trading.day></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Last Trading Day: 
+      According to the Chicago Board of Trade rules, the final day when trading 
+      may occur in a given futures or options contract month. Futures contracts 
+      outstanding at the end of the last trading day must be settled by delivery 
+      of the underlying commodity or securities or by agreement for monetary 
+      settlement (in some cases by EFPs).</STRONG></FONT></TD></TR></TABLE><A 
+name=leading.indicators></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Leading 
+      Indicators: Market indicators that signal the state of the economy for 
+      the coming months. Some of the leading indicators include: average 
+      manufacturing workweek, initial claims for unemployment insurance, orders 
+      for consumer goods and material, percentage of companies reporting slower 
+      deliveries, change in manufacturers' unfilled orders for durable goods, 
+      plant and equipment orders, new building permits, index of consumer 
+      expectations, change in material prices, prices of stocks, change in money 
+      supply.</STRONG></FONT></TD></TR></TABLE><A name=leverage></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Leverage: The 
+      ability to control large dollar amounts of a commodity with a 
+      comparatively small amount of capital.</STRONG></FONT></TD></TR></TABLE><A 
+name=limit.order></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Limit Order: An 
+      order in which the customer sets a limit on the price and/or time of 
+      execution.</STRONG></FONT></TD></TR></TABLE><A name=limits></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Limits: See 
+      Position Limit, Price Limit, Variable Limit.</STRONG></FONT></TD></TR></TABLE><A 
+name=linkage></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Linkage: The 
+      ability to buy (sell) contracts on one exchange (such as the Chicago 
+      Mercantile Exchange) and later sell (buy) them on another exchange (such 
+      as the Singapore International Monetary Exchange).</STRONG></FONT> 
+</TD></TR></TABLE><A name=liquid></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Liquid: A 
+      characteristic of a security or commodity market with enough units 
+      outstanding to allow large transactions without a substantial change in 
+      price. Institutional investors are inclined to seek out liquid investments 
+      so that their trading activity will not influence the market price.</STRONG></FONT>
+    </TD></TR></TABLE><A name=liquidate></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Liquidate: Selling 
+      (or purchasing) futures contracts of the same delivery month purchased (or 
+      sold) during an earlier transaction or making (or taking) delivery of the 
+      cash commodity represented by the futures contract. See <A 
+      href="#offset">Offset</A>.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=liquidity.data.bankR(ldbR)></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Liquidity Data 
+      BankR(LDBR): A computerized profile of CBOT market activity, used by 
+      technical traders to analyze price trends and develop trading strategies. 
+      There is a specialized display of daily volume data and time distribution 
+      of prices for every commodity traded on the Chicago Board of Trade.</STRONG></FONT>
+    </TD></TR></TABLE><A name=loan.program></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Loan Program: A 
+      federal program in which the government lends money at preannounced rates 
+      to farmers and allows them to use the crops they plant for the upcoming 
+      crop year as collateral. Default on these loans is the primary method by 
+      which the government acquires stocks of agricultural commodities.</STRONG></FONT>
+    </TD></TR></TABLE><A name=loan.rate></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Loan Rate: The 
+      amount lent per unit of a commodity to farmers.</STRONG></FONT> 
+</TD></TR></TABLE><A name=long></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Long: One who has 
+      bought futures contracts or owns a cash commodity. Long Hedge: See <A 
+      href="#purchasing.hedge">Purchasing 
+      Hedge</A>.</STRONG></FONT></TD></TR></TABLE><A name=low></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Low: The lowest 
+      price of the day for a particular futures contract.</STRONG></FONT>
+</TD></TR></TABLE><A name=m>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>M</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=maintenance.margin></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Maintenance 
+      Margin: A set minimum margin (per outstanding futures contract) that a 
+      customer must maintain in his margin account.</STRONG></FONT> 
+</TD></TR></TABLE><A name=managed.account></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Managed Account: 
+      See <A 
+      href="#discretionary.account">Discretionary 
+      Account</A>.</STRONG></FONT></TD></TR></TABLE><A name=managed.futures></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Managed Futures: 
+      Represents an industry comprised of professional money managers known as 
+      commodity trading advisors who manage client assets on a discretionary 
+      basis, using global futures markets as an investment medium.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=margin></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Margin: See 
+      Clearing Margin and Customer Margin.</STRONG></FONT></TD></TR></TABLE><A 
+name=margin.call></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Margin Call: A 
+      call from a clearinghouse to a clearing member, or from a brokerage firm 
+      to a customer, to bring margin deposits up to a required minimum level.</STRONG></FONT>
+      </TD></TR></TABLE><A 
+name=market.information.data.inquiry.system></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Market Information 
+      Data Inquiry System (MIDIS): Historical Chicago Board of Trade price, 
+      volume, open interest data and other market information accessible by 
+      computers within the Chicago Board of Trade building.</STRONG></FONT> 
+</TD></TR></TABLE><A name=market.order></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Market Order: An 
+      order to buy or sell a futures contract of a given delivery month to be 
+      filled at the best possible price and as soon as possible.</STRONG></FONT> 
+  </TD></TR></TABLE><A 
+name=market.price.reporting.and.information.system></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Market Price Reporting 
+      and Information System (MPRIS): The Chicago Board of Trade's 
+      computerized price-reporting system.</STRONG></FONT> </TD></TR></TABLE><A 
+name=market.profileR></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Market ProfileR: A 
+      Chicago Board of Trade information service that helps technical traders 
+      analyze price trends. Market Profile consists of the Time and Sales ticker 
+      and the Liquidity Data Bank.</STRONG></FONT></TD></TR></TABLE><A 
+name=market.reporter></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Market Reporter: A 
+      person employed by the exchange and located in or near the trading pit who 
+      records prices as they occur during trading.</STRONG></FONT></TD></TR></TABLE><A 
+name=marking-to-market></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Marking-to-Market: 
+      To debit or credit on a daily basis a margin account based on the close of 
+      that day's trading session. In this way, buyers and sellers are protected 
+      against the possibility of contract default.</STRONG></FONT></TD></TR></TABLE><A 
+name=minimum.price.fluctuation></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Minimum Price 
+      Fluctuation: See <A 
+      href="#tick">Tick</A>.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=money.supply></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Money Supply: The 
+      amount of money in the economy, consisting primarily of currency in 
+      circulation plus deposits in banks: M-1-U.S. money supply consisting of 
+      currency held by the public, traveler's checks, checking account funds, 
+      NOW and super-NOW accounts, automatic transfer service accounts, and 
+      balances in credit unions. M-2-U.S. money supply consisting of M-1 plus 
+      savings and small time deposits (less than $100,000) at depository 
+      institutions, overnight repurchase agreements at commercial banks, and 
+      money market mutual fund accounts. M-3 -U.S. money supply consisting of 
+      M-2 plus large time deposits ($100,000 or more) at depository 
+      institutions, repurchase agreements with maturities longer than one day at 
+      commercial banks, and institutional money market accounts.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=moving-average.charts></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Moving-Average 
+      Charts: A statistical price analysis method of recognizing different 
+      price trends. A moving average is calculated by adding the prices for a 
+      predetermined number of days and then dividing by the number of days.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=municipal.bonds></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Municipal Bonds: 
+      Debt securities issued by state and local governments, and special 
+      districts and counties.</STRONG></FONT></TD></TR></TABLE><A name=n>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>N</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=national.futures.association></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>National Futures 
+      Association (NFA): An industrywide, industry-supported, 
+      self-regulatory organization for futures and options markets. The primary 
+      responsibilities of the NFA are to enforce ethical standards and customer 
+      protection rules, screen futures professionals for membership, audit and 
+      monitor professionals for financial and general compliance rules, and 
+      provide for arbitration of futures-related disputes.</STRONG></FONT>
+</TD></TR></TABLE><A name=nearby.(delivery).month></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Nearby (Delivery) 
+      Month: The futures contract month closest to expiration. Also referred 
+      to as spot month.</STRONG></FONT></TD></TR></TABLE><A 
+name=negative.yield.curve></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Negative Yield 
+      Curve: See <A 
+      href="#yield.curve">Yield 
+      Curve</A>.</STRONG></FONT></TD></TR></TABLE><A name=notice.day></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Notice Day: 
+      According to Chicago Board of Trade rules, the second day of the three-day 
+      delivery process when the clearing corporation matches the buyer with the 
+      oldest reported long position to the delivering seller and notifies both 
+      parties. See <A 
+      href="#first.notice.day">First 
+      Notice Day</A>.</STRONG></FONT></TD></TR></TABLE><A name=o>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>O</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=offer></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Offer: An 
+      expression indicating one's desire to sell a commodity at a given price; 
+      opposite of bid.</STRONG></FONT></TD></TR></TABLE><A name=offset></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Offset: Taking a 
+      second futures or options position opposite to the initial or opening 
+      position. See <A 
+      href="#liquidate">Liquidate</A>.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=opec></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>OPEC: Organization 
+      of Petroleum Exporting Countries, emerged as the major petroleum pricing 
+      power in1973, when the ownership of oil production in the Middle East 
+      transferred from the operating companies to the governments of the 
+      producing countries or to their national oil. Members are: Algeria, 
+      Ecuador, Gabon, Indonesia, Iran, Iraq, Kuwait, Libya, Nigeria, Qatar, 
+      Saudi Arabia, the United Arab Emirates, and Venezuela.</STRONG></FONT>
+  </TD></TR></TABLE><A name=opening.range></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Opening Range: A 
+      range of prices at which buy and sell transactions took place during the 
+      opening of the market.</STRONG></FONT></TD></TR></TABLE><A 
+name=open.interest></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Open Interest: The 
+      total number of futures or options contracts of a given commodity that 
+      have not yet been offset by an opposite futures or option transaction nor 
+      fulfilled by delivery of the commodity or option exercise. Each open 
+      transaction has a buyer and a seller, but for calculation of open 
+      interest, only one side of the contract is counted.</STRONG></FONT> 
+</TD></TR></TABLE><A name=open.market.operation></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Open Market 
+      Operation: The buying and selling of government securities Treasury 
+      bills, notes, and bonds by the Federal Reserve.</STRONG></FONT> 
+</TD></TR></TABLE><A name=open.outcry></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Open Outcry: 
+      Method of public auction for making verbal bids and offers in the trading 
+      pits or rings of futures exchanges.</STRONG></FONT> </TD></TR></TABLE><A 
+name=option></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Option: A contract 
+      that conveys the right, but not the obligation, to buy or sell a 
+      particular item at a certain price for a limited time. Only the seller of 
+      the option is obligated to perform.</STRONG></FONT></TD></TR></TABLE><A 
+name=option.buyer></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Option Buyer: The 
+      purchaser of either a call or put option. Option buyers receive the right, 
+      but not the obligation, to assume a futures position. Also referred to as 
+      the holder.</STRONG></FONT> </TD></TR></TABLE><A name=option.premium></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Option Premium: 
+      The price of an option the sum of money that the option buyer pays and the 
+      option seller receives for the rights granted by the option.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=option.seller></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Option Seller: The 
+      person who sells an option in return for a premium and is obligated to 
+      perform when the holder exercises his right under the option contract. 
+      Also referred to as the writer.</STRONG></FONT></TD></TR></TABLE><A 
+name=option.spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Option Spread: The 
+      simultaneous purchase and sale of one or more options contracts, futures, 
+      and/or cash positions.</STRONG></FONT></TD></TR></TABLE><A 
+name=option.writer></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Option Writer: See 
+      <A 
+      href="#option.seller">Option 
+      Seller</A>.</STRONG></FONT></TD></TR></TABLE><A name=original.margin></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Original Margin: 
+      The amount a futures market participant must deposit into his margin 
+      account at the time he places an order to buy or sell a futures contract. 
+      Also referred to as initial margin.</STRONG></FONT></TD></TR></TABLE><A 
+name=out-of-the-money.option></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Out-of-the-Money 
+      Option: An option with no intrinsic value, i.e., a call whose strike 
+      price is above the current futures price or a put whose strike price is 
+      below the current futures price.</STRONG></FONT></TD></TR></TABLE><A 
+name=over-the-counter.(otc).market></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Over-the-Counter (OTC) 
+      Market: A market where products such as stocks, foreign currencies, 
+      and other cash items are bought and sold by telephone and other means of 
+      communication.</STRONG></FONT> </TD></TR></TABLE><A name=p>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>P</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=p&amp;s.statement></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>P&amp;S (Purchase and 
+      Sale) Statement: A statement sent by a commission house to a customer 
+      when his futures or options on futures position has changed, showing the 
+      number of contracts bought or sold, the prices at which the contracts were 
+      bought or sold, the gross profit or loss, the commission charges, and the 
+      net profit or loss on the transactions.</STRONG></FONT></TD></TR></TABLE><A 
+name=par></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Par: The face 
+      value of a security. For example, a bond selling at par is worth the same 
+      dollar amount it was issued for or at which it will be redeemed at 
+      maturity.</STRONG></FONT></TD></TR></TABLE><A 
+name=payment-in-kind.(pik).program></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Payment-In-Kind (PIK) 
+      Program: A government program in which farmers who comply with a 
+      voluntary acreage-control program and set aside an additional percentage 
+      of acreage specified by the government receive certificates that can be 
+      redeemed for government-owned stocks of grain.</STRONG></FONT>
+</TD></TR></TABLE><A name=performance.bond.margin></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Performance Bond 
+      Margin: The amount of money deposited by both a buyer and seller of a 
+      futures contract or an options seller to ensure performance of the term of 
+      the contract. Margin in commodities is not a payment of equity or down 
+      payment on the commodity itself, but rather it is a security deposit. See 
+      Customer Margin and Clearing Margin.</STRONG></FONT></TD></TR></TABLE><A 
+name=pit></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Pit: The area on 
+      the trading floor where futures and options on futures contracts are 
+      bought and sold. Pits are usually raised octagonal platforms with steps 
+      descending on the inside that permit buyers and sellers of contracts to 
+      see each other.</STRONG></FONT></TD></TR></TABLE><A 
+name=point-and-figure.charts></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Point-and-Figure 
+      Charts: Charts that show price changes of a minimum amount regardless 
+      of the time period involved.</STRONG></FONT></TD></TR></TABLE><A 
+name=position></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Position: A market 
+      commitment. A buyer of a futures contract is said to have a long position 
+      and, conversely, a seller of futures contracts is said to have a short 
+      position.</STRONG></FONT></TD></TR></TABLE><A name=position.day></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Position Day: 
+      According to the Chicago Board of Trade rules, the first day in the 
+      process of making or taking delivery of the actual commodity on a futures 
+      contract. The clearing firm representing the seller notifies the Board of 
+      Trade Clearing Corporation that its short customers want to deliver on a 
+      futures contract.</STRONG></FONT></TD></TR></TABLE><A name=position.limit></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Position Limit: 
+      The maximum number of speculative futures contracts one can hold as 
+      determined by the Commodity Futures Trading Commission and/or the exchange 
+      upon which the contract is traded. Also referred to as trading limit.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=position.trader></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Position Trader: 
+      An approach to trading in which the trader either buys or sells contracts 
+      and holds them for an extended period of time.</STRONG></FONT> 
+</TD></TR></TABLE><A name=positive.yield.curve></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Positive Yield 
+      Curve: See <A 
+      href="#yield.curve">Yield 
+      Curve</A>.</STRONG></FONT></TD></TR></TABLE><A name=premium></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Premium: (1) The 
+      additional payment allowed by exchange regulation for delivery of 
+      higher-than-required standards or grades of a commodity against a futures 
+      contract. (2) In speaking of price relationships between different 
+      delivery months of a given commodity, one is said to be ""trading at a 
+      premium'' over another when its price is greater than that of the other. 
+      (3) In financial instruments, the dollar amount by which a security trades 
+      above its principal value. See <A 
+      href="#option.premium">Option 
+      Premium</A>.</STRONG></FONT></TD></TR></TABLE><A name=price.discovery></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Price Discovery: 
+      The generation of information about ""future'' cash market prices through 
+      the futures markets.</STRONG></FONT></TD></TR></TABLE><A name=price.limit></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Price Limit: The 
+      maximum advance or decline from the previous day's settlement price 
+      permitted for a contract in one trading session by the rules of the 
+      exchange. See also Variable Limit.</STRONG></FONT></TD></TR></TABLE><A 
+name=price.limit.order></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Price Limit Order: 
+      A customer order that specifies the price at which a trade can be 
+      executed.</STRONG></FONT></TD></TR></TABLE><A name=primary.dealer></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Primary Dealer: A 
+      designation given by the Federal Reserve System to commercial banks or 
+      broker/dealers who meet specific criteria. Among the criteria are capital 
+      requirements and meaningful participation in the Treasury auctions.</STRONG></FONT> 
+    </TD></TR></TABLE><A name=primary.market></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Primary Market: 
+      Market of new issues of securities.</STRONG></FONT></TD></TR></TABLE><A 
+name=prime.rate></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Prime Rate: 
+      Interest rate charged by major banks to their most creditworthy customers.</STRONG></FONT>
+      </TD></TR></TABLE><A name=producer.price.index></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Producer Price Index 
+      (PPI): An index that shows the cost of resources needed to produce 
+      manufactured goods during the previous month.</STRONG></FONT> 
+</TD></TR></TABLE><A name=pulpit></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Pulpit: A raised 
+      structure adjacent to, or in the center of, the pit or ring at a futures 
+      exchange where market reporters, employed by the exchange, record price 
+      changes as they occur in the trading pit.</STRONG></FONT> </TD></TR></TABLE><A 
+name=purchasing.hedge></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Purchasing Hedge (or 
+      Long Hedge): Buying futures contracts to protect against a possible 
+      price increase of cash commodities that will be purchased in the future. 
+      At the time the cash commodities are bought, the open futures position is 
+      closed by selling an equal number and type of futures contracts as those 
+      that were initially purchased. Also referred to as a buying hedge. See <A 
+      href="#hedging">Hedging</A>.</STRONG></FONT>
+      </TD></TR></TABLE><A name=put.option></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Put Option: An 
+      option that gives the option buyer the right but not the obligation to 
+      sell (go "short'') the underlying futures contract at the strike price on 
+      or before the expiration date.</STRONG></FONT></TD></TR></TABLE><A name=q>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>Q</STRONG></FONT></CENTER></TD></TR></TABLE></A><A name=r><TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>R</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=range></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Range (Price): The 
+      price span during a given trading session, week, month, year, etc.</STRONG></FONT> 
+    </TD></TR></TABLE><A name=reciprocal.of.european.terms></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Reciprocal of European 
+      Terms: One method of quoting exchange rates, which measures the U.S. 
+      dollar value of one foreign currency unit, i.e., U.S. dollars per foreign 
+      units. See <A 
+      href="#european.terms">European 
+      Terms</A>.</STRONG></FONT> </TD></TR></TABLE><A name=repurchase.agreements></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Repurchase Agreements 
+      ( or Repo): An agreement between a seller and a buyer, usually in U.S. 
+      government securities, in which the seller agrees to buy back the security 
+      at a later date.</STRONG></FONT></TD></TR></TABLE><A 
+name=reserve.requirements></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Reserve 
+      Requirements: The minimum amount of cash and liquid assets as a 
+      percentage of demand deposits and time deposits that member banks of the 
+      Federal Reserve are required to maintain.</STRONG></FONT> </TD></TR></TABLE><A 
+name=resistance></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Resistance: A 
+      level above which prices have had difficulty penetrating.</STRONG></FONT>
+  </TD></TR></TABLE><A name=resumption></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Resumption: The 
+      reopening the following day of specific futures and options markets that 
+      also trade during the evening session at the Chicago Board of Trade.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=reverse.crush.spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Reverse Crush 
+      Spread: The sale of soybean futures and the simultaneous purchase of 
+      soybean oil and meal futures. See <A 
+      href="#crush.spread">Crush 
+      Spread</A>.</STRONG></FONT></TD></TR></TABLE><A name=runners></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Runners: 
+      Messengers who rush orders received by phone clerks to brokers for 
+      execution in the pit.</STRONG></FONT></TD></TR></TABLE><A name=s></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>S</STRONG></FONT></CENTER></TD></TR></TABLE><A 
+name=scalper></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Scalper: A trader 
+      who trades for small, short-term profits during the course of a trading 
+      session, rarely carrying a position overnight.</STRONG></FONT>
+</TD></TR></TABLE><A name=secondary.market></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Secondary Market: 
+      Market where previously issued securities are bought and sold.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=security></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Security: Common 
+      or preferred stock; a bond of a corporation, government, or 
+      quasi-government body.</STRONG></FONT></TD></TR></TABLE><A 
+name=selling.hedge></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Selling Hedge (or 
+      Short Hedge): Selling futures contracts to protect against possible 
+      declining prices of commodities that will be sold in the future. At the 
+      time the cash commodities are sold, the open futures position is closed by 
+      purchasing an equal number and type of futures contracts as those that 
+      were initially sold. See <A 
+      href="#hedging">Hedging</A>.</STRONG></FONT> 
+      </TD></TR></TABLE><A name=settle></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Settle: See <A 
+      href="#settlement.price">Settlement 
+      Price</A>.</STRONG></FONT></TD></TR></TABLE><A name=settlement.price></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Settlement Price: 
+      The last price paid for a commodity on any trading day. The exchange 
+      clearinghouse determines a firm's net gains or losses, margin 
+      requirements, and the next day's price limits, based on each futures and 
+      options contract settlement price. If there is a closing range of prices, 
+      the settlement price is determined by averaging those prices. Also 
+      referred to as settle or closing price.</STRONG></FONT></TD></TR></TABLE><A 
+name=short></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Short: (noun) One 
+      who has sold futures contracts or plans to purchase a cash commodity. 
+      (verb) Selling futures contracts or initiating a cash forward contract 
+      sale without offsetting a particular market position.</STRONG></FONT>
+</TD></TR></TABLE><A name=short.hedge></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Short Hedge: See 
+      <A 
+      href="#selling.hedge">Selling 
+      Hedge</A>.</STRONG></FONT></TD></TR></TABLE><A 
+name=simulation.analysis.of.financial.exposure></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Simulation Analysis of 
+      Financial Exposure (SAFE): A sophisticated computer risk-analysis 
+      program that monitors the risk of clearing members and large-volume 
+      traders at the Chicago Board of Trade. It calculates the risk of change in 
+      market prices or volatility to a firm carrying open positions.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=speculator></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Speculator: A 
+      market participant who tries to profit from buying and selling futures and 
+      options contracts by anticipating future price movements. Speculators 
+      assume market price risk and add liquidity and capital to the futures 
+      markets.</STRONG></FONT></TD></TR></TABLE><A name=spot></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Spot: Usually 
+      refers to a cash market price for a physical commodity that is available 
+      for immediate delivery.</STRONG></FONT></TD></TR></TABLE><A name=spot.month></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Spot Month: See 
+      Nearby (Delivery) Month.</STRONG></FONT></TD></TR></TABLE><A name=spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Spread: The price 
+      difference between two related markets or commodities.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=spreading></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Spreading: The 
+      simultaneous buying and selling of two related markets in the expectation 
+      that a profit will be made when the position is offset. Examples include: 
+      buying one futures contract and selling another futures contract of the 
+      same commodity but different delivery month; buying and selling the same 
+      delivery month of the same commodity on different futures exchanges; 
+      buying a given delivery month of one futures market and selling the same 
+      delivery month of a different, but related, futures market.</STRONG></FONT>
+  </TD></TR></TABLE><A name=steer/corn.ratio></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Steer/Corn Ratio: 
+      The relationship of cattle prices to feeding costs. It is measured by 
+      dividing the price of cattle ($/hundredweight) by the price of corn 
+      ($/bushel). When corn prices are high relative to cattle prices, fewer 
+      units of corn equal the dollar value of 100 pounds of cattle. Conversely, 
+      when corn prices are low in relation to cattle prices, more units of corn 
+      are required to equal the value of 100 pounds of beef. See <A 
+      href="#feed.ratio">Feed 
+      Ratio</A>.</STRONG></FONT> </TD></TR></TABLE><A name=stock.index></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Stock Index: An 
+      indicator used to measure and report value changes in a selected group of 
+      stocks. How a particular stock index tracks the market depends on its 
+      composition the sampling of stocks, the weighting of individual stocks, 
+      and the method of averaging used to establish an index.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=stock.market></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Stock Market: A 
+      market in which shares of stock are bought and sold.</STRONG></FONT>
+</TD></TR></TABLE><A name=stop-limit.order></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Stop-Limit Order: 
+      A variation of a stop order in which a trade must be executed at the exact 
+      price or better. If the order cannot be executed, it is held until the 
+      stated price or better is reached again.</STRONG></FONT></TD></TR></TABLE><A 
+name=stop.order></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Stop Order: An 
+      order to buy or sell when the market reaches a specified point. A stop 
+      order to buy becomes a market order when the futures contract trades (or 
+      is bid) at or above the stop price. A stop order to sell becomes a market 
+      order when the futures contract trades (or is offered) at or below the 
+      stop price.</STRONG></FONT></TD></TR></TABLE><A name=strike.price></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Strike Price: The 
+      price at which the futures contract underlying a call or put option can be 
+      purchased (if a call) or sold (if a put). Also referred to as exercise 
+      price.</STRONG></FONT></TD></TR></TABLE><A name=supply,.law.of></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Supply, Law of: 
+      The relationship between product supply and its price.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=support></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Support: The place 
+      on a chart where the buying of futures contracts is sufficient to halt a 
+      price decline.</STRONG></FONT></TD></TR></TABLE><A name=suspension></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Suspension: The 
+      end of the evening session for specific futures and options markets traded 
+      at the Chicago Board of Trade.</STRONG></FONT></TD></TR></TABLE><A name=t>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>T</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=technical.analysis></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Technical 
+      Analysis: Anticipating future price movement using historical prices, 
+      trading volume, open interest, and other trading data to study price 
+      patterns.</STRONG></FONT> </TD></TR></TABLE><A name=tick></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Tick: The smallest 
+      allowable increment of price movement for a contract. Also referred to as 
+      minimum price fluctuation.</STRONG></FONT></TD></TR></TABLE><A 
+name=time.limit.order></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Time Limit Order: 
+      A customer order that designates the time during which it can be executed.</STRONG></FONT>
+      </TD></TR></TABLE><A name=time.and.sales.ticker></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Time and Sales 
+      Ticker: Part of the Chicago Board of Trade Market Profile system 
+      consisting of an on-line graphic service that transmits price and time 
+      information throughout the day.</STRONG></FONT></TD></TR></TABLE><A 
+name=time-stamped></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Time-Stamped: Part 
+      of the order-routing process in which the time of day is stamped on an 
+      order. An order is time-stamped when it is (1) received on the trading 
+      floor, and (2) completed.</STRONG></FONT></TD></TR></TABLE><A 
+name=time.value></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Time Value: The 
+      amount of money option buyers are willing to pay for an option in the 
+      anticipation that, over time, a change in the underlying futures price 
+      will cause the option to increase in value. In general, an option premium 
+      is the sum of time value and intrinsic value. Any amount by which an 
+      option premium exceeds the option's intrinsic value can be considered time 
+      value. Also referred to as extrinsic value.</STRONG></FONT></TD></TR></TABLE><A 
+name=trade.balance></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Trade Balance: The 
+      difference between a nation's imports and exports of merchandise. Trading 
+      Limit: See <A 
+      href="#position.limit">Position 
+      Limit</A>.</STRONG></FONT></TD></TR></TABLE><A name=treasury.bill></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Treasury Bill: See 
+      <A 
+      href="#u.s..treasury.bill">U.S. 
+      Treasury Bill</A>.</STRONG></FONT></TD></TR></TABLE><A name=treasury.bond></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Treasury Bond: See 
+      <A 
+      href="#u.s..treasury.bond">U.S. 
+      Treasury Bond</A>.</STRONG></FONT></TD></TR></TABLE><A name=treasury.note></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Treasury Note: See 
+      <A 
+      href="#u.s..treasury.note">U.S. 
+      Treasury Note</A>.</STRONG></FONT></TD></TR></TABLE><A name=u>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>U</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=underlying.futures.contract></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Underlying Futures 
+      Contract: The specific futures contract that is bought or sold by 
+      exercising an option.</STRONG></FONT></TD></TR></TABLE><A 
+name=u.s..treasury.bill></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>U.S. Treasury 
+      Bill: A short-term U.S. government debt instrument with an original 
+      maturity of one year or less. Bills are sold at a discount from par with 
+      the interest earned being the difference between the face value received 
+      at maturity and the price paid.</STRONG></FONT></TD></TR></TABLE><A 
+name=u.s..treasury.bond></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>U.S. Treasury 
+      Bond: Government-debt security with a coupon and original maturity of 
+      more than 10 years. Interest is paid semiannually.</STRONG></FONT>
+</TD></TR></TABLE><A name=u.s..treasury.note></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>U.S. Treasury 
+      Note: Government-debt security with a coupon and original maturity of 
+      one to 10 years.</STRONG></FONT></TD></TR></TABLE><A name=v>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>V</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=variable.limit></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Variable Limit: 
+      According to the Chicago Board of Trade rules, an expanded allowable price 
+      range set during volatile markets.</STRONG></FONT></TD></TR></TABLE><A 
+name=variation.margin></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Variation Margin: 
+      During periods of great market volatility or in the case of high-risk 
+      accounts, additional margin deposited by a clearing member firm to an 
+      exchange clearinghouse.</STRONG></FONT></TD></TR></TABLE><A 
+name=versus.cash></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Versus Cash: See 
+      <A 
+      href="#exchange.for.physicals">Exchange 
+      For Physicals</A>.</STRONG></FONT></TD></TR></TABLE><A name=vertical.spread></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Vertical Spread: 
+      Buying and selling puts or calls of the same expiration month but 
+      different strike prices.</STRONG></FONT></TD></TR></TABLE><A 
+name=volatility></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Volatility: A 
+      measurement of the change in price over a given time period. It is often 
+      expressed as a percentage and computed as the annualized standard 
+      deviation of percentage change in daily price.</STRONG></FONT> 
+</TD></TR></TABLE><A name=volume></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Volume: The number 
+      of purchases or sales of a commodity futures contract made during a 
+      specified period of time, often the total transactions for one trading 
+      day.</STRONG></FONT> </TD></TR></TABLE><A name=w>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>W</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=warehouse.receipt></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Warehouse Receipt: 
+      Document guaranteeing the existence and availability of a given quantity 
+      and quality of a commodity in storage; commonly used as the instrument of 
+      transfer of ownership in both cash and futures transactions.</STRONG></FONT> 
+  </TD></TR></TABLE><A name=wire.house></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Wire House: See 
+      Futures Commission Merchant (FCM).</STRONG></FONT></TD></TR></TABLE><A 
+name=writer></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Writer: See <A 
+      href="#option.seller">Option 
+      Seller</A>.</STRONG></FONT> </TD></TR></TABLE><A name=x>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>X</STRONG></FONT></CENTER></TD></TR></TABLE></A><A name=y>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>Y</STRONG></FONT></CENTER></TD></TR></TABLE></A><A 
+name=yield></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Yield: A measure 
+      of the annual return on an investment.</STRONG></FONT></TD></TR></TABLE><A 
+name=yield.curve></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Yield Curve: A 
+      chart in which the yield level is plotted on the vertical axis and the 
+      term to maturity of debt instruments of similar creditwor thiness is 
+      plotted on the horizontal axis. The yield curve is positive when long-term 
+      rates are higher than short-term rates. However, when short-term rates are 
+      higher than yields on long-term investments, the yield curve is negative 
+      or inverted.</STRONG></FONT></TD></TR></TABLE><A name=yield.to.maturity></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Yield to Maturity: 
+      The rate of return an investor receives if a fixed-income security is held 
+      to maturity.</STRONG></FONT></TD></TR></TABLE><A name=z></A>
+<TABLE width="90%" class="std">
+  
+  <TR>
+    <TD width=600><CENTER><FONT FACE="TIMES NEW ROMAN" SIZE="5" COLOR="#000080"><STRONG>Z</STRONG></FONT></CENTER></TD></TR></TABLE></center><P><center><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>Past performance is not necessarily indicative of future results.</STRONG></FONT></center><center><FONT FACE="TIMES NEW ROMAN" SIZE="3" COLOR="#000080"><STRONG>The risk of loss exists in commodity futures trading.</STRONG></FONT></center><p><br></blockquote></TD></TR></TABLE><!--glossary commodity futures options trading commodities-->
+
+                                                
+                      </td>
+                    </tr>
+                  </table>
+                  <p>&nbsp;</p>
+                </center>
+              </div></td>
+          </tr>
+        </table></TD>
+      <TD width="3" height="451" background="images/line2.gif"> <IMG SRC="images/line2.gif" width=3 height=238 ALT=""></TD>
+      <TD valign="top" height="451" width="306"> 
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td valign="top" width="100%"> </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td width="100%" rowspan="3" valign="top">
+              
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%" height="41"></td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%">&nbsp;</td>
+            <td width="100%" valign="top"></td>
+          </tr>
+        </table>
+      </TD>
+      <TD width="2" height="451" background="images/line3.gif"> <IMG SRC="images/line3.gif" width=2 height=238 ALT=""></TD>
+      <TD width="166" align="center" valign="top" bgcolor="F8FBFE"> 
+        <div align="left">
+          <table width="100%" border="0">
+            <tr> 
+              <td align="center"><div align="left"><strong></strong></div></td>
+            </tr>
+          </table>
+        </div>
+        
+      </TD>
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" bgcolor="#E6F1FE">&nbsp; </TD>
+      <TD COLSPAN=5 bgcolor="#E6F1FE" height="1"> <table width="119%" border="0" cellspacing="0" cellpadding="0" height="24">
+          <tr> 
+            <td width="81%" height="24"> <div align="center"> 
+                <center>
+                  <table width="315" border="0" cellspacing="2" cellpadding="2">
+                    <tr> 
+                      <td width="305"> <p align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#003366">©2019                              
+                          ADFC&nbsp;</font></p></td>                             
+                    </tr>
+                  </table>
+                </center>
+              </div></td>
+            <td width="19%" height="24"> <div align="right"></div></td>                      
+          </tr>
+        </table></TD>
+      <TD width="166"></TD>
+    </TR>
+    <TR> 
+      <TD COLSPAN=7 height="1"> </TD>
+      <TD width="166"></TD>
+    </TR>
+  </TABLE>
+</div>
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)">
+</div>
+</BODY>
+</HTML>

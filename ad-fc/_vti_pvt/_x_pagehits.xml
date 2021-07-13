@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagedata>
+<month val="mar 2004" total="7">
+<item str="login.asp" cnt="2" />
+<item str="about.html" cnt="1" />
+<item str="member_area.html" cnt="1" />
+<item str="calendar.asp" cnt="1" />
+<item str="principles.asp" cnt="1" />
+<item str="indices.asp" cnt="1" />
+</month>
+<month val="may 2004" total="4">
+<item str="images/movie2.swf" cnt="2" />
+<item str="principles.asp" cnt="1" />
+<item str="login.asp" cnt="1" />
+</month>
+</usagedata>

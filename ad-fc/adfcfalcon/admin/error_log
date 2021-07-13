@@ -1,0 +1,1137 @@
+[20-Dec-2018 14:16:41] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[20-Dec-2018 14:16:41] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:16:41] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:16:41] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[20-Dec-2018 14:17:41] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[20-Dec-2018 14:17:41] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:17:41] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:17:41] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[20-Dec-2018 14:29:47] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[20-Dec-2018 14:29:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:29:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:29:47] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[20-Dec-2018 14:29:47] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[20-Dec-2018 14:29:47] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[20-Dec-2018 14:32:21] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[20-Dec-2018 14:32:21] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:32:21] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:32:21] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[20-Dec-2018 14:32:21] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[20-Dec-2018 14:32:42] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[20-Dec-2018 14:32:42] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:32:42] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:32:42] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[20-Dec-2018 14:37:09] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[20-Dec-2018 14:37:09] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:37:09] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 14:37:09] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[20-Dec-2018 14:37:09] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[20-Dec-2018 15:36:43] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[20-Dec-2018 15:36:43] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 15:36:43] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[20-Dec-2018 15:36:43] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[20-Dec-2018 15:36:43] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Dec-2018 10:00:44] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[21-Dec-2018 10:00:44] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:00:44] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:00:44] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Dec-2018 10:00:44] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Dec-2018 10:01:41] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[21-Dec-2018 10:01:41] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:01:41] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:01:41] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Dec-2018 10:01:41] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:04:37] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Dec-2018 10:04:37] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:04:37] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:04:37] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Dec-2018 10:04:37] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Dec-2018 10:06:47] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[21-Dec-2018 10:06:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:06:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:06:47] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Dec-2018 10:06:47] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Dec-2018 10:07:47] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[21-Dec-2018 10:07:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:07:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:07:47] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Dec-2018 10:07:47] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Dec-2018 10:08:47] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[21-Dec-2018 10:08:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:08:47] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[21-Dec-2018 10:08:47] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Dec-2018 10:08:47] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[24-Dec-2018 22:54:21] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[24-Dec-2018 22:54:21] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[24-Dec-2018 22:54:21] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[24-Dec-2018 22:54:21] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[24-Dec-2018 22:54:21] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[24-Dec-2018 22:57:44] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[24-Dec-2018 22:57:44] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[24-Dec-2018 22:57:44] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[24-Dec-2018 22:57:44] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[24-Dec-2018 22:57:44] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[24-Dec-2018 22:57:44] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[24-Dec-2018 22:57:44] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[26-Dec-2018 11:27:58] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 11:27:58] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:27:58] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:27:58] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[26-Dec-2018 11:27:58] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[26-Dec-2018 11:28:58] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 11:28:58] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:28:58] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:28:58] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[26-Dec-2018 11:28:58] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[26-Dec-2018 11:29:59] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 11:29:59] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:29:59] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:29:59] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[26-Dec-2018 11:29:59] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[26-Dec-2018 11:30:34] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 11:30:34] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:30:34] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:30:34] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[26-Dec-2018 11:30:34] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[26-Dec-2018 11:36:05] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 11:36:05] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:36:05] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 11:36:05] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[26-Dec-2018 11:36:05] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[26-Dec-2018 21:53:05] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 21:53:05] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 21:53:05] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 21:53:05] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[26-Dec-2018 21:53:05] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[26-Dec-2018 21:54:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 21:54:19] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 21:54:19] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 21:54:19] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:54:19] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:54:19] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:54:19] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:54:19] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 9
+[26-Dec-2018 21:54:19] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 9
+[26-Dec-2018 21:54:19] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 10
+[26-Dec-2018 21:54:19] PHP Notice:  Undefined variable: ms in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 248
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[26-Dec-2018 21:55:39] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:55:39] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:55:39] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:55:39] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 6
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 9
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 9
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 10
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 22
+[26-Dec-2018 21:55:39] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/forgetpassword.php on line 22
+[27-Dec-2018 05:27:40] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[27-Dec-2018 05:27:40] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 05:27:40] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 05:27:40] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 05:27:40] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 05:27:40] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[27-Dec-2018 05:27:40] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[27-Dec-2018 05:28:55] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[27-Dec-2018 05:28:55] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 05:28:55] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 05:28:55] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 05:28:55] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 05:45:33] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[27-Dec-2018 05:45:33] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 05:45:33] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 05:45:33] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 05:45:33] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 09:50:52] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[27-Dec-2018 09:50:52] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 09:50:52] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 09:50:52] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 09:50:52] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 09:52:22] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[27-Dec-2018 09:52:22] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 09:52:22] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 09:52:22] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 09:52:22] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 09:52:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[27-Dec-2018 09:52:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[27-Dec-2018 14:23:23] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[27-Dec-2018 14:23:23] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 14:23:23] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 14:23:23] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 14:23:23] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 14:24:46] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '98.130.0.121' (110) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 10
+[27-Dec-2018 14:24:46] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 14:24:46] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/config.php on line 11
+[27-Dec-2018 14:24:46] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 14:24:46] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 14:24:46] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'adfcnet'@'localhost' (using password: NO) in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[27-Dec-2018 14:24:46] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 22
+[27-Dec-2018 14:27:38] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[27-Dec-2018 14:27:38] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined variable: sql in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 89
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 170
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:09] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined variable: sql in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 89
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 170
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:29:40] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[27-Dec-2018 14:30:01] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[27-Dec-2018 14:30:01] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[27-Dec-2018 14:30:01] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[27-Dec-2018 14:30:01] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: u in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 630
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: pg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 631
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: name1 in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 637
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: userid in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 650
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: pass in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 653
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: pass in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 656
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: email in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 660
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: language in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 726
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: language in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 727
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: muser in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 738
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: cnumber in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 743
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: hname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 747
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: phone in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 754
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: street in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 758
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: city in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 762
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: province in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 766
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: date1 in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 794
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: image in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 803
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 814
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 815
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 817
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 818
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 819
+[27-Dec-2018 14:30:01] PHP Notice:  Undefined variable: painting_image in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 822
+[27-Dec-2018 14:30:13] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[27-Dec-2018 14:30:13] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[27-Dec-2018 14:30:13] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[27-Dec-2018 14:30:13] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[27-Dec-2018 14:30:13] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 344
+[27-Dec-2018 14:30:19] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_inactive_user.php on line 5
+[27-Dec-2018 14:30:19] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_inactive_user.php on line 206
+[27-Dec-2018 14:30:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_inactive_user.php on line 255
+[27-Dec-2018 14:30:19] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_inactive_user.php on line 260
+[28-Dec-2018 06:15:31] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[28-Dec-2018 06:15:31] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 15:08:16] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 15:08:16] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 15:09:26] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 15:09:26] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 15:10:03] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:10:03] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:10:03] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:10:03] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: u in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 630
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: pg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 631
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: name1 in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 637
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: fname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 645
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: userid in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 650
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: pass in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 653
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: pass in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 656
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: email in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 660
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: parentId in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 703
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: parentId in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 703
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: language in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 726
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: language in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 727
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: phone in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 754
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: street in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 758
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: city in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 762
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: province in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 766
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: date1 in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 794
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 814
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 815
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 817
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 818
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 819
+[30-Dec-2018 15:10:03] PHP Notice:  Undefined variable: painting_image in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 822
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 6
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 218
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 15:10:07] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined variable: sql in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 89
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 170
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[30-Dec-2018 15:10:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_product.php on line 215
+[30-Dec-2018 15:10:29] PHP Notice:  Undefined variable: sql in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 89
+[30-Dec-2018 15:10:29] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 176
+[30-Dec-2018 15:10:29] PHP Notice:  Trying to get property of non-object in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 219
+[30-Dec-2018 15:10:29] PHP Notice:  Trying to get property of non-object in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 219
+[30-Dec-2018 15:11:04] PHP Notice:  Undefined variable: sql in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 89
+[30-Dec-2018 15:11:04] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 176
+[30-Dec-2018 15:11:04] PHP Notice:  Trying to get property of non-object in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 219
+[30-Dec-2018 15:11:04] PHP Notice:  Trying to get property of non-object in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_package.php on line 219
+[30-Dec-2018 15:11:15] PHP Notice:  A session had already been started - ignoring session_start() in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/includes/session.php on line 2
+[30-Dec-2018 15:11:15] PHP Notice:  Undefined index:  msgdate in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_message.php on line 83
+[30-Dec-2018 15:11:15] PHP Notice:  Undefined index:  msgdate in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_message.php on line 198
+[30-Dec-2018 15:11:15] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_message.php on line 218
+[30-Dec-2018 15:12:05] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 6
+[30-Dec-2018 15:12:05] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 218
+[30-Dec-2018 15:12:05] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 15:12:05] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 15:12:08] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:08] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:08] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:08] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:08] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 344
+[30-Dec-2018 15:12:11] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:12:11] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:12:11] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:12:11] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: u in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 630
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: pg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 631
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: name1 in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 637
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: fname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 645
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: userid in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 650
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: pass in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 653
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: pass in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 656
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: email in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 660
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: parentId in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 703
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: parentId in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 703
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: language in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 726
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: language in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 727
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: phone in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 754
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: street in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 758
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: city in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 762
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: province in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 766
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: country in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 779
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: date1 in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 794
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 814
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 815
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 817
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 818
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 819
+[30-Dec-2018 15:12:11] PHP Notice:  Undefined variable: painting_image in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 822
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 6
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 218
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 15:12:13] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 15:12:18] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:18] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:18] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:18] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 4
+[30-Dec-2018 15:12:18] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_trial_user.php on line 344
+[30-Dec-2018 15:12:21] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_pending_user.php on line 206
+[30-Dec-2018 15:12:23] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_inactive_user.php on line 5
+[30-Dec-2018 15:12:23] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_inactive_user.php on line 206
+[30-Dec-2018 15:12:29] PHP Notice:  Undefined variable: code in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 203
+[30-Dec-2018 15:12:29] PHP Notice:  Undefined variable: name in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 207
+[30-Dec-2018 15:12:29] PHP Notice:  Undefined variable: acode in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 210
+[30-Dec-2018 15:12:29] PHP Notice:  Undefined variable: aname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 214
+[30-Dec-2018 15:12:29] PHP Notice:  Undefined variable: description in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 220
+[30-Dec-2018 15:13:03] PHP Notice:  Undefined variable: code in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 203
+[30-Dec-2018 15:13:03] PHP Notice:  Undefined variable: name in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 207
+[30-Dec-2018 15:13:03] PHP Notice:  Undefined variable: acode in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 210
+[30-Dec-2018 15:13:03] PHP Notice:  Undefined variable: aname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 214
+[30-Dec-2018 15:13:03] PHP Notice:  Undefined variable: description in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 220
+[30-Dec-2018 15:13:56] PHP Notice:  Undefined variable: code in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 203
+[30-Dec-2018 15:13:56] PHP Notice:  Undefined variable: name in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 207
+[30-Dec-2018 15:13:56] PHP Notice:  Undefined variable: acode in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 210
+[30-Dec-2018 15:13:56] PHP Notice:  Undefined variable: aname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 214
+[30-Dec-2018 15:13:56] PHP Notice:  Undefined variable: description in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 220
+[30-Dec-2018 15:14:39] PHP Notice:  Undefined variable: code in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 203
+[30-Dec-2018 15:14:39] PHP Notice:  Undefined variable: name in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 207
+[30-Dec-2018 15:14:39] PHP Notice:  Undefined variable: acode in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 210
+[30-Dec-2018 15:14:39] PHP Notice:  Undefined variable: aname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 214
+[30-Dec-2018 15:14:39] PHP Notice:  Undefined variable: description in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_product.php on line 220
+[30-Dec-2018 16:06:46] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 16:06:46] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 16:07:49] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 16:07:49] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 16:20:21] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 17:02:12] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 17:02:12] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 17:02:30] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 17:02:30] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 17:37:48] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 17:37:48] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 17:38:07] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[30-Dec-2018 17:38:07] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 6
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 218
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 17:38:13] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 17:38:21] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:21] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:21] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:21] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:21] PHP Notice:  Undefined variable: painting_image in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 822
+[30-Dec-2018 17:38:52] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:52] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:52] PHP Warning:  include(class.phpmailer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:52] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 4
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined variable: address in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 316
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined variable: mysql_affected_rows in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 321
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined variable: TemplateMessage in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/owm_add_user.php on line 328
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 6
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 218
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[30-Dec-2018 17:38:52] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[30-Dec-2018 17:39:29] PHP Notice:  A session had already been started - ignoring session_start() in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/includes/session.php on line 2
+[30-Dec-2018 17:39:29] PHP Notice:  Undefined index:  msgdate in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_message.php on line 83
+[30-Dec-2018 17:39:29] PHP Notice:  Undefined index:  msgdate in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_message.php on line 198
+[30-Dec-2018 17:39:29] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_message.php on line 218
+[31-Dec-2018 22:20:14] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[31-Dec-2018 22:20:14] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[31-Dec-2018 22:20:36] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[31-Dec-2018 22:20:36] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[02-Jan-2019 21:37:21] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[02-Jan-2019 21:37:21] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[02-Jan-2019 21:37:43] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[02-Jan-2019 21:37:43] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[03-Jan-2019 19:19:52] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[03-Jan-2019 19:19:52] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[03-Jan-2019 19:19:56] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[03-Jan-2019 19:19:56] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[03-Jan-2019 19:20:28] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[03-Jan-2019 19:20:33] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[03-Jan-2019 19:27:30] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[07-Jan-2019 12:21:40] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[07-Jan-2019 12:21:40] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[07-Jan-2019 12:21:43] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[07-Jan-2019 12:21:43] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[08-Jan-2019 12:03:50] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[08-Jan-2019 12:03:50] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[08-Jan-2019 12:03:53] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[08-Jan-2019 12:03:53] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[08-Jan-2019 13:38:33] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[08-Jan-2019 13:38:33] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[08-Jan-2019 13:38:36] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[08-Jan-2019 13:38:36] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[08-Jan-2019 14:26:44] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[08-Jan-2019 14:27:04] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined index:  p in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 6
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined variable: flag in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 218
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined property: stdClass::$color_id in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 267
+[08-Jan-2019 14:40:19] PHP Notice:  Undefined property: stdClass::$lastname in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/own_list_user.php on line 272
+[21-Jan-2019 09:59:42] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Jan-2019 09:59:42] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9
+[21-Jan-2019 09:59:51] PHP Notice:  Undefined index:  status in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 6
+[21-Jan-2019 09:59:51] PHP Notice:  Undefined index:  msg in /home/adfcnet/public_html/adfincorp/adfcfalcon/admin/login.php on line 9

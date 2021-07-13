@@ -1,0 +1,2301 @@
+<HTML>
+<HEAD>
+<TITLE>Orders Types</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<STYLE TYPE="TEXT/CSS">
+<!--
+
+A { text-decoration: none }
+
+
+A {color:#003366; font-family: Helvetica, Arial; font-size: 12px; text-decoration: none;}
+A:hover {color:#FF6600; font-family: Helvetica, Arial; font-size: 12px; text-decoration: underline;}
+
+td {font-family: Helvetica, Arial; font-size: 11px;}
+.linkcell { padding-left: 10px; font-family: Helvetica, Arial; font-size: 10px;}
+hr {  color: #000000}
+
+//.unnamed1 {  font-family: Arial, Helvetica, sans-serif; font-size: small}
+-->
+
+
+</STYLE>
+<script language="JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function checkAll(myForm)
+{
+   if (myForm==1)
+       setTimeout("myClear(1)",5000); 
+   if (myForm==2)
+       setTimeout("myClear(2)",5000); 
+   if (myForm==3)
+       setTimeout("myClear(3)",5000); 
+   return true;
+}
+
+function myClear(myForm)
+{
+   if (myForm==1)
+   {
+      document.myRedirect.acct.value='';
+   }
+   if (myForm==2)
+   {
+      document.formLOGON.userid.value='';document.formLOGON.password.value='';   
+   }
+   if (myForm==3)
+   {
+      document.LOGON.client_id.value='';document.LOGON.password.value='';
+   }
+   return true;
+}
+//-->
+</script>
+<script language="JavaScript">
+document.oncontextmenu = function(){return false}
+if(document.layers) {
+    window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = function(e){
+        if(e.target==document)return false;
+    }
+}
+else {
+    document.onmousedown = function(){return false}
+}
+
+document.onmouseup = document.selection.empty;
+
+
+function change(){
+document.getElementById('cal').src="http://www.thectr.com/2004/multi.php?req="+document.form1.information.value;
+window.status="Finance";
+}
+
+</script>
+<style>
+<!--
+
+.menuskin{
+position:absolute;
+width:230px;
+background-color:FFFFFF;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+visibility:hidden;
+}
+
+.menuskin a{
+text-decoration:none;
+color:black;
+padding-left:5px;
+padding-right:5px;
+}
+
+#mouseoverstyle{
+background-color:014684;
+}
+
+#mouseoverstyle a{
+color:white;
+}
+-->
+</style>
+
+<script language="JavaScript1.2">
+
+//Pop-it menu- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var linkset=new Array()
+//SPECIFY MENU SETS AND THEIR LINKS. FOLLOW SYNTAX LAID OUT
+
+/*linkset[0]='<div class="menuitems"><a href="calendar.php">Calendar</a></div>';
+linkset[0]+='<div class="menuitems"><a href="margin.php">Margin</a></div>';
+linkset[0]+='<div class="menuitems"><a href="fin_news.php">Financial News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_news.php">Futures News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="usda.php">USDA Reports</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_charts.php">Futures Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="open.php">Opening Call</a></div>';*/
+linkset[0]='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+
+linkset[1]='<div class="menuitems"><a href="afcs.html">Active Futures Contrcats Specifications</a></div>';
+linkset[1]+='<div class="menuitems"><a href="fnltd.html">First Notice and Last Trading Day</a></div>';
+linkset[1]+='<div class="menuitems"><a href="uf.html">Understandind futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="os.html">Options Strategies</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ot.html">Order Types</a></div>';
+linkset[1]+='<div class="menuitems"><a href="oae.html">Orders Accepted by exchanges</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ff.html">Financial Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cf.html">Commodities Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/analysis_publications/oil_market_basics/default.htm" target="_blank">Oil Market Basics</a></div>';
+linkset[1]+='<div class="menuitems"><a href="indices.php">US Economic indices</a></div>';
+linkset[1]+='<div class="menuitems"><a href="principles.php">Elliott Waves Principles</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cfg.html">Commodity Futures Glossary</a></div>';
+
+
+////No need to edit beyond here
+
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var ns6=document.getElementById&&!document.all
+var ns4=document.layers
+
+function showmenu(e,which){
+
+if (!document.all&&!document.getElementById&&!document.layers)
+return
+
+clearhidemenu()
+
+menuobj=ie4? document.all.popmenu : ns6? document.getElementById("popmenu") : ns4? document.popmenu : ""
+menuobj.thestyle=(ie4||ns6)? menuobj.style : menuobj
+
+if (ie4||ns6)
+menuobj.innerHTML=which
+else{
+menuobj.document.write('<layer name=gui bgColor=#E6E6E6 width=165 onmouseover="clearhidemenu()" onmouseout="hidemenu()">'+which+'</layer>')
+menuobj.document.close()
+}
+
+menuobj.contentwidth=(ie4||ns6)? menuobj.offsetWidth : menuobj.document.gui.document.width
+menuobj.contentheight=(ie4||ns6)? menuobj.offsetHeight : menuobj.document.gui.document.height
+eventX=ie4? event.clientX : ns6? e.clientX : e.x
+eventY=ie4? event.clientY : ns6? e.clientY : e.y
+
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie4? document.body.clientWidth-eventX : window.innerWidth-eventX
+var bottomedge=ie4? document.body.clientHeight-eventY : window.innerHeight-eventY
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<menuobj.contentwidth)
+//move the horizontal position of the menu to the left by it's width
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX-menuobj.contentwidth : ns6? window.pageXOffset+eventX-menuobj.contentwidth : eventX-menuobj.contentwidth
+else
+//position the horizontal position of the menu where the mouse was clicked
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX : ns6? window.pageXOffset+eventX : eventX
+
+//same concept with the vertical position
+if (bottomedge<menuobj.contentheight)
+menuobj.thestyle.top=ie4? document.body.scrollTop+eventY-menuobj.contentheight : ns6? window.pageYOffset+eventY-menuobj.contentheight : eventY-menuobj.contentheight
+else
+menuobj.thestyle.top=ie4? document.body.scrollTop+event.clientY : ns6? window.pageYOffset+eventY : eventY
+menuobj.thestyle.visibility="visible"
+return false
+}
+
+function contains_ns6(a, b) {
+//Determines if 1 element in contained in another- by Brainjar.com
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function hidemenu(){
+if (window.menuobj)
+menuobj.thestyle.visibility=(ie4||ns6)? "hidden" : "hide"
+}
+
+function dynamichide(e){
+if (ie4&&!menuobj.contains(e.toElement))
+hidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+hidemenu()
+}
+
+function delayhidemenu(){
+if (ie4||ns6||ns4)
+delayhide=setTimeout("hidemenu()",500)
+}
+
+function clearhidemenu(){
+if (window.delayhide)
+clearTimeout(delayhide)
+}
+
+function highlightmenu(e,state){
+if (document.all)
+source_el=event.srcElement
+else if (document.getElementById)
+source_el=e.target
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+else{
+while(source_el.id!="popmenu"){
+source_el=document.getElementById? source_el.parentNode : source_el.parentElement
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=hidemenu
+
+</script>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Verdana;
+    panose-1:2 11 6 4 3 5 4 4 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-parent:"";
+    margin:0cm;
+    margin-bottom:.0001pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman";
+    mso-fareast-font-family:"Times New Roman";
+    color:windowtext;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p
+    {mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    mso-pagination:widow-orphan;
+    font-size:12.0pt;
+    font-family:"Times New Roman";
+    mso-fareast-font-family:"Times New Roman";
+    color:black;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+@page Section1
+    {size:612.0pt 792.0pt;
+    margin:72.0pt 90.0pt 72.0pt 90.0pt;
+    mso-header-margin:36.0pt;
+    mso-footer-margin:36.0pt;
+    mso-paper-source:0;}
+div.Section1
+    {page:Section1;}
+-->
+</style>
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<div align="left">
+  <TABLE WIDTH=985 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+       <TR> 
+      <TD COLSPAN=8 height="23" width="982"> <IMG SRC="images/top_bar.gif" WIDTH="100%" ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top"> <p align="right"> </TD>
+      <TD width="145" valign="middle"> 
+        <p align="center"><img src="images/adfc-white.png" width="150" height="215"> 
+      </TD>
+      <TD COLSPAN=5 height="177" width="100%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="662" height="177">
+          <img src="images/adfc-banner.jpg" width="100%" />
+      </TD>
+   <!--   <TD width="178" valign="middle"> <img src="images/adfc-white.png" width="" height="90"></TD> -->
+    </TR>
+    <!--<TR> 
+      <TD COLSPAN=8 height="23" width="972"> <IMG SRC="images/top_bar.gif" WIDTH=100% HEIGHT=23 ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top" height="464"> <p align="right"> </TD>
+      <TD width="153" valign="middle" height="183"> <p align="center"><img src="images/adf.jpg" width="145" height="90"> 
+      </TD>
+      <TD COLSPAN=5 height="183"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="662" height="177">
+          <param name="movie" value="images/movie2.swf">
+          <param name="quality" value="high">
+          <embed src="images/movie2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="662" height="177"></embed></object></TD>
+      <TD valign="middle" height="183">&nbsp; </TD>
+    </TR>-->
+    <TR> 
+      <TD width="153" valign="top" BGCOLOR=#FFFFFF> 
+        <div align="right"> 
+          <table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+<tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>
+          <br>
+          <p align="left">&nbsp;</p>
+        </div></TD>
+      <TD width="2" height="451" background="images/line1.gif"> <IMG SRC="images/line1.gif" width=2 height=238 ALT=""></TD>
+      <TD valign="top" height="451" bgcolor="F8FBFE" width="352"> 
+        <table width="345" border="0" cellspacing="2" cellpadding="2" height="65">
+          <tr> 
+            <td width="100%" valign="top"> <div align="right"> </div>
+              <div align="center"> 
+                <center>
+                  <table border="0" cellpadding="0" cellspacing="0" width="95%">
+                    <tr> 
+                      <td width="700">
+
+
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="700"
+ style='width:700;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><a name=TYPE><b><span lang=EN-US style='font-size:12.0pt;
+  color:black'>ORDER TYPES</span></b></a><span lang=EN-US style='font-size:
+  12.0pt;color:black'><br>
+  The types of orders most commonly used are briefly described below: <o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+  lang=EN-US style='font-size:12.0pt;color:black'><br>
+  <b>l. THE MARKET ORDER</b><br>
+  <br>
+  The market order is the most frequently used order. It is a very good order
+  to use once you have made a decision about opening or closing a position. It can
+  keep the customer from having to chase a market trying to get in or out of a
+  position. The market order is executed at the best possible price obtainable
+  at the time the order reaches the trading pit.<br>
+  <br>
+  <b>2. LIMIT ORDERS</b><br>
+  <br>
+  The limit order is an order to buy or sell at a designated price. Limit
+  Orders to buy are placed below the market while limit orders to sell are
+  placed above the market. Since the market may never get high enough or low
+  enough to trigger a limit order, a customer may miss the market if he uses a
+  limit order. (Even though you may see the market touch a limit price several
+  times, this does not guarantee or earn the customer a fill at that price. In
+  most instances, the market must trade BETTER than the limit price for the
+  customer to get a fill.)<br>
+  <br>
+  <b>3. OR BETTER</b><br>
+  <br>
+  The pit broker is obligated to get the best possible price for the customer.
+  Putting an </span><st1:place><span lang=EN-US style='font-size:12.0pt;
+   color:black'>OB</span></st1:place><span lang=EN-US style='font-size:12.0pt;
+  color:black'> on an order does not cause him to work harder. If the price is
+  NOT OB, the broker is irritated because he is paying special attention to a
+  ticket that does not deserve it. Think of OB as MARKET with a LIMIT. If the
+  price does not have an OB next to it, and the market is considerably better,
+  the pit broker may question the runner to see if the order should have been a
+  stop. They will return the order for clarification which could delay the
+  filling of the order and possibly change the results of the fill. ONLY USE
+  &quot;OR BETTER&quot; IF THE MARKET IS &quot;OR BETTER.&quot;<br>
+  <br>
+  <b>4. MARKET IF TOUCHED (MIT)</b><br>
+  <br>
+  MITs are the opposite of stop orders. Buy MITs are placed below the market
+  and Sell MITs are placed above the market. An MIT order is usually used to
+  enter the market or initiate a trade. An MIT order is similar to a limit
+  order in that a specific price is placed on the order. However, an MIT order
+  becomes a market order once the limit price is touched or passed through. An
+  execution may be at, above, or below the originally specified price. An MIT
+  order will not be executed if the market fails to touch the MIT specified
+  price.<br>
+  <br>
+  <b>5. STOP ORDER</b><br>
+  <br>
+  Stop orders can be used for three purposes:<br>
+  <br>
+  a. to minimize a loss on a long or short position,<br>
+  b. to protect a profit on an existing long or short position, or<br>
+  c. to initiate a new long or short position.<br>
+  <br>
+  A buy stop order is placed above the market and a sell stop order is placed
+  below the market. Once the stop price is touched, the order is treated like a
+  market order and will be filled at the best possible price.<br>
+  <br>
+  <b>*****PLEASE NOTE; WHILE STOPS AND M.I.T.'S ARE NORMALLY ELECTED ONLY WHEN
+  THE SPECIFIC PRICE IS TOUCHED, THEY CAN BE ELECTED WHEN THE OPENING OF A
+  MARKET IS SUCH THAT THE PRICE IS THROUGH THE STOP OR MIT LIMIT. IN THIS CASE,
+  THE CUSTOMER CAN ROUTINELY EXPECT THE FILL TO BE MUCH WORSE THAN THE ORIGINAL
+  STOP OR BETTER ON THE MIT. THIS APPLIES TO STOP ORDERS AND MIT ORDERS PLACED
+  BEFORE THE OPENING OF TRADING.*****</b><br>
+  <br>
+  <b>6. STOP LIMIT ORDERS</b><br>
+  <br>
+  A stop limit order lists two prices and is an attempt to gain more control
+  over the price at which your stop is filled. The first part of the order is
+  written like the above stop order. The second part of the order specifies a
+  limit price. This indicates that once your stop is triggered, you do not wish
+  to be filled beyond the limit price. Stop limit orders should usually not be
+  used when trying to exit a position. If a customer does not give a limit
+  price, then the stop price and the limit price are meant to be identical.<br>
+  <br>
+  <b>7. STOP CLOSE ONLY</b><br>
+  <br>
+  The stop price on a stop close only will only be triggered if the market
+  touches the stop during the close of trading. The disadvantage of this order
+  is a fast market in the last few minutes of trading may cause the order to be
+  filled at an undesirable price. It can, however, protect the customer from
+  getting filled during adverse price fluctuations during the course of the
+  day.<br>
+  <br>
+  <b>8. MARKET ON OPENING</b><br>
+  <br>
+  This is an order that the customer wishes to be executed during the opening
+  range of trading at the best possible price obtainable within the opening
+  range. Not all exchanges recognize this type of order. One such exchange is
+  the Chicago Board of Trade.<br>
+  <br>
+  <b>9. MARKET ON CLOSE (MOC)</b><br>
+  <br>
+  This is an order that will be filled during the final seconds of trading at
+  whatever price is available. PLEASE NOTE: A FLOOR BROKER RESERVES THE RIGHT
+  TO REFUSE AN MOC ORDER UP TO FIFTEEN MINUTES BEFORE THE CLOSE DEPENDING UPON
+  MARKET CONDITIONS.<br>
+  <br>
+  <b>10. FILL OR KILL</b><br>
+  <br>
+  The fill or kill order is used by customers wishing an immediate fill, but at
+  a specified price. Our floor broker will bid or offer the order three times
+  and immediately return either a fill or an unable.<br>
+  <br>
+  <b>ll. ONE CANCELS THE OTHER (OCO)</b><br>
+  <br>
+  This is a combination of two orders written on one order ticket. This
+  instructs our floor personnel that once one side of the order is filled, the
+  remaining side of the order should be cancelled. By placing both instructions
+  on one order, rather than two separate tickets, the customer eliminates the
+  possibility of a double fill. (This order is not acceptable on all
+  exchanges.)<br>
+  <b>PLEASE NOTE: WE WILL NOT ROUTINELY ACCEPT CANCEL/REPLACE OF AN OCO ORDER
+  WITHIN TO FIFTEEN MINUTES OF THE CLOSE OF TRADING. WE WILL ACCEPT CANCELLING
+  BOTH SIDES DURING THIS PERIOD AND REPLACING WITH EITHER MOC OR MARKET ORDERS,
+  BUT CANNOT GUARANTEE AGAINST A DOUBLE FILL.</b><br>
+  <br>
+  <b>12. SPREAD</b><br>
+  <br>
+  The customer wishes to take a simultaneous long and short position in an
+  attempt to profit via the price differential or &quot;spread&quot; between
+  two prices. A spread can be established between different months of the same
+  commodity, between related commodities or between the same or related
+  commodities traded on two different exchanges. A spread order can be entered
+  at the market or you can designate that you wish to be filled when the price
+  difference between the commodities reaches a certain point (or premium). For
+  example: BUY 1 JUNE LIVE CATTLE, SELL 1 AUGUST LIVE CATTLE PLUS 100 TO THE
+  AUGUST SELL SIDE. This means that the customer wants to initiate or liquidate
+  the spread when August Cattle is 100 points higher than June cattle.<br>
+  <br>
+  At this time, most exchanges do not report spread transactions on their
+  quotation feeds. A spread broker has great leeway to ensure he can obtain
+  prices required by limits. He cannot be held to any price differentials which
+  seem to appear on quotation equipment!<br>
+  <br>
+  <b>13. OTHER</b><br>
+  <br>
+  As futures and options trading becomes more and more sophisticated, new
+  strategies and techniques may arise. Certain option orders called
+  &quot;spreads&quot; may not look much like traditional spreads. There may be
+  two buys and no sells, the quantity may be a ratio, it may include futures
+  and options on the same order, and many more. If you have any questions about
+  this type of order, please let your manager know that you may need help and
+  he or she will be happy to assist you or to find someone who can.<br>
+  </span><a name=XINFO><b><span lang=EN-US style='font-size:13.5pt;color:black'>EXCHANGE
+  INFORMATION</span></b></a><span lang=EN-US style='font-size:12.0pt;
+  color:black'><br>
+  Different Exchanges accept different orders. All of the orders which we have
+  discussed are not accepted by all exchanges.<br>
+  <br>
+  <br>
+  <b>Following is a list of the major commodity exchanges, their commodities
+  and the orders which they accept:</b><br>
+  <br>
+  <br>
+  <b>CHICAGO BOARD OF TRADE</b><br>
+  (Acceptable are: Market, Market on Close, Limit, Stop, and Fill or Kill
+  Orders)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:0cm;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>WHEAT<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>CORN<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>OATS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>SOYBEANS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>BEAN
+  OIL<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>BEAN
+  MEAL<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>T-BONDS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>T-NOTES<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>MUNI
+  BONDS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>FIVE
+  YEAR NOTES<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>TWO
+  YEAR NOTES<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>DJIA
+  Index<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><br>
+  <br>
+  <b>CHICAGO MERCANTILE EXCHANGE</b><br>
+  (All of the orders described in this section are acceptable)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:0cm;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>LIVE
+  CATTLE<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>FEEDER
+  CATTLE<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>LEAN
+  HOGS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>PORK
+  BELLIES<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>LUMBER<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt'><span
+lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><br>
+  <b>INDEX AND OPTIONS MARKET (IOM)</b><br>
+  (All of the orders described in this section are acceptable)<br>
+  <br>
+  S&amp;P 500<br>
+  MID CAP 400<br>
+  NASDAQ 100<br>
+  <br>
+  <br>
+  <b>INTERNATIONAL MONETARY MARKET (IMM)</b><br>
+  (All of the orders described in this section are acceptable)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:0cm;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>T-BILLS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>JAPANESE
+  YEN<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>EURODOLLARS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>BRITISH
+  POUND<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>CANADIAN
+  DOLLAR<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>SWISS
+  FRANC<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>EUROCURRENCY<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>AUSTRALIAN
+  DOLLAR<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>MEXICAN
+  PESO<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>EUROYEN<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt'><span
+lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><br>
+  <b>GLOBEX</b><br>
+  (Only Limits, Stop Limits, and Market if Touched (MIT) are acceptable)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt'><span
+lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;color:black'>NEW
+  YORK COMEX</span></b><span lang=EN-US style='font-size:12.0pt;color:black'><br>
+  (For Copper only, Acceptable are: Market, Market on Close, Limit, Stop and
+  Fill or Kill. OCO Orders are acceptable only if the second half of the order
+  is a MOC.)<br>
+  <br>
+  COPPER<br>
+  <br>
+  (For Gold and Silver, Acceptable are: Market, Market on Close, Limit, Stop,
+  and Fill or Kill. Stop Limits are acceptable only on a not-held basis.)<br>
+  <br>
+  GOLD<br>
+  SILVER<br>
+  <br>
+  <br>
+  <b>NY COTTON EXCHANGE</b><br>
+  (Acceptable are: Market, Market on Close, Limit, Stop, and Fill or Kill. OCO
+  Orders are acceptable but only if the second part of the order is a MOC)<br>
+  <br>
+  COTTON<br>
+  ORANGE JUICE<br>
+  DOLLAR INDEX<br>
+  <br>
+  <br>
+  <b>NY COFFEE, SUGAR &amp; COCOA EXCHANGE</b><br>
+  (All of the orders described in this section are acceptable)<br>
+  <br>
+  COFFEE<br>
+  COCOA<br>
+  SUGAR<br>
+  <br>
+  <br>
+  <b>NY MERCANTILE EXCHANGE</b><br>
+  (All of the orders described in this section are acceptable)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:0cm;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>LEADED
+  GASOLINE<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>HEATING
+  OIL<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>PLATINUM<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>CRUDE
+  OIL<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>PALLADIUM<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>NATURAL
+  GAS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt'><span
+lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;color:black'>NY
+  FUTURES EXCHANGE</span></b><span lang=EN-US style='font-size:12.0pt;
+  color:black'><br>
+  (All of the orders described in this section are acceptable)<br>
+  <br>
+  <br>
+  NEW YORK STOCK EXCHANGE INDEX<br>
+  CRB INDEX<br>
+  <br>
+  <br>
+  <b>KANSAS CITY BOARD OF TRADE</b><br>
+  (All of the orders described in this section are acceptable)<br>
+  <br>
+  <br>
+  KANSAS CITY VALUE LINE<br>
+  KANSAS CITY MINI VALUE LINE<br>
+  (Acceptable are: Market, Market on Close, Limit, Stop and Fill or Kill)<br>
+  <br>
+  KANSAS CITY WHEAT<br>
+  <br>
+  <br>
+  <b>MINNEAPOLIS BOARD OF TRADE</b><br>
+  (All of the orders described in this section are acceptable)<br>
+  <br>
+  MINNEAPOLIS WHEAT<br>
+  MINNEAPOLIS WHITE WHEAT<br>
+  <br>
+  <br>
+  <b>MID AMERICA EXCHANGE</b><br>
+  (Acceptable Are: Market, Market on Close, Limit, Stop, Fill or Kill and Stop
+  Close Only Orders)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:0cm;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>CATTLE<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>HOGS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>SILVER<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>GOLD<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>CORN<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>BEANS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>WHEAT<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>T-BILLS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>T-BONDS<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>SWISS
+  FRANC<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>CANADIAN
+  DOLLAR<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>EUROCURRENCY<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>JAPANESE
+  YEN<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>BRITISH
+  POUND<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>SUGAR<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt'><span
+lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;color:black'>*PLEASE
+  NOTE THAT THE INDIVIDUAL EXCHANGES MAY CHANGE THE ORDERS WHICH THEY ACCEPT
+  WITHOUT PRIOR NOTICE.</span></b><span lang=EN-US style='font-size:12.0pt;
+  color:black'><br>
+  <br>
+  </span><a name=MONTH><b><span lang=EN-US style='font-size:13.5pt;color:black'>SYMBOLS</span></b></a><span
+  lang=EN-US style='font-size:12.0pt;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:0cm;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>JANUARY<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>F<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>JULY<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>N<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>FEBRUARY<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>G<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>AUGUST<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>Q<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>MARCH<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>H<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>SEPTEMBER<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>U<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>APRIL<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>J<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>OCTOBER<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>V<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>MAY<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>K<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>NOVEMBER<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>X<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>JUNE<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>M<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>DECEMBER<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>Z<o:p></o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt'><span
+lang=EN-US style='font-size:12.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="93%"
+ style='width:93.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;color:black'>Using
+  symbols to write an order may save time. However, the extra seconds that it
+  may take to write out the commodity and month may prevent errors.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+lang=EN-US style='font-family:Verdana;color:red'>*&nbsp;Please note: </span></b><span
+lang=EN-US style='font-family:Verdana;color:red'>The above information is
+believed to be reliable. There is no expressed or implied warranty as to the
+accuracy or completeness of this information. All information is subject to
+change at any time and without notice. Please consult the appropriate exchange
+for further information.</span><span lang=EN-US style='font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+                                                
+                      </td>
+                    </tr>
+                  </table>
+                  <p>&nbsp;</p>
+                </center>
+              </div></td>
+          </tr>
+        </table></TD>
+      <TD width="3" height="451" background="images/line2.gif"> <IMG SRC="images/line2.gif" width=3 height=238 ALT=""></TD>
+      <!--<TD valign="top" height="451" width="100%"> 
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td valign="top" width="100%"> </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td width="100%" rowspan="3" valign="top">
+              
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%" height="41"></td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%">&nbsp;</td>
+            <td width="100%" valign="top"></td>
+          </tr>
+        </table>
+      </TD>
+      <TD width="2" height="451" background="images/line3.gif"> <IMG SRC="images/line3.gif" width=2 height=238 ALT=""></TD>
+      <TD width="166" align="center" valign="top" bgcolor="F8FBFE"> 
+        <div align="left">
+          <table width="100%" border="0">
+            <tr> 
+              <td align="center"><div align="left"><strong></strong></div></td>
+            </tr>
+          </table>
+        </div>
+        
+      </TD>-->
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" bgcolor="#E6F1FE">&nbsp; </TD>
+      <TD COLSPAN=5 bgcolor="#E6F1FE" height="1"> <table width="119%" border="0" cellspacing="0" cellpadding="0" height="24">
+          <tr> 
+            <td width="81%" height="24"> <div align="center"> 
+                <center>
+                  <table width="315" border="0" cellspacing="2" cellpadding="2">
+                    <tr> 
+                      <td width="305"> <p align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#003366">©2019                              
+                          ADFC&nbsp;</font></p></td>                             
+                    </tr>
+                  </table>
+                </center>
+              </div></td>
+            <td width="19%" height="24"> <div align="right"></div></td>                      
+          </tr>
+        </table></TD>
+      <TD width="166"></TD>
+    </TR>
+    <TR> 
+      <TD COLSPAN=7 height="1"> </TD>
+      <TD width="166"></TD>
+    </TR>
+  </TABLE>
+</div>
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)">
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,582 @@
+<HTML>
+<HEAD>
+<meta name="description" content="provides futures, options and forex brokerage and advisory services to indidviduals,banks,financial institutions,money managers,brokers and corporates in the middle east and africa">
+<meta name="keywords" content="arab,broker,brokerage,platform,waves,options,middle east,trading,forex,currencies,metals,oil,online,advisory,gold,stock,emirates,saudi,qatar,bahrain,gulf,free,research,analysis,futures,lebanon,jordan,oman,africa">
+<meta name="author" content="AD Financial Corp">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 Week">
+<meta name="language" content="EN">
+<meta name="copyright" content="AD Financial Corp">
+<meta name="rating" content="general">
+
+
+
+<TITLE>ADFC</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<STYLE TYPE="TEXT/CSS">
+<!--
+
+A { text-decoration: none }
+
+
+A {color:#003366; font-family: Helvetica, Arial; font-size: 14px; text-decoration: none;}
+A:hover {color:#FF6600; font-family: Helvetica, Arial; font-size: 14px; text-decoration: underline;}
+
+td {font-family: Helvetica, Arial; font-size: 14px;}
+.linkcell { padding-left: 10px; font-family: Helvetica, Arial; font-size: 14px;}
+hr {  color: #000000}
+
+//.unnamed1 {  font-family: Arial, Helvetica, sans-serif; font-size: small}
+-->
+
+
+</STYLE>
+
+<script language="JavaScript">
+<!-- 
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}-->
+
+function checkAll(myForm)
+{
+   if (myForm==1)
+       setTimeout("myClear(1)",5000); 
+   if (myForm==2)
+       setTimeout("myClear(2)",5000); 
+   if (myForm==3)
+       setTimeout("myClear(3)",5000); 
+   return true;
+}
+
+function myClear(myForm)
+{
+   if (myForm==1)
+   {
+      document.myRedirect.acct.value='';
+   }
+   if (myForm==2)
+   {
+      document.formLOGON.userid.value='';document.formLOGON.password.value='';   
+   }
+   if (myForm==3)
+   {
+      document.LOGON.client_id.value='';document.LOGON.password.value='';
+   }
+   return true;
+}
+//-->
+</script>
+<style>
+<!--
+
+.menuskin{
+position:absolute;
+width:230px;
+background-color:FFFFFF;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+visibility:hidden;
+}
+
+.menuskin a{
+text-decoration:none;
+color:black;
+padding-left:5px;
+padding-right:5px;
+}
+
+#mouseoverstyle{
+background-color:014684;
+}
+
+#mouseoverstyle a{
+color:white;
+}
+-->
+</style>
+
+<script language="JavaScript1.2">
+
+//Pop-it menu- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var linkset=new Array();
+//SPECIFY MENU SETS AND THEIR LINKS. FOLLOW SYNTAX LAID OUT
+
+/*linkset[0]='<div class="menuitems"><a href="calendar.php">Calendar</a></div>';
+linkset[0]+='<div class="menuitems"><a href="margin.php">Margin</a></div>';
+linkset[0]+='<div class="menuitems"><a href="fin_news.php">Financial News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_news.php">Futures News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="usda.php">USDA Reports</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_charts.php">Futures Charts</a></div>';*/
+linkset[0]='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+/*linkset[0]+='<div class="menuitems"><a href="open.php">Opening Call</a></div>';*/
+
+linkset[1]='<div class="menuitems"><a href="afcs.html">Active Futures Contrcats Specifications</a></div>';
+linkset[1]+='<div class="menuitems"><a href="fnltd.html">First Notice and Last Trading Day</a></div>';
+linkset[1]+='<div class="menuitems"><a href="uf.html">Understandind futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="os.html">Options Strategies</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ot.html">Order Types</a></div>';
+linkset[1]+='<div class="menuitems"><a href="oae.html">Orders Accepted by exchanges</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ff.html">Financial Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cf.html">Commodities Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/analysis_publications/oil_market_basics/default.htm" target="_blank">Oil Market Basics</a></div>';
+linkset[1]+='<div class="menuitems"><a href="indices.php">US Economic indices</a></div>';
+linkset[1]+='<div class="menuitems"><a href="principles.php">Elliott Wave Principles</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cfg.html">Commodity Futures Glossary</a></div>';
+
+////No need to edit beyond here
+
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var ns6=document.getElementById&&!document.all
+var ns4=document.layers
+
+function showmenu(e,which){
+
+if (!document.all&&!document.getElementById&&!document.layers)
+return
+
+clearhidemenu()
+
+menuobj=ie4? document.all.popmenu : ns6? document.getElementById("popmenu") : ns4? document.popmenu : ""
+menuobj.thestyle=(ie4||ns6)? menuobj.style : menuobj
+
+if (ie4||ns6)
+menuobj.innerHTML=which
+else{
+menuobj.document.write('<layer name=gui bgColor=#E6E6E6 width=165 onmouseover="clearhidemenu()" onmouseout="hidemenu()">'+which+'</layer>')
+menuobj.document.close()
+}
+
+menuobj.contentwidth=(ie4||ns6)? menuobj.offsetWidth : menuobj.document.gui.document.width
+menuobj.contentheight=(ie4||ns6)? menuobj.offsetHeight : menuobj.document.gui.document.height
+eventX=ie4? event.clientX : ns6? e.clientX : e.x
+eventY=ie4? event.clientY : ns6? e.clientY : e.y
+
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie4? document.body.clientWidth-eventX : window.innerWidth-eventX
+var bottomedge=ie4? document.body.clientHeight-eventY : window.innerHeight-eventY
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<menuobj.contentwidth)
+//move the horizontal position of the menu to the left by it's width
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX-menuobj.contentwidth : ns6? window.pageXOffset+eventX-menuobj.contentwidth : eventX-menuobj.contentwidth
+else
+//position the horizontal position of the menu where the mouse was clicked
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX : ns6? window.pageXOffset+eventX : eventX
+
+//same concept with the vertical position
+if (bottomedge<menuobj.contentheight)
+menuobj.thestyle.top=ie4? document.body.scrollTop+eventY-menuobj.contentheight : ns6? window.pageYOffset+eventY-menuobj.contentheight : eventY-menuobj.contentheight
+else
+menuobj.thestyle.top=ie4? document.body.scrollTop+event.clientY : ns6? window.pageYOffset+eventY : eventY
+menuobj.thestyle.visibility="visible"
+return false
+}
+
+function contains_ns6(a, b) {
+//Determines if 1 element in contained in another- by Brainjar.com
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function hidemenu(){
+if (window.menuobj)
+menuobj.thestyle.visibility=(ie4||ns6)? "hidden" : "hide"
+}
+
+function dynamichide(e){
+if (ie4&&!menuobj.contains(e.toElement))
+hidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+hidemenu()
+}
+
+function delayhidemenu(){
+if (ie4||ns6||ns4)
+delayhide=setTimeout("hidemenu()",500)
+}
+
+function clearhidemenu(){
+if (window.delayhide)
+clearTimeout(delayhide)
+}
+
+function highlightmenu(e,state){
+if (document.all)
+source_el=event.srcElement
+else if (document.getElementById)
+source_el=e.target
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+else{
+while(source_el.id!="popmenu"){
+source_el=document.getElementById? source_el.parentNode : source_el.parentElement
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=hidemenu
+
+</script>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<div align="left">
+  <TABLE WIDTH=985 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR> 
+      <TD COLSPAN=8 height="23" width="982"> <IMG SRC="images/top_bar.gif" WIDTH="100%" ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top"> <p align="right"> </TD>
+      <TD width="145" valign="middle"> 
+        <p align="center"><img src="images/adfc-white.png" width="150" height="215"> 
+      </TD>
+      <TD COLSPAN=5 height="177" width="100%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="662" height="177">
+          <img src="images/adfc-banner.jpg" width="100%" />
+      </TD>
+   <!--   <TD width="178" valign="middle"> <img src="images/adfc-white.png" width="" height="90"></TD> -->
+    </TR>
+    <TR> 
+      <TD width="125" valign="top" BGCOLOR=#FFFFFF> 
+        <div align="right"> 
+          <table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>
+          <br>
+
+          <table width="153" border="0" cellpadding="0" cellspacing="0">
+          <tr><td align="center">
+          
+<!--BEGINNING OF chatstat.com CODE-->
+<script type='text/javascript'>
+var chat = 1;
+var chat_div_id = "chat_div";
+</script>
+<!--<script type='text/javascript' src='https://www.chatstat.com/clients/8204/8204.js'></script><div id="chat_div"></div>-->
+<noscript></noscript>
+<!--END OF chatstat.com CODE-->
+<br>
+
+          </td></tr>
+          <tr><td align="center"><a href="chat_login.php"><img src="images/login.jpg" width="127" height="160" border="0"></a></td></tr>
+         
+         
+          </table>
+
+          <p align="center">&nbsp;</p>
+          <p align="left">&nbsp;</p>
+        </div>
+        </TD>
+      <!--<TD width="2" height="451" background="images/line1.gif"> <IMG SRC="/images/line1.gif" width=2 height=238 ALT=""></TD>-->
+      <TD valign="top" height="100%" bgcolor="#F8FBFE" width="460"> 
+        <table width="521" border="0" cellspacing="2" cellpadding="2" height="65">
+          <tr> 
+            <td valign="top" height="31" width="100%"> <div align="right">
+                <table width="100%" border="0" cellspacing="0" cellpadding="1">
+                  <tr>
+                    <td bgcolor="#003366"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tr>
+                          <td><div align="right"><!-- Clock Part 1 - Put Anywhere Before Part 2 -->
+
+<script language="JavaScript">
+// Clock Script Generated By Maxx Blade's Clock v2.0
+// http://www.maxxblade.co.uk/clock
+
+function tS(){ x=new Date(); x.setTime(x.getTime()); return x; } 
+function lZ(x){ return (x>9)?x:'0'+x; } 
+function dT(){ if(fr==0){ fr=1; document.write('<font size=2 face=Arial><b><span id="tP">'+eval(oT)+'</span></b></font>'); } tP.innerText=eval(oT); setTimeout('dT()',1000); } 
+function y4(x){ return (x<500)?x+1900:x; } 
+var dN=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'),mN=new Array('January','February','March','April','May','June','July','August','September','October','November','December'),fr=0,oT="dN[tS().getDay()]+','+' '+mN[tS().getMonth()]+' '+tS().getDate()+','+' '+y4(tS().getYear())";
+</script>
+
+<!-- Clock Part 1 - Ends Here  -->
+
+
+<!-- Clock Part 2 - This Starts/Displays Your Clock -->
+
+<script language="JavaScript">dT();</script>
+
+<!-- Clock Part 2 - Ends Here --></div></td>
+                        </tr>
+                      </table></td>
+                  </tr>
+                </table>
+                <br>
+                <APPLET NAME="Ticker2"
+          CODE="Ticker.class"
+          ARCHIVE="Ticker.jar"
+          CODEBASE="http://java.barchart.com/ticker"
+          HEIGHT="48"
+          WIDTH="450"
+  >
+                  <PARAM NAME="panels"    VALUE="3">
+                  <PARAM NAME="1:symbols"   VALUE="'Indices,$NASX:NASDAQ Composite,$IUXX:Nasdaq100,$NYS:NYSE:NYSE,$IUX:Russell 2000,$DXY:Dollar Index,$VLA:Value Line,$CRB:CRB Index">
+                  <PARAM NAME="1:scroll"    VALUE="-1, 100">
+                  <PARAM NAME="1:bgcolor"   VALUE="#235789">
+                  <PARAM NAME="1:fgcolor"   VALUE="#FFFFFF">
+                  <PARAM NAME="1:pscolor"   VALUE="#86FF86">
+                  <PARAM NAME="1:ngcolor"   VALUE="#FF3333">
+                  <PARAM NAME="1:hilight"   VALUE="#FFFF00">
+                  <PARAM NAME="1:font"      VALUE="Arial, Normal, 10">
+                  <PARAM NAME="2:symbols"   VALUE="'Stocks,MSFT:Microsoft,IBM,QQQQ,SIEB:Siebert,YHOO:Yahoo,AA:Alcoa Inc,AXP:Amer Express,BA:Boeing,C:City group,CAT:Caterpillar,DD:Du Pont,DIS:Walt Disney,EK:Eastman Kodak,GE:General Electric,GM:General Motors,HD:Home Depot,HPQ:Hewlett-packard,INTC:Intel,CSCO:Cisco,JNJ:Johnson&Johnson,JPM:JP Morgan Chase,KO:Coca Cola,MCD:Mcdonalds,MRK:Merk&CO,PG:Procter&Gamble,T:AT&T,WMT:Wal-Mart,XOM:Exxon Mobil">
+                  <PARAM NAME="2:scroll"    VALUE="-1, 200">
+                  <PARAM NAME="2:bgcolor"   VALUE="#D3E7FE">
+                  <PARAM NAME="2:fgcolor"   VALUE="#000000">
+                  <PARAM NAME="2:pscolor"   VALUE="#0A4A0A">
+                  <PARAM NAME="2:ngcolor"   VALUE="#AA0000">
+                  <PARAM NAME="2:hilight"   VALUE="#0000FF">
+                  <PARAM NAME="2:font"      VALUE="Arial, Normal, 10">
+                   <PARAM NAME="3:symbols"   VALUE="'Futures,E6M11: Euro Fx,B6M11: British Pound,J6M11: Japanes Yen,S6M11: Swiss Franc,D6M11: Canadian$,A6M11: Australian$,YMM11: Mini Dow,ESM11: Mini SP,NQM11: Mini NASDAQ,ZBM11: 30Y T.Bonds,ZNM11: 10Y T.Notes,ZGM11: Gold,ZSK11: Silver,PQN11: Platinum,LQM11: Palladuim,QCK11: Copper,CCK11: Cocoa,KCK11: Coffee,SBK11: Sugar,ZSK11: Soybean,
+ZWK11: Wheat,ZCK11: Corn,ZBOK11: Bean Oil,WSK11: Crude Oil,BHK11: Heating Oil,HPK11: Natural Gaz,LCM11: Live Cattle,LHM11: Lean Hogs,PBN11: Pork Bellies,CTK11: Cotton,OJK11: Oranje Juice,LBK11: Lumber
+">
+                  <PARAM NAME="3:scroll"    VALUE="-1,  50">
+                  <PARAM NAME="3:bgcolor"   VALUE="#3873AD">
+                  <PARAM NAME="3:fgcolor"   VALUE="#FFFFFF">
+                  <PARAM NAME="3:pscolor"   VALUE="#86FF86">
+                  <PARAM NAME="3:ngcolor"   VALUE="#FFDD75">
+                  <PARAM NAME="3:hilight"   VALUE="#CCFFFF">
+                  <PARAM NAME="3:font"      VALUE="Arial, Normal, 10">
+                </APPLET>
+              </div></td>
+          </tr>
+          <tr> 
+            <td valign="top"> 
+              <div align="center">
+                <center>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td colspan='2'>
+
+                <table width='100%' border='0' cellspacing='1' cellpadding='1' align='left' >
+                <tr bgcolor='#666666'>
+                  <td>
+                    <!--<table width='100%' border='0' cellspacing='1' cellpadding='4' class=blackred bgcolor='#AEE4FF'>-->
+                            <table width='100%' border='0' cellspacing='1' cellpadding='4' class=blackred >
+                   </table>
+                    </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+                </table>
+</center></div>
+                    </td>                     
+                  </tr>
+
+                  <tr>
+                    <td colspan='2'>
+                        <!--<br>-->
+
+                <table width='820' border='0' cellspacing='1' cellpadding='1' align='left'  class=blackred bgcolor='#AEE4FF' >
+               
+                <tr>
+                  <td>
+                    <table width='100%' border='0' cellspacing='1' cellpadding='4'>
+                    <tr>
+                    <td>
+                        <p>
+                            Understanding the clients' needs is the key to success in any business. Our 30 years of experience in the financial field covering brokerage, advisory and market analysis, allows us to clearly understand what services you need; 
+“What you need is what we offer”.</p><p>
+If you are either an investor or a hedger looking for an FCM to execute your trades, Advisory services for your trading or hedging strategies, or market analysis to help you taking a sound investment decision, then you are in the right place.
+</p><p>Our comprehensive market analysis and advisory service suit the need of every type of traders.  We cover Futures , Forex  and Bitcoin markets which include Currencies ,  Metals, Food, Fiber, Oil & Gas products  Grains, livestock, Indices, Interest rates, and Bitcoin markets. 
+</p><p>Futures traders and hedgers will open segregated accounts directly with top regulated clearing firms and get direct access to trade all the futures and options products around the world. Forex and CFDs Traders will open segregated accounts directly with regulated and respected brokerage firms.
+
+                        </p>
+                    </td>
+                    </tr>
+                    
+                    </table>
+                     
+                 
+                  </td>
+                </tr>
+                </table>
+
+                    </td>                     
+                  </tr>
+
+                 
+                    </td>                     
+                  </tr>
+
+                  <tr>
+                    <td colspan='2'>
+
+
+                        <table width='820' border='0' cellspacing='1' cellpadding='1' align='left' >
+                <tr bgcolor='#666666'>
+                  <td>
+                    <table width='100%' border='0' cellspacing='1' cellpadding='4' class=blackred bgcolor='#bababa'>
+                    <tr>
+                    <td align='center'>
+                       <SPAN 
+            style="FONT-SIZE: 14pt; COLOR: navy">What's Hot</SPAN>
+                    </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr bgcolor='#666666'>
+                  <td>
+                    <table width='100%' border='0' cellspacing='1' cellpadding='4' class=blackred bgcolor='#FFFFFF'>
+                    <tr>
+                    <td>
+
+                        <MARQUEE onmouseover=this.scrollAmount=0 onmouseout=this.scrollAmount=2; scrollAmount=2 direction="up" width="100%" height="260" name="news">
+<script language="JavaScript" src='hot.php'></script>
+                        </MARQUEE>
+<!--<script type="text/javascript" src="http://www.goforex.net/worldrates.php?H=152&W=180&BC=CCCCCC&HC=1B226A"></script>-->
+                    </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+                </table>
+                    
+                    
+                    </td>                     
+                  </tr>
+
+                  
+                  <tr>
+                    <td colspan='2'><br>
+                <form name='Z1' action='#' method='get' onsubmit='return false;'>
+<script language='JavaScript'>
+<!--
+/*function Calc()
+{
+ var doc = document.Z1;
+ var rg = parseFloat(doc.high.value) - parseFloat(doc.low.value);
+ var close = parseFloat(doc.close.value);
+ doc.s1.value = close  - 0.618*rg;
+ doc.s2.value = close  - rg;
+ doc.s3.value = close  - 1.382*rg;
+ doc.s4.value = close  - 1.618*rg;
+
+ doc.r1.value = close  + 0.618*rg ;
+ doc.r2.value = close  + rg ;
+ doc.r3.value = close  + 1.382*rg ;
+ doc.r4.value = close  + 1.618*rg ;
+
+}*/
+-->
+</script>
+                <table width='100%' border='0' cellspacing='1' cellpadding='1' align='left' >
+                <tr bgcolor='#666666'>
+                  <td>
+                   
+                  </td>
+                </tr>
+                </table>
+                </form>
+                    </td>                     
+                  </tr>
+
+                
+                </table>
+                  <p>&nbsp;</p>
+                </center>
+              </div>
+              </td>
+          </tr>
+        </table>
+        </TD>
+      <!--<TD width="3" height="451" background="images/line2.gif"> 
+        <IMG SRC="images/line2.gif" width=3 height=238 ALT=""></TD>
+      <TD valign="top" height="451" width=""> 
+        
+      </TD>-->
+      
+     
+    </TR>
+    <TR> 
+      <TD width="125" valign="top" bgcolor="#E6F1FE">&nbsp; </TD>
+      <TD COLSPAN=5 bgcolor="#E6F1FE" height="1" width="672"> <table width="119%" border="0" cellspacing="0" cellpadding="0" height="24">
+          <tr> 
+            <td width="81%" height="24"> <div align="center"> 
+                <center>
+                  <table width="315" border="0" cellspacing="2" cellpadding="2">
+                    <tr> 
+                      <td width="305"> <p align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#003366">Copyright 
+                        2019                           
+                          ADFC &nbsp;</font></p></td>                          
+                    </tr>
+                  </table>
+                </center>
+              </div></td>
+            <td width="19%" height="24"> <div align="right"></div></td>                      
+          </tr>
+        </table></TD>
+      <TD width="178"></TD>
+    </TR>
+    <TR> 
+      <TD COLSPAN=7 height="1" width="802"> </TD>
+      <TD width="178"></TD>
+    </TR>
+  </TABLE>
+</div>
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)">
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagedata>
+<month val="mar 2004" total="2">
+<item str="193.251.156.101" cnt="2" />
+</month>
+<month val="may 2004" total="5">
+<item str="212.138.47.22" cnt="2" />
+<item str="64.68.82.181" cnt="2" />
+<item str="64.68.82.136" cnt="1" />
+</month>
+</usagedata>

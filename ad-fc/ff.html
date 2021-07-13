@@ -1,0 +1,4134 @@
+<HTML>
+<HEAD>
+<TITLE>Financials Futures</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<STYLE TYPE="TEXT/CSS">
+<!--
+
+A { text-decoration: none }
+
+
+A {color:#003366; font-family: Helvetica, Arial; font-size: 12px; text-decoration: none;}
+A:hover {color:#FF6600; font-family: Helvetica, Arial; font-size: 12px; text-decoration: underline;}
+
+td {font-family: Helvetica, Arial; font-size: 11px;}
+.linkcell { padding-left: 10px; font-family: Helvetica, Arial; font-size: 10px;}
+hr {  color: #000000}
+
+//.unnamed1 {  font-family: Arial, Helvetica, sans-serif; font-size: small}
+-->
+
+
+</STYLE>
+<script language="JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function checkAll(myForm)
+{
+   if (myForm==1)
+       setTimeout("myClear(1)",5000); 
+   if (myForm==2)
+       setTimeout("myClear(2)",5000); 
+   if (myForm==3)
+       setTimeout("myClear(3)",5000); 
+   return true;
+}
+
+function myClear(myForm)
+{
+   if (myForm==1)
+   {
+      document.myRedirect.acct.value='';
+   }
+   if (myForm==2)
+   {
+      document.formLOGON.userid.value='';document.formLOGON.password.value='';   
+   }
+   if (myForm==3)
+   {
+      document.LOGON.client_id.value='';document.LOGON.password.value='';
+   }
+   return true;
+}
+//-->
+</script>
+<script language="JavaScript">
+document.oncontextmenu = function(){return false}
+if(document.layers) {
+    window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = function(e){
+        if(e.target==document)return false;
+    }
+}
+else {
+    document.onmousedown = function(){return false}
+}
+
+document.onmouseup = document.selection.empty;
+
+
+function change(){
+document.getElementById('cal').src="http://www.thectr.com/2004/multi.php?req="+document.form1.information.value;
+window.status="Finance";
+}
+
+</script>
+<style>
+<!--
+
+.menuskin{
+position:absolute;
+width:230px;
+background-color:FFFFFF;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+visibility:hidden;
+}
+
+.menuskin a{
+text-decoration:none;
+color:black;
+padding-left:5px;
+padding-right:5px;
+}
+
+#mouseoverstyle{
+background-color:014684;
+}
+
+#mouseoverstyle a{
+color:white;
+}
+-->
+</style>
+
+<script language="JavaScript1.2">
+
+//Pop-it menu- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var linkset=new Array()
+//SPECIFY MENU SETS AND THEIR LINKS. FOLLOW SYNTAX LAID OUT
+
+/*linkset[0]='<div class="menuitems"><a href="calendar.php">Calendar</a></div>';
+linkset[0]+='<div class="menuitems"><a href="margin.php">Margin</a></div>';
+linkset[0]+='<div class="menuitems"><a href="fin_news.php">Financial News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_news.php">Futures News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="usda.php">USDA Reports</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_charts.php">Futures Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="open.php">Opening Call</a></div>';*/
+linkset[0]='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+
+linkset[1]='<div class="menuitems"><a href="afcs.html">Active Futures Contrcats Specifications</a></div>';
+linkset[1]+='<div class="menuitems"><a href="fnltd.html">First Notice and Last Trading Day</a></div>';
+linkset[1]+='<div class="menuitems"><a href="uf.html">Understandind futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="os.html">Options Strategies</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ot.html">Order Types</a></div>';
+linkset[1]+='<div class="menuitems"><a href="oae.html">Orders Accepted by exchanges</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ff.html">Financial Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cf.html">Commodities Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/analysis_publications/oil_market_basics/default.htm" target="_blank">Oil Market Basics</a></div>';
+linkset[1]+='<div class="menuitems"><a href="indices.php">US Economic indices</a></div>';
+linkset[1]+='<div class="menuitems"><a href="principles.php">Elliott Waves Principles</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cfg.html">Commodity Futures Glossary</a></div>';
+
+
+////No need to edit beyond here
+
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var ns6=document.getElementById&&!document.all
+var ns4=document.layers
+
+function showmenu(e,which){
+
+if (!document.all&&!document.getElementById&&!document.layers)
+return
+
+clearhidemenu()
+
+menuobj=ie4? document.all.popmenu : ns6? document.getElementById("popmenu") : ns4? document.popmenu : ""
+menuobj.thestyle=(ie4||ns6)? menuobj.style : menuobj
+
+if (ie4||ns6)
+menuobj.innerHTML=which
+else{
+menuobj.document.write('<layer name=gui bgColor=#E6E6E6 width=165 onmouseover="clearhidemenu()" onmouseout="hidemenu()">'+which+'</layer>')
+menuobj.document.close()
+}
+
+menuobj.contentwidth=(ie4||ns6)? menuobj.offsetWidth : menuobj.document.gui.document.width
+menuobj.contentheight=(ie4||ns6)? menuobj.offsetHeight : menuobj.document.gui.document.height
+eventX=ie4? event.clientX : ns6? e.clientX : e.x
+eventY=ie4? event.clientY : ns6? e.clientY : e.y
+
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie4? document.body.clientWidth-eventX : window.innerWidth-eventX
+var bottomedge=ie4? document.body.clientHeight-eventY : window.innerHeight-eventY
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<menuobj.contentwidth)
+//move the horizontal position of the menu to the left by it's width
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX-menuobj.contentwidth : ns6? window.pageXOffset+eventX-menuobj.contentwidth : eventX-menuobj.contentwidth
+else
+//position the horizontal position of the menu where the mouse was clicked
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX : ns6? window.pageXOffset+eventX : eventX
+
+//same concept with the vertical position
+if (bottomedge<menuobj.contentheight)
+menuobj.thestyle.top=ie4? document.body.scrollTop+eventY-menuobj.contentheight : ns6? window.pageYOffset+eventY-menuobj.contentheight : eventY-menuobj.contentheight
+else
+menuobj.thestyle.top=ie4? document.body.scrollTop+event.clientY : ns6? window.pageYOffset+eventY : eventY
+menuobj.thestyle.visibility="visible"
+return false
+}
+
+function contains_ns6(a, b) {
+//Determines if 1 element in contained in another- by Brainjar.com
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function hidemenu(){
+if (window.menuobj)
+menuobj.thestyle.visibility=(ie4||ns6)? "hidden" : "hide"
+}
+
+function dynamichide(e){
+if (ie4&&!menuobj.contains(e.toElement))
+hidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+hidemenu()
+}
+
+function delayhidemenu(){
+if (ie4||ns6||ns4)
+delayhide=setTimeout("hidemenu()",500)
+}
+
+function clearhidemenu(){
+if (window.delayhide)
+clearTimeout(delayhide)
+}
+
+function highlightmenu(e,state){
+if (document.all)
+source_el=event.srcElement
+else if (document.getElementById)
+source_el=e.target
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+else{
+while(source_el.id!="popmenu"){
+source_el=document.getElementById? source_el.parentNode : source_el.parentElement
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=hidemenu
+
+</script>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;
+    mso-font-charset:2;
+    mso-generic-font-family:auto;
+    mso-font-pitch:variable;
+    mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+    {font-family:Verdana;
+    panose-1:2 11 6 4 3 5 4 4 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-parent:"";
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:normal;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman";
+    mso-fareast-font-family:"Times New Roman";
+    color:windowtext;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+    
+h1
+    {margin-top:18.75pt;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    mso-outline-level:1;
+    font-size:13.0pt;
+    font-family:Arial;
+    color:#3D5B7B;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+h2
+    {margin-top:0cm;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    mso-outline-level:2;
+    font-size:11.5pt;
+    font-family:"Times New Roman";
+    color:#555555;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+h3
+    {margin-top:22.5pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    margin-bottom:.0001pt;
+    line-height:13.2pt;
+    mso-pagination:widow-orphan;
+    mso-outline-level:3;
+    font-size:11.5pt;
+    font-family:Arial;
+    color:#3D5B7B;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+h4
+    {margin-top:0cm;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    line-height:normal;
+    mso-pagination:widow-orphan;
+    mso-outline-level:4;
+    font-size:9.0pt;
+    font-family:"Times New Roman";
+    color:#999999;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+h5
+    {mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    line-height:normal;
+    mso-pagination:widow-orphan;
+    mso-outline-level:5;
+    font-size:10.0pt;
+    font-family:"Times New Roman";
+    color:#333399;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+a:link, span.MsoHyperlink
+    {color:#617DA7;
+    text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+    {color:#617DA7;
+    text-underline:single;}
+pre
+    {margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+tt
+    {font-family:Arial;
+    mso-ascii-font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    mso-hansi-font-family:Arial;
+    mso-bidi-font-family:Arial;
+    color:#555555;}
+span.Hyperlink9
+    {mso-style-name:Hyperlink9;
+    color:#617DA7;
+    text-decoration:underline;
+    text-underline:single;}
+p.back2top, li.back2top, div.back2top
+    {mso-style-name:back2top;
+    margin-top:3.75pt;
+    margin-right:11.25pt;
+    margin-bottom:11.25pt;
+    margin-left:11.25pt;
+    text-align:right;
+    line-height:13.5pt;
+    mso-pagination:widow-orphan;
+    font-size:9.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#336699;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.border, li.border, div.border
+    {mso-style-name:border;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    border:none;
+    mso-border-alt:solid #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.borderdark, li.borderdark, div.borderdark
+    {mso-style-name:borderdark;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    border:none;
+    mso-border-alt:solid #333333 .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.borderdotted, li.borderdotted, div.borderdotted
+    {mso-style-name:borderdotted;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    border:none;
+    mso-border-alt:dotted #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.borderdotteddark, li.borderdotteddark, div.borderdotteddark
+    {mso-style-name:borderdotteddark;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    border:none;
+    mso-border-alt:dotted #333333 .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.tight, li.tight, div.tight
+    {mso-style-name:tight;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.h1, li.h1, div.h1
+    {mso-style-name:h1;
+    margin-top:18.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    font-size:13.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#3D5B7B;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.pquote, li.pquote, div.pquote
+    {mso-style-name:pquote;
+    margin-top:18.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    font-size:13.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#3D5B7B;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.h2, li.h2, div.h2
+    {mso-style-name:h2;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    font-size:11.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.h3, li.h3, div.h3
+    {mso-style-name:h3;
+    margin-top:22.5pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    margin-bottom:.0001pt;
+    line-height:13.2pt;
+    mso-pagination:widow-orphan;
+    font-size:11.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#3D5B7B;
+    letter-spacing:-.35pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.h4, li.h4, div.h4
+    {mso-style-name:h4;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:9.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#999999;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.h5, li.h5, div.h5
+    {mso-style-name:h5;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#333399;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.bartitle, li.bartitle, div.bartitle
+    {mso-style-name:bartitle;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    text-indent:3.75pt;
+    line-height:15.0pt;
+    mso-pagination:widow-orphan;
+    font-size:9.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:white;
+    letter-spacing:-.75pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.indent, li.indent, div.indent
+    {mso-style-name:indent;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:15.0pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.indentmore, li.indentmore, div.indentmore
+    {mso-style-name:indentmore;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:30.0pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.sectionhead, li.sectionhead, div.sectionhead
+    {mso-style-name:sectionhead;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:125%;
+    mso-pagination:widow-orphan;
+    font-size:12.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:black;
+    letter-spacing:-.4pt;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.crumb, li.crumb, div.crumb
+    {mso-style-name:crumb;
+    margin-top:4.5pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    border:none;
+    mso-border-left-alt:dotted #999999 .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 8.0pt;
+    font-size:8.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#5979A0;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.crumbleft, li.crumbleft, div.crumbleft
+    {mso-style-name:crumbleft;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.timestamp, li.timestamp, div.timestamp
+    {mso-style-name:timestamp;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:white;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.disclaimer, li.disclaimer, div.disclaimer
+    {mso-style-name:disclaimer;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:9.0pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#908F8F;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.bgray, li.bgray, div.bgray
+    {mso-style-name:bgray;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#999999;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.bgray10, li.bgray10, div.bgray10
+    {mso-style-name:bgray10;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#999999;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.menulink, li.menulink, div.menulink
+    {mso-style-name:menulink;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#666666;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.store, li.store, div.store
+    {mso-style-name:store;
+    margin-top:1.5pt;
+    margin-right:0cm;
+    margin-bottom:3.0pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#666666;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.storetitle, li.storetitle, div.storetitle
+    {mso-style-name:storetitle;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:13.5pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.author, li.author, div.author
+    {mso-style-name:author;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:9.0pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#908F8F;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.price, li.price, div.price
+    {mso-style-name:price;
+    margin-top:9.0pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:black;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.formtype, li.formtype, div.formtype
+    {mso-style-name:formtype;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:8.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:black;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.formquestion, li.formquestion, div.formquestion
+    {mso-style-name:formquestion;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.promo, li.promo, div.promo
+    {mso-style-name:promo;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:14.4pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman";
+    mso-bidi-font-family:Arial;
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.promohome, li.promohome, div.promohome
+    {mso-style-name:promohome;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman";
+    mso-bidi-font-family:Arial;
+    color:black;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.promoblue, li.promoblue, div.promoblue
+    {mso-style-name:promoblue;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#001C5C;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.lightrow, li.lightrow, div.lightrow
+    {mso-style-name:lightrow;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:whitesmoke;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.darkrow, li.darkrow, div.darkrow
+    {mso-style-name:darkrow;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:#DDDDDD;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.bluerow, li.bluerow, div.bluerow
+    {mso-style-name:bluerow;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:#7D94AA;
+    border:none;
+    mso-border-bottom-alt:solid white 1.5pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 4.0pt 0cm;
+    font-size:8.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:white;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.nav-div, li.nav-div, div.nav-div
+    {mso-style-name:nav-div;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:white;
+    border:none;
+    mso-border-alt:solid #999999 .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 0cm;
+    font-size:8.5pt;
+    font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman";
+    mso-bidi-font-family:Arial;
+    color:#908F8F;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.nav-td, li.nav-td, div.nav-td
+    {mso-style-name:nav-td;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:8.5pt;
+    font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman";
+    mso-bidi-font-family:Arial;
+    color:white;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.dtree, li.dtree, div.dtree
+    {mso-style-name:dtree;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:3.0pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman";
+    mso-bidi-font-family:Arial;
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.module, li.module, div.module
+    {mso-style-name:module;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:5.25pt;
+    margin-left:7.5pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:#EEEEEE;
+    border:none;
+    mso-border-alt:solid #999999 1.5pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.blocktitle, li.blocktitle, div.blocktitle
+    {mso-style-name:block_title;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman";
+    mso-bidi-font-family:Arial;
+    color:#FFA34F;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.title, li.title, div.title
+    {mso-style-name:title;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    text-align:right;
+    line-height:11.25pt;
+    mso-pagination:widow-orphan;
+    background:#CCCCCC;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#666666;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.content, li.content, div.content
+    {mso-style-name:content;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:#EEEEEE;
+    border:none;
+    mso-border-top-alt:solid #999999 1.5pt;
+    padding:0cm;
+    mso-padding-alt:6.0pt 0cm 0cm 0cm;
+    font-size:7.5pt;
+    font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman";
+    mso-bidi-font-family:Arial;
+    color:black;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.row, li.row, div.row
+    {mso-style-name:row;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.bottom, li.bottom, div.bottom
+    {mso-style-name:bottom;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    text-align:center;
+    line-height:7.5pt;
+    mso-pagination:widow-orphan;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#666666;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.webpolldiv, li.webpolldiv, div.webpolldiv
+    {mso-style-name:webpolldiv;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.mainimage, li.mainimage, div.mainimage
+    {mso-style-name:mainimage;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:7.5pt;
+    margin-left:0cm;
+    text-align:center;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    font-variant:small-caps;
+    color:#F8F8F8;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.footerbutton, li.footerbutton, div.footerbutton
+    {mso-style-name:footerbutton;
+    margin-top:7.5pt;
+    margin-right:7.5pt;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    text-align:center;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    border:none;
+    mso-border-right-alt:dotted #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 8.0pt 0cm 0cm;
+    font-size:7.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#8A8A8A;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.searchdiv, li.searchdiv, div.searchdiv
+    {mso-style-name:searchdiv;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:7.5pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.searchbox, li.searchbox, div.searchbox
+    {mso-style-name:searchbox;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:right;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:white;
+    border:none;
+    mso-border-alt:solid #999999 1.5pt;
+    padding:0cm;
+    mso-padding-alt:4.0pt 4.0pt 0cm 0cm;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#666666;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.searchgo, li.searchgo, div.searchgo
+    {mso-style-name:searchgo;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    text-align:center;
+    mso-line-height-alt:.75pt;
+    mso-pagination:widow-orphan;
+    background:#3D5B7B;
+    font-size:7.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:white;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p.lessonnav, li.lessonnav, div.lessonnav
+    {mso-style-name:lessonnav;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:whitesmoke;
+    border:none;
+    mso-border-alt:dotted #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:1.0pt 0cm 0cm 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.contactinsert, li.contactinsert, div.contactinsert
+    {mso-style-name:contactinsert;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:center;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:#EEEEEE;
+    border:none;
+    mso-border-alt:dotted #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.padright, li.padright, div.padright
+    {mso-style-name:padright;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.graybox, li.graybox, div.graybox
+    {mso-style-name:graybox;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:whitesmoke;
+    border:none;
+    mso-border-alt:dotted #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:2.0pt 2.0pt 2.0pt 2.0pt;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.bookbox, li.bookbox, div.bookbox
+    {mso-style-name:bookbox;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    text-align:center;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:whitesmoke;
+    border:none;
+    mso-border-alt:dotted #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 8.0pt 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.boxdark, li.boxdark, div.boxdark
+    {mso-style-name:boxdark;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    border:none;
+    mso-border-alt:solid #333333 .75pt;
+    padding:0cm;
+    mso-padding-alt:0cm 0cm 0cm 0cm;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.formtable, li.formtable, div.formtable
+    {mso-style-name:formtable;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    background:#FFFFD7;
+    border:none;
+    mso-border-alt:solid #CCCCCC .75pt;
+    padding:0cm;
+    mso-padding-alt:8.0pt 8.0pt 8.0pt 8.0pt;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.wrap, li.wrap, div.wrap
+    {mso-style-name:wrap;
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.sidebar, li.sidebar, div.sidebar
+    {mso-style-name:sidebar;
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+p.mainarea, li.mainarea, div.mainarea
+    {mso-style-name:mainarea;
+    margin-top:22.5pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+span.navbutton
+    {mso-style-name:navbutton;
+    mso-ansi-font-size:9.0pt;
+    mso-bidi-font-size:9.0pt;
+    font-family:Arial;
+    mso-ascii-font-family:Arial;
+    mso-hansi-font-family:Arial;
+    mso-bidi-font-family:Arial;
+    color:white;
+    mso-text-animation:none;
+    mso-hide:none;
+    border:solid white 1.0pt;
+    mso-border-alt:solid white .75pt;
+    padding:4.0pt;
+    background:#3D5B7B;
+    font-weight:bold;
+    font-style:normal;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.Hyperlink1
+    {mso-style-name:Hyperlink1;
+    color:#3D5B7B;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.FollowedHyperlink1
+    {mso-style-name:FollowedHyperlink1;
+    color:#3D5B7B;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.Hyperlink2
+    {mso-style-name:Hyperlink2;
+    color:#555555;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.FollowedHyperlink2
+    {mso-style-name:FollowedHyperlink2;
+    color:#555555;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.Hyperlink3
+    {mso-style-name:Hyperlink3;
+    color:#3D5B7B;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.FollowedHyperlink3
+    {mso-style-name:FollowedHyperlink3;
+    color:#3D5B7B;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.Hyperlink4
+    {mso-style-name:Hyperlink4;
+    color:black;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.FollowedHyperlink4
+    {mso-style-name:FollowedHyperlink4;
+    color:black;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.Hyperlink5
+    {mso-style-name:Hyperlink5;
+    color:#908F8F;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.FollowedHyperlink5
+    {mso-style-name:FollowedHyperlink5;
+    color:#908F8F;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+span.FollowedHyperlink6
+    {mso-style-name:FollowedHyperlink6;
+    color:white;
+    text-decoration:underline;
+    text-underline:single;}
+span.Hyperlink6
+    {mso-style-name:Hyperlink6;
+    color:white;
+    text-decoration:underline;
+    text-underline:single;}
+span.Hyperlink7
+    {mso-style-name:Hyperlink7;
+    mso-ansi-font-size:7.5pt;
+    mso-bidi-font-size:7.5pt;
+    color:black;
+    mso-text-animation:none;
+    text-decoration:none;
+    text-underline:none;
+    text-decoration:none;
+    text-line-through:none;}
+p.NormalWeb1, li.NormalWeb1, div.NormalWeb1
+    {mso-style-name:"Normal \(Web\)1";
+    margin-top:3.75pt;
+    margin-right:0cm;
+    margin-bottom:11.25pt;
+    margin-left:0cm;
+    line-height:12.75pt;
+    mso-pagination:widow-orphan;
+    font-size:8.5pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:#555555;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+span.Hyperlink8
+    {mso-style-name:Hyperlink8;
+    color:white;
+    text-decoration:underline;
+    text-underline:single;}
+span.FollowedHyperlink7
+    {mso-style-name:FollowedHyperlink7;
+    color:white;
+    text-decoration:underline;
+    text-underline:single;}
+span.SpellE
+    {mso-style-name:"";
+    mso-spl-e:yes;}
+span.GramE
+    {mso-style-name:"";
+    mso-gram-e:yes;}
+@page Section1
+    {size:612.0pt 792.0pt;
+    margin:72.0pt 90.0pt 72.0pt 90.0pt;
+    mso-header-margin:36.0pt;
+    mso-footer-margin:36.0pt;
+    mso-paper-source:0;}
+div.Section1
+    {page:Section1;}
+ /* List Definitions */
+ @list l0
+    {mso-list-id:104422368;
+    mso-list-template-ids:-408916408;}
+@list l0:level1
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0B7;
+    mso-level-tab-stop:36.0pt;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    mso-ansi-font-size:10.0pt;
+    font-family:Symbol;}
+ol
+    {margin-bottom:0cm;}
+ul
+    {margin-bottom:0cm;}
+-->
+</style>
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<div align="left">
+  <TABLE WIDTH=985 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <!--<TR> 
+      <TD COLSPAN=8 height="23" width="972"> <IMG SRC="images/top_bar.gif" WIDTH=100% HEIGHT=23 ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top" height="464"> <p align="right"> </TD>
+      <TD width="153" valign="middle" height="183"> <p align="center"><img src="images/adf.jpg" width="145" height="90"> 
+      </TD>
+      <TD COLSPAN=5 height="183"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="662" height="177">
+          <param name="movie" value="images/movie2.swf">
+          <param name="quality" value="high">
+          <embed src="images/movie2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="662" height="177"></embed></object></TD>
+      <TD valign="middle" height="183">&nbsp; </TD>
+    </TR>
+    <TR> -->
+     <TR> 
+      <TD COLSPAN=8 height="23" width="982"> <IMG SRC="images/top_bar.gif" WIDTH="100%" ALT=""></TD>
+    </TR>
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top"> <p align="right"> </TD>
+      <TD width="145" valign="middle"> 
+        <p align="center"><img src="images/adfc-white.png" width="150" height="215"> 
+      </TD>
+      <TD COLSPAN=5 height="177" width="100%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="662" height="177">
+          <img src="images/adfc-banner.jpg" width="100%" />
+      </TD>
+   <!--   <TD width="178" valign="middle"> <img src="images/adfc-white.png" width="" height="90"></TD> -->
+    </TR>
+      <TD width="153" valign="top" BGCOLOR=#FFFFFF> 
+        <div align="right"> 
+          <table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+<tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>
+          <br>
+          <p align="left">&nbsp;</p>
+        </div></TD>
+      <TD width="2" height="451" background="images/line1.gif"> <IMG SRC="images/line1.gif" width=2 height=238 ALT=""></TD>
+      <TD valign="top" height="451" bgcolor="F8FBFE" width="352"> 
+        <table width="345" border="0" cellspacing="2" cellpadding="2" height="65">
+          <tr> 
+            <td width="100%" valign="top"> <div align="right"> </div>
+              <div align="center"> 
+                <center>
+                  <table border="0" cellpadding="0" cellspacing="0" width="95%">
+                    <tr> 
+                      <td width="700">
+                      <img src="images/line1.gif" width='700' height='1'>
+
+
+
+<div class=Section1>
+
+                          <p>&nbsp;</p>
+                          <p><font size="+2">What Are Financial Futures?</font></p>
+                          <p><font size="+1">Financial futures are contracts based 
+                            on underlying financial instruments. These can be 
+                            interest-rate sensitive instruments such as U.S. Treasury 
+                            bonds, equity instruments such as the Standard &amp; 
+                            Poor's 500R Index, or currencies such as the Japanese 
+                            yen.</font></p>
+                          <p><font size="+1">Like all futures contracts, a financial 
+                            futures contract specifies a specific quantity of 
+                            the underlying financial instrument at a market-determined 
+                            price. They can be settled via cash or physical delivery, 
+                            depending on the instrument. Supply and demand factors 
+                            determine pricing, and while common fundamentals often 
+                            influence many markets globally, there are also factors 
+                            that are unique to each particular market.</font></p>
+                          <p><font size="+1">Financial futures were developed 
+                            amid a rapidly growing trend toward globalization 
+                            in the world's investment and economic landscape starting 
+                            in the early 1970s. They were designed to meet new 
+                            needs and risks that businesses, governments, and 
+                            individuals faced amid changing capital flows. Even 
+                            though they have a shorter history than agricultural 
+                            futures, they now dominate the exchange-traded product 
+                            offerings. Today, the majority of futures traded globally 
+                            are financial-based contracts, and futures exchanges 
+                            are continually on the lookout for new successes in 
+                            this category.</font></p>
+                          <p><font size="+1">Types of Financial Futures</font></p>
+                          <p><font size="+1">Financial futures fall into three 
+                            broad categories - those tied to interest rate instruments, 
+                            stocks or stock indexes, and global currencies. Some 
+                            of the most popular are outlined briefly here.</font></p>
+                          <p><font size="+1">Interest Rate Products</font></p>
+                          <p><font size="+1">In simple terms, interest rates reflect 
+                            the price of money. And like all goods and services, 
+                            interest rates are determined mainly by supply and 
+                            demand. A greater demand for money is likely to drive 
+                            up the price of money, reflected in the interest rate. 
+                            Demand depends on factors such as the nation's economic 
+                            health, the level of government borrowing to support 
+                            budgets, and societal perception of inflation. Also, 
+                            a nation's central bank can manipulate interest rates 
+                            - rates are adjusted upward in an attempt to slow 
+                            the economy, while rates are adjusted downward to 
+                            act as a stimulus.</font></p>
+                          <p><font size="+1">Interest rate futures products encompass 
+                            a range of short-term instruments, such as the Federal 
+                            funds rate, an overnight inter-bank lending rate, 
+                            to long-term, such as the 30-year Treasury bond. The 
+                            relationship between short- and long-term interest 
+                            rates along a broad time continuum is called the yield 
+                            curve. Typically, the yield curve has an upward slope, 
+                            with a longer period of lending risk resulting in 
+                            higher rates for long-term instruments.</font></p>
+                          <p></p>
+                          <p><font size="+1">Some of the most popular U.S. interest 
+                            rate futures products and their features are detailed 
+                            below.</font></p>
+                          <p><font size="+1">Eurodollar Futures</font></p>
+                          <p><font size="+1">Eurodollars are U.S. dollars on deposit 
+                            in commercial banks outside the country, mainly in 
+                            Europe. Eurodollars are commonly used to settle international 
+                            transactions and are not guaranteed by any government, 
+                            but rather, by the obligation of the bank holding 
+                            them. Eurodollar futures track the interest rate on 
+                            90-day Eurodollar deposits, and frequently top the 
+                            list of the world's most popular futures contracts 
+                            traded.</font></p>
+                          <p><font size="+1">The Chicago Mercantile Exchange's 
+                            Eurodollar futures contract reflects the London Interbank 
+                            Offered Rate (LIBOR) for a three-month, $1 million 
+                            offshore deposit. The exchange lists a total of 40 
+                            quarterly futures contracts, spanning 10 years, plus 
+                            the four nearest serial (nonquarterly) months. This 
+                            contract is frequently used as a barometer for monetary 
+                            policy implications, with a cash yield that has a 
+                            close tie to the Federal funds rate. Therefore, economic 
+                            statistics that may alter monetary policy have a big 
+                            influence on Eurodollar futures prices.</font></p>
+                          <p><font size="+1">Treasury Futures</font></p>
+                          <p><font size="+1">Because of the strength and stability 
+                            of the U.S. government, which has never defaulted 
+                            on debt, U.S. Treasury instruments are often described 
+                            as &quot;safe-haven&quot; investments. Indeed, when 
+                            strong buying occurs in the Treasury futures market 
+                            because of some type of global or economic shock, 
+                            it's often called a &quot;flight to quality&quot; 
+                            among the part of global investors.</font></p>
+                          <p><font size="+1">U.S. Treasury bonds are long-term 
+                            debt issues of the U.S. government with maturities 
+                            of more than 10 years. U.S. Treasury notes are medium-term 
+                            obligations of the U.S. government with maturities 
+                            that range from one to 10 years. Futures are traded 
+                            on the 30-year bond and the two-, five- and 10-year 
+                            Treasury notes. U.S. economic strength, inflation 
+                            and monetary policy are the major influences on the 
+                            pricing of Treasury futures. Demand for money in a 
+                            strong and/or inflationary economy typically causes 
+                            cash Treasury yields (i.e. the interest rate paid) 
+                            to rise and the price of the futures to fall, while 
+                            conversely, a weak economy typically causes yields 
+                            to fall while futures prices rise.</font></p>
+                          <p><font size="+1">Treasury bills are U.S. government 
+                            debt issues with maturities of up to one year. T-bills 
+                            are the most widely issued government debt security 
+                            and are auctioned weekly and monthly. The T-bill interest 
+                            rate is considered the risk-free rate of variable 
+                            return to investors. Because of their short durations, 
+                            T-bills are considered money-market instruments. Treasury 
+                            bills do not pay periodic interest. Instead, they 
+                            are sold at a discount from their face value, and 
+                            upon maturity, the investor receives the face value. 
+                            The difference between the face value and the price 
+                            at which it was sold is treated as interest.</font></p>
+                          <p><font size="+1">Foreign Government Debt Futures</font></p>
+                          <p><font size="+1">Similar to the U.S. government, most 
+                            foreign governments also issue short- and long-term 
+                            debt and many have corresponding futures contracts 
+                            listed at exchanges around the globe. Europe's leading 
+                            futures exchanges, Eurex and Euronext.liffe, offer 
+                            many popular euro-based contracts including euro-bund 
+                            futures, which are long-term debt instruments, and 
+                            three-month euribor futures, which are short-term 
+                            instruments. </font></p>
+                          <p><font size="+1">Prior to the start of the European 
+                            Monetary Union in 1999, German government bonds were 
+                            the recognized benchmark for the European government 
+                            bond market due to their liquidity, credit rating, 
+                            a record of stable German monetary policy and Germany's 
+                            market size and depth. Germany had been considered 
+                            the &quot;safe haven&quot; of Eurozone issuers, but 
+                            the recent integration of Europe's markets with the 
+                            EMU has created new debt instruments and market dynamics. 
+                            </font></p>
+                          <p><font size="+1">In the U.S., the Chicago Board of 
+                            Trade lists futures on three German debt instruments-the 
+                            Bund, Bobl and Schatz. These contracts trade exclusively 
+                            on the CBOT's electronic platform. The remaining term 
+                            to maturity on the Bund is 8 ½- 10 ½ years, the Bobl 
+                            has a remaining term to maturity of 4 ½ to 5 ½ years, 
+                            while the Schatz has a remaining term of maturity 
+                            of 1 ¾ to 2 ¼ years. </font></p>
+                          <p><font size="+1">Swap Futures</font></p>
+                          <p><font size="+1">Swaps are generally defined as agreements 
+                            between two parties to exchange periodic interest 
+                            payments. They have become an interest rate benchmark 
+                            and are an innovative means for those seeking ways 
+                            to transfer financial risk. Swap futures are traded 
+                            at the Chicago Mercantile Exchange and Chicago Board 
+                            of Trade and are designed to provide investors involved 
+                            in U.S. dollar-denominated swaps with new trading 
+                            and hedging opportunities. Investors can trade two-year, 
+                            five-year and 10-year swap futures contracts.</font></p>
+                          <p><font size="+1">Currency Futures </font></p>
+                          <p><font size="+1">Also known as foreign exchange, forex 
+                            or simply FX, financial institutions, investment managers, 
+                            corporations and private investors trade currency 
+                            futures to manage the risks and capture potential 
+                            opportunities associated with currency rate fluctuations. 
+                            </font></p>
+                          <p><font size="+1">Trading a nation's currency doesn't 
+                            occur in a vacuum; you don't actually trade one currency 
+                            but a pair based on its relationship to another currency. 
+                            A number of factors go into determining the &quot;strength&quot; 
+                            or &quot;weakness&quot; of a currency vs. another, 
+                            but it usually comes down to comparing one nation's 
+                            economy to another's. Generally, expanding economies 
+                            have stronger currencies while recessionary economies 
+                            have weaker currencies. </font></p>
+                          <p><font size="+1">Factors influencing a currency's 
+                            value include gross domestic product (GDP) as well 
+                            as the trade balance between countries. The current 
+                            account balance and money flows from one country to 
+                            another reflect a currency's supply and demand, so 
+                            traders are always watching each country's trade balance 
+                            to see changes in surpluses/deficits. Other factors 
+                            influencing currency valuations include fiscal and 
+                            monetary policies, including interest rates on government-issued 
+                            securities, and political leadership. </font></p>
+                          <p><font size="+1">The Chicago Mercantile Exchange is 
+                            the leader for currency futures trading in the United 
+                            States, and offers a variety of contracts with pricing 
+                            based on a nation's respective currency value vs. 
+                            the U.S. dollar. Traders can also access cross-rate 
+                            futures contracts, which allow a value comparison 
+                            of a currency against another currency besides the 
+                            U.S. dollar. For example, you can trade futures on 
+                            the Australian dollar vs. the Canadian dollar, or 
+                            British pound vs. the Japanese yen.</font></p>
+                          <p><font size="+1">To learn more about FX pricing and 
+                            the differences between trading cash FX and futures 
+                            FX, or to translate futures FX prices into cash FX 
+                            prices, visit CME's web-based application: CME E-quivalentsR: 
+                            A free tool for smarter FX trading at www.cme.com/e-quivalents.</font></p>
+                          <p><font size="+1">Equity-Based Futures</font></p>
+                          <p><font size="+1">Some of the most popular futures 
+                            contracts are related to the equity markets. Most 
+                            major economies with a vibrant stock market also have 
+                            a futures contract on a stock index that represents 
+                            that particular economy. For example, in the United 
+                            States, futures contracts are available on the Dow 
+                            Jones Industrial Average as well as the broader Standard 
+                            &amp; Poor's 500 Index and the technology-oriented 
+                            Nasdaq-100 Index. Other countries have similar contracts, 
+                            such as the FTSE-100 in the United Kingdom, the Hang 
+                            Seng in Hong Kong and the CAC 40 in France. The Dow 
+                            Jones Euro STOXX 50 covers selected stocks in the 
+                            euro economy.</font></p>
+                          <p><font size="+1">Fundamental factors influencing stock 
+                            markets encompass factors affecting companies' earnings 
+                            potential, such as news about the global and domestic 
+                            economy, inflation, currency values, politics and 
+                            interest rates.</font></p>
+                          <p><font size="+1">Stock Indexes</font></p>
+                          <p><font size="+1">Stock index futures contracts were 
+                            introduced in the U.S. in 1982, nine years after listed 
+                            equity options began trading at the Chicago Board 
+                            Options Exchange, the securities offshoot of the Chicago 
+                            Board of Trade. Interestingly, the CBOT had come up 
+                            with the idea of futures on stocks as a way to diversify 
+                            its product line, although futures on individual stocks 
+                            were many more years in coming.</font></p>
+                          <p><font size="+1">The Kansas City Board of Trade launched 
+                            the first stock index futures contract on the Value 
+                            Line in February 1982, and the Chicago Mercantile 
+                            Exchange followed with its S&amp;P 500 Index contract 
+                            a few months later. The S&amp;P contract quickly became 
+                            the market leader and continues to dominate U.S. stock 
+                            index futures trading today. A number of stock index 
+                            futures and options contracts are now available to 
+                            traders, covering all areas of the market. The most 
+                            popular major index futures contracts are listed below.</font></p>
+                          <p><font size="+1">Standard &amp; Poor's 500R Index</font></p>
+                          <p><font size="+1">The S&amp;P 500 Index is a market 
+                            value-weighted index of 500 large-capitalization stocks 
+                            traded on the New York Stock Exchange, American Stock 
+                            Exchange and Nasdaq National Market System. Because 
+                            the S&amp;P is capitalization-weighted, those stocks 
+                            with the most shares outstanding at the highest prices 
+                            will have the most influence on the index movement. 
+                            The S&amp;P 500 index, introduced in 1957, is known 
+                            as the investment industry's standard for measuring 
+                            portfolio performance and is licensed by McGraw-Hill 
+                            Companies Ltd.</font></p>
+                          <p><font size="+1">The Chicago Mercantile Exchange introduced 
+                            S&amp;P 500 futures in 1982, and they originally traded 
+                            at $500 times the cash index. As the market began 
+                            to surge during the 1990s, the initial margin became 
+                            too costly for many traders. In response, the CME 
+                            decided to cut the contract's value to $250 times 
+                            the index. The CME went even further to attract individual 
+                            investors.</font></p>
+                          <p><font size="+1">In 1997, the CME launched an even 
+                            smaller version of its popular S&amp;P 500 futures 
+                            contract, which was felt to be more attractively sized 
+                            for individual traders. The E-mini S&amp;P 500 futures 
+                            are priced at one-fifth the size of the big contract 
+                            at $50 times the index, with a lower initial margin. 
+                            But the real innovation of the new &quot;mini&quot; 
+                            futures was the fact that they traded on an electronic 
+                            platform, and not in open-outcry pits. CME officials 
+                            decided trading would take place entirely on a trade-matching 
+                            computer, giving traders direct access to the market 
+                            and not an order-handler. Electronic trading would 
+                            no longer be used only for after-hours trading or 
+                            as a supplement to the primary pit contract. It became 
+                            the mainstream market for the E-mini contracts. And, 
+                            as long as trading was all computer-based, the CME 
+                            decided to keep the market open nearly 24 hours a 
+                            day. In just a year after its launch, the E-mini S&amp;P 
+                            futures were the third most active stock index contract 
+                            in the country, and today, boast the strongest volume 
+                            of any U.S. stock index product. Because of its strong 
+                            liquidity, what started out as mainly a product for 
+                            small speculators, day-traders and other retail investors 
+                            is now also an institutional favorite.</font></p>
+                          <p><font size="+1">Nasdaq-100R Index</font></p>
+                          <p><font size="+1">The Nasdaq-100 Index is a modified 
+                            market-capitalization index and includes the top 100 
+                            non-financial stocks (both domestic and foreign) listed 
+                            on the Nasdaq Stock Market. Stocks such as Microsoft, 
+                            Intel, eBay, Dell, Cisco, etc. dominate the index, 
+                            so it's frequently associated with the high-flying 
+                            technology sector of the stock market.</font></p>
+                          <p><font size="+1">Futures on the Nasdaq-100 began trading 
+                            in 1996 with a value of $100 times the index. Like 
+                            the S&amp;P 500 Index, the value of the Nasdaq-100 
+                            rose dramatically during the 1990s, and the CME launched 
+                            a mini-sized electronic contract. E-mini Nasdaq-100 
+                            futures are priced at $20 times the index.</font></p>
+                          <p><font size="+1">Both E-mini S&amp;P 500 and E-mini 
+                            Nasdaq-100 futures were smashing successes. Volume 
+                            quickly grew in both to overtake their larger futures 
+                            benchmarks and paved the way for many other mini-sized 
+                            futures products at the CME and other exchanges. </font></p>
+                          <p><font size="+1">Dow Jones Industrial Average</font></p>
+                          <p><font size="+1">The Dow Jones Industrial Average 
+                            is an index of 30 large capitalization &quot;blue 
+                            chip&quot; stocks traded on the New York Stock Exchange, 
+                            accounting for about 20 percent of the market value 
+                            of all U.S. equities. The index, first published in 
+                            1896, is the most widely quoted market indicator in 
+                            newspapers, radio, television and electronic media 
+                            throughout the world. Futures on the DJIA began trading 
+                            at the Chicago Board of Trade in 1997 after heated 
+                            competition between the Chicago exchanges for the 
+                            rights to trade futures and options on products owned 
+                            by Dow Jones &amp; Co., which had remained reluctant 
+                            to allow its name to be used in trading.</font></p>
+                          <p><font size="+1">The large DJIA futures contract has 
+                            a value of $10 times the average. The CBOT began trading 
+                            electronic, mini-sized DJIA futures valued at $5 times 
+                            the average in 2002, and similar to the E-mini S&amp;P 
+                            contract, the mini-sized DJIA has become the more 
+                            popular of the two with larger overall volume.</font></p>
+                          <p><font size="+1">Single-Stock Futures</font></p>
+                          <p><font size="+1">Single-stock futures, also known 
+                            as security futures, began trading in 2002 after many 
+                            years of regulatory debate. The so-called Johnson-Shad 
+                            Accord in the early 1980s had set the ground rules 
+                            for stock index futures, but futures on individual 
+                            stocks and narrow-based stock indexes were not allowed 
+                            to trade. They remained banned until Congress opened 
+                            the door with passage of the Commodity Futures Modernization 
+                            Act of 2000.</font></p>
+                          <p><font size="+1">The legislation gave the green light 
+                            to single-stock futures, and two new exchanges made 
+                            their debut in November 2002. OneChicago, LLC was 
+                            formed via a joint venture of the Chicago Mercantile 
+                            Exchange, Chicago Board of Trade and Chicago Board 
+                            Options Exchange , while NQLX, LLC was formed via 
+                            a joint venture of Nasdaq and Euronext.liffe until 
+                            the former dropped out. Currently, only OneChicago 
+                            offers trading in the products; NQLX decided to suspend 
+                            their trading effective in December 2004 due to lack 
+                            of interest. </font></p>
+                          <p><font size="+1">In the United States, single-stock 
+                            futures trade solely on an electronic platform, and 
+                            each futures contract represents 100 shares of the 
+                            underlying stock. Despite years of anticipation surrounding 
+                            their development, single-stock futures have been 
+                            viewed as slow to catch on in the marketplace. However, 
+                            they do offer many potential advantages futures in 
+                            general hold over cash stocks, such as greater leverage, 
+                            an easier ability to take a short position, and positive 
+                            tax benefits.</font></p>
+                          <p><font size="+1">Volatility Futures</font></p>
+                          <p><font size="+1">The CBOE Futures Exchange, LLC launched 
+                            trading in VIX futures in March 2004. VIX futures 
+                            are based on the CBOE Volatility Index, which was 
+                            first introduced in 1993 and became known as a benchmark 
+                            of stock market sentiment among investors. Derived 
+                            from real-time S&amp;P 500 Index option prices, the 
+                            CBOE states the VIX is designed to reflect investors' 
+                            consensus view of expected stock market volatility 
+                            over the next 30 days.</font></p>
+                          <p><font size="+1">In May 2004, the CBOE CFE launched 
+                            a realized variance futures contract. The CBOE S&amp;P 
+                            500 three-month variance futures is an exchange-traded 
+                            futures contract based on the realized variance of 
+                            the Standard &amp; Poor's 500 stock Index over a three-month 
+                            period.</font></p>
+                          <p></p>
+                          <p></p>
+                          <p><font size="+1">Who Participates in Financial Futures 
+                            Markets?</font></p>
+                          <p><font size="+1">There are two basic types of participants 
+                            in the financial futures markets - hedgers and speculators. 
+                            The hedgers are those seeking to minimize and manage 
+                            price risk, while speculators are those willing to 
+                            take on risk in the hope of making a profit. Hedgers 
+                            include institutions such as banks and insurance companies, 
+                            large multinational corporations, pension plans, and 
+                            mutual funds. Despite their name, &quot;hedge funds&quot; 
+                            actually often act as speculators in the marketplace. 
+                            They utilize an array of complicated and varied strategies 
+                            that not only seek to hedge against other cash investments 
+                            held by their investors, but also to enhance returns 
+                            through speculative positions.</font></p>
+                          <p><font size="+1">As an example of a hedger in the 
+                            financial futures markets, put yourself in the position 
+                            of a mutual fund manager running an S&amp;P 500 Index 
+                            fund that contains individual stocks that comprise 
+                            the S&amp;P 500 Index. You are worried that a shaky 
+                            U.S. economy and incidents of global terrorism could 
+                            negatively impact the index and your returns, yet 
+                            you can't disrupt your stock holdings. However, you 
+                            could take a short position in S&amp;P 500 Index futures, 
+                            and if the stock prices fall, you could then buy back 
+                            the futures at a lower price. That would allow you 
+                            to offset losses to the stock holdings in your fund. 
+                            Of course, if your worries were unfounded and the 
+                            stock prices rose, you'd lose money on the futures 
+                            transaction. But, the idea is to use futures as a 
+                            hedge to minimize your potential risk.</font></p>
+                          <p><font size="+1">While speculators can include large 
+                            institutions and funds, many are individual traders 
+                            who provide valuable liquidity to the marketplace. 
+                            An individual trader who commits his or her own capital 
+                            to act as speculator on a particular exchange is known 
+                            as a local. Typically, these individuals provide market 
+                            liquidity by constantly buying and selling throughout 
+                            the trading session and are viewed as important participants 
+                            in the market by shouldering risk. While the term 
+                            local has been used to designate those trading in 
+                            the open-outcry markets, this era of electronic trading 
+                            is making the phrase a little obsolete. However, their 
+                            function as liquidity providers is equally important 
+                            in electronic markets. The Commodity Futures Trading 
+                            Commission defines this new breed of electronic traders 
+                            &quot;E-locals,&quot; but they are often more simply 
+                            known as independent traders.</font></p>
+                          <p><font size="+1">A speculative trader typically takes 
+                            a position in the futures markets with the hope of 
+                            making a profit without any underlying cash stock 
+                            market position. In the example above, the speculator 
+                            may take the other side of the portfolio manager's 
+                            trade, thinking it's unlikely a terrorist incident 
+                            will soon strike and that stock prices will hold up.</font></p>
+                          <p></p>
+                          <p><font size="+1">History of Financial Futures</font></p>
+                          <p><font size="+1">The history of established futures 
+                            markets dates back to the 1800s, but up until the 
+                            early 1970s, all futures markets were basically designated 
+                            as &quot;commodity&quot; markets because the products 
+                            traded were mainly agricultural. However, futures 
+                            on financial products were quickly and enthusiastically 
+                            embraced. They now dominate trading activity, accounting 
+                            for about 75 percent of all derivatives trading volume 
+                            in the world.</font></p>
+                          <p><font size="+1">The Chicago Mercantile Exchange claims 
+                            credit for the creation of financial futures with 
+                            the launch of seven foreign currency contracts in 
+                            1972. According to the CME, they were introduced in 
+                            response to the breakdown of the Bretton Woods Agreement, 
+                            which had governed international currency exchange-rate 
+                            policy since the end of World War II.</font></p>
+                          <p><font size="+1">It was during the FX market turmoil 
+                            leading up to the initial revision of the U.S. dollar 
+                            &quot;gold peg&quot; that Leo Melamed, Chairman Emeritus 
+                            of CME, with the endorsement of Nobel Laureate economist 
+                            Milton Friedman, championed the idea of foreign exchange 
+                            futures contracts. On May 16, 1972, the CME's International 
+                            Monetary Market opened for business, listing seven 
+                            foreign currency futures contracts: British pound, 
+                            Canadian dollar, Deutsche mark, French franc, Japanese 
+                            yen, Mexican peso and Swiss franc.</font></p>
+                          <p><font size="+1">Also during the 1970s, the challenges 
+                            of inflation and volatile interest rate fluctuations 
+                            spawned the development of futures contracts tied 
+                            to interest rates.</font></p>
+                          <p><font size="+1">In 1975, the Chicago Board of Trade 
+                            launched its first financial futures contract on Government 
+                            National Mortgage Association mortgage-backed certificates, 
+                            or GNMAs. In 1977, the CBOT introduced trading in 
+                            U.S. Treasury bond futures and a suite of other Treasury 
+                            futures products followed.</font></p>
+                          <p><font size="+1">In 1981, the CME launched Eurodollar 
+                            futures, which had an innovative feature that paved 
+                            the way for even more growth in financial contracts 
+                            to come. Eurodollar futures were the first futures 
+                            contracts that did not require delivery of an underlying 
+                            instrument, but were settled in cash. The cash-settlement 
+                            innovation safeguarded their usefulness to hedgers 
+                            and opened the door for new types of contracts in 
+                            which a delivery option would be impossible or prohibitively 
+                            expensive. The cash-delivery feature also helped fuel 
+                            the creation of stock index futures. First came the 
+                            Kansas City Board of Trade's launch of the Value Line 
+                            Index in 1982, then the same year the CME launched 
+                            the Standard &amp; Poor's 500 Index contract and the 
+                            New York Financial Exchange (now part of the New York 
+                            Board of Trade) launched the NYSE Index contract.</font></p>
+                          <p><font size="+1">In the 1990s, more financial futures 
+                            products came to the marketplace, and the advent of 
+                            electronic trading caused a further explosion in their 
+                            popularity. Mini-sized, all-electronic versions of 
+                            stock index futures contracts charged onto the scene 
+                            in the late 1990s and were quickly embraced. Today, 
+                            volume in the E-mini S&amp;P 500 Index futures contract 
+                            at the Chicago Mercantile Exchange often tops a million 
+                            contracts per day, surpassing the larger and older 
+                            benchmark S&amp;P 500 futures contract that spawned 
+                            it. Exchanges continue to launch new financial futures 
+                            products to meet ever-changing investor needs. </font></p>
+                          <p><font size="+1">Among the newest innovations in financial 
+                            futures are single-stock futures, launched in 2002, 
+                            VIX futures, launched in 2004, and event futures, 
+                            which are based on specific economic releases or events. 
+                            The CME launched one such event futures product, CPI 
+                            futures, in 2004. They are based on the market's expectation 
+                            for future inflation based on the popular consumer 
+                            price index indicator. </font></p>
+                          <p><font size="+1">What Contracts Can I Trade?</font></p>
+                          <p><font size="+1">A wide variety of financial futures 
+                            markets are available to trade around the world, and 
+                            new contracts are continually being introduced while 
+                            others retired. </font></p>
+                          <p><font size="+1">A list of U.S. exchanges that offer 
+                            trading in financial futures and their corresponding 
+                            contract listings is shown here, although not exhaustive. 
+                            </font></p>
+                          <p><font size="+1">Some of these futures markets have 
+                            limited liquidity and therefore can be more challenging 
+                            to trade. Therefore, it is recommended you contact 
+                            your broker and learn more before deciding to trade 
+                            these markets. Click on each exchange's link below 
+                            for more details on contract specifications.</font></p>
+                          <p>&nbsp; </p>
+                          <p class=MsoNormal style='margin-top:22.5pt;line-height:13.2pt;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:11.5pt;font-family:Arial;color:#3D5B7B;
+letter-spacing:-.35pt'>Major Contracts Available With Links to </span></b><st1:country-region><st1:place><b><span
+  lang=EN-US style='font-size:11.5pt;font-family:Arial;color:#3D5B7B;
+  letter-spacing:-.35pt'>U.S.</span></b></st1:place></st1:country-region><b><span
+lang=EN-US style='font-size:11.5pt;font-family:Arial;color:#3D5B7B;letter-spacing:
+-.35pt'> Exchanges<o:p></o:p></span></b></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="85%"
+ style='width:85.0%;mso-cellspacing:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0'>
+  <td colspan=2 valign=bottom style='background:#7D94AA;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><b><span lang=EN-US
+  style='font-family:Arial;color:white'>Stock Index Futures<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>DJIA<!--[if gte vml 1]><v:shape id="_x0000_i1026"
+   type="#_x0000_t75" alt="" style='width:9.75pt;height:6.75pt'>
+   <v:imagedata src="Financial%20Futures_files/image002.gif" o:href="http://www.lind-waldock.com/images/sm_p.gif"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=13 height=9
+  src="Financial%20Futures_files/image002.gif" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>DJIA<!--[if gte vml 1]><v:shape id="_x0000_i1027"
+   type="#_x0000_t75" alt="" style='width:9.75pt;height:6.75pt'>
+   <v:imagedata src="Financial%20Futures_files/image002.gif" o:href="http://www.lind-waldock.com/images/sm_p.gif"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=13 height=9
+  src="Financial%20Futures_files/image002.gif" v:shapes="_x0000_i1027"><![endif]>,
+  Mini-Sized<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Dow Jones<!--[if gte vml 1]><v:shape
+   id="_x0000_i1028" type="#_x0000_t75" alt="" style='width:9.75pt;height:6.75pt'>
+   <v:imagedata src="Financial%20Futures_files/image002.gif" o:href="http://www.lind-waldock.com/images/sm_p.gif"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=13 height=9
+  src="Financial%20Futures_files/image002.gif" v:shapes="_x0000_i1028"><![endif]>
+  Total Market Index (TMI)<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:#555555'>Nasdaq</span></span><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 100R<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>E-miniT <span class=SpellE>Nasdaq</span>
+  100R<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>E-miniT <span class=SpellE>Nasdaq</span>
+  CompositeR<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>NikkeiR 225<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>NYSE CompositeR<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 1000R<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 1000R<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 1000R Growth<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 1000R Value<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 1000R Index<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.eurexus.com/"
+  target="_blank"><span class=SpellE>Eurex</span> US</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 2000R<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 2000R<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 2000R Index<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.eurexus.com/"
+  target="_blank"><span class=SpellE>Eurex</span> US</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russell 3000R<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>E-miniT Russell 2000R<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>S&amp;P <span class=SpellE>MidCap</span>
+  400T<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>E-miniT S&amp;P MidCap400T<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>S&amp;P <span class=SpellE>SmallCap</span>
+  600T<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>S&amp;P 500R<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>E-miniT S&amp;P 500R<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>S&amp;P 500R/Barra Growth<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>S&amp;P 500R/Barra Value<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>SPCTRR Futures<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>S&amp;P/<span class=SpellE>Topix</span>
+  150T<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Value LineR<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.kcbot.com/"
+  target="_blank">KCBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:29;height:7.5pt'>
+  <td colspan=2 style='padding:0cm 0cm 0cm 0cm;height:7.5pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:#555555'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:30'>
+  <td colspan=2 valign=bottom style='background:#7D94AA;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><b><span lang=EN-US
+  style='font-family:Arial;color:white'>Single-Stock Futures<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:31'>
+  <td colspan=2 style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:#555555'>OneChicago</span></span><span
+  lang=EN-US style='font-family:Arial;color:#555555'> LLC offers more than 130
+  different security futures contracts, including single-stock futures, futures
+  on the DIAMONDSR Trust, and futures on the Dow Jones <span class=SpellE>Microsector</span>
+  IndexesT. Check their Web site at <a href="http://www.onechicago.com"
+  target="_blank"><span style='text-decoration:none;text-underline:none'>www.OneChicago.com</span></a>
+  for a full listing.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:32;height:7.5pt'>
+  <td colspan=2 style='padding:0cm 0cm 0cm 0cm;height:7.5pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:#555555'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:33'>
+  <td colspan=2 valign=bottom style='background:#7D94AA;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><b><span lang=EN-US
+  style='font-family:Arial;color:white'>Interest Rate Futures<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:34'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Agency Notes, 5-Year<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:35'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Agency Notes, 10-Year<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:36'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Bob1<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:37'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Bund<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:38'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Eurodollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:39'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Eurodollar FRA<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:40'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Eurodollar, Mini-Sized<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:41'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:#555555'>Euroyen</span></span><span
+  lang=EN-US style='font-family:Arial;color:#555555'><o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:42'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:#555555'>Japenese</span></span><span
+  lang=EN-US style='font-family:Arial;color:#555555'> Government Bonds<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:43'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Libor<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:44'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:#555555'>Muni</span></span><span
+  lang=EN-US style='font-family:Arial;color:#555555'> Bond<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:45'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Municipal Note Index, 10-year<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:46'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Schatz<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:47'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swap, 10-year<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:48'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swap, 10-year<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:49'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swap, 5-year<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:50'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swap, 5-year<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:51'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swap, 2-year<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:52'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Turn Rate Futures<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:53'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>13-week T-bills<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:54'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>28-day TIIE<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:55'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>91-day CETES<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:56'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>30-day Federal Funds<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:57'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 30-year Treasury Bond<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:58'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 30-year Treasury Bond<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.eurexus.com/"
+  target="_blank"><span class=SpellE>Eurex</span> US</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:59'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 30-year Treasury Bond,
+  Mini-Sized<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:60'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 10-year Treasury Note<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:61'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 10-year Treasury Note<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.eurexus.com/"
+  target="_blank"><span class=SpellE>Eurex</span> US</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:62'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 10-year Treasury Note,
+  Mini-Sized<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:63'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 5-year Treasury Note<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:64'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 5-year Treasury Note<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.eurexus.com/"
+  target="_blank"><span class=SpellE>Eurex</span> US</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:65'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 5-year Treasury Note<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cbot.com/"
+  target="_blank">CBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:66'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>U.S.</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> 5-year Treasury Note<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.eurexus.com/"
+  target="_blank"><span class=SpellE>Eurex</span> US</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:67;height:7.5pt'>
+  <td colspan=2 style='padding:0cm 0cm 0cm 0cm;height:7.5pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:#555555'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:68'>
+  <td colspan=2 valign=bottom style='background:#7D94AA;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><b><span lang=EN-US
+  style='font-family:Arial;color:white'>Currency Futures<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:69'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:70'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Brazilian Real<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:71'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>British Pound<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:72'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Canadian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:73'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:#555555'>CME$Index</span></span><span
+  lang=EN-US style='font-family:Arial;color:#555555'><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:74'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Czech Koruna<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:75'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>E-mini Euro FX<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:76'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>E-mini Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:77'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:78'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Hungarian Forint<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:79'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:80'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Mexican Peso<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:81'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>New Zealand</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:82'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Norwegian <span class=SpellE>Krone</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:83'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Polish Zloty<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:84'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Russian Ruble<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:85'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>South African </span><st1:place><span
+   lang=EN-US style='font-family:Arial;color:#555555'>Rand</span></st1:place><span
+  lang=EN-US style='font-family:Arial;color:#555555'><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:86'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swedish <span class=SpellE>Krona</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:87'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swiss Franc<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:88'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar Index<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:89;height:7.5pt'>
+  <td colspan=2 style='padding:0cm 0cm 0cm 0cm;height:7.5pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:#555555'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:90'>
+  <td colspan=2 valign=bottom style='background:#7D94AA;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><b><span lang=EN-US
+  style='font-family:Arial;color:white'>Currency Crosses<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:91'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Large Euro/U.S. Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:92'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/U.S. Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:93'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:94'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Small U.S. Dollar/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:95'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/Canadian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:96'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Small U.S. Dollar/Canadian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:97'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/Swiss Franc<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:98'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Small U.S. Dollar/Swiss Franc<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:99'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/South African </span><st1:place><span
+   lang=EN-US style='font-family:Arial;color:#555555'>Rand</span></st1:place><span
+  lang=EN-US style='font-family:Arial;color:#555555'><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:100'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/Norwegian <span
+  class=SpellE>Krone</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:101'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/Swiss <span class=SpellE>Krona</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:102'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/Hungarian Forint<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:103'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>U.S. Dollar/Czech Koruna<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:104'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>British Pound/U.S. Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:105'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Small British Pound/U.S. Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:106'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar/U.S. Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:107'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><st1:country-region><st1:place><span
+    lang=EN-US style='font-family:Arial;color:#555555'>New Zealand</span></st1:place></st1:country-region><span
+  lang=EN-US style='font-family:Arial;color:#555555'> Dollar/U.S. Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:108'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:109'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Swedish <span class=SpellE>Krona</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:110'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Swiss Franc<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:111'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/British Pound<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:112'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Norwegian <span class=SpellE>Krone</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:113'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Canadian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:114'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Australian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:115'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Hungarian Forint<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:116'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro/Czech Koruna<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:117'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar/New </span><st1:place><span
+   lang=EN-US style='font-family:Arial;color:#555555'>Zealand</span></st1:place><span
+  lang=EN-US style='font-family:Arial;color:#555555'> Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:118'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:119'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar/Canadian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:120'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:#555555'>Britizh</span></span><span
+  lang=EN-US style='font-family:Arial;color:#555555'> Pound/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:121'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Canadian Dollar/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:122'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swiss Franc/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:123'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Norwegian <span class=SpellE>Krone</span>/Swedish
+  <span class=SpellE>Krona</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.nybot.com/"
+  target="_blank">NYBOT</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:124;height:7.5pt'>
+  <td colspan=2 style='padding:0cm 0cm 0cm 0cm;height:7.5pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:#555555'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:125;height:12.0pt'>
+  <td colspan=2 valign=bottom style='background:#7D94AA;padding:3.75pt 3.75pt 3.75pt 3.75pt;
+  height:12.0pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><b><span lang=EN-US
+  style='font-family:Arial;color:white'>Currency Crosses<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:126'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Australian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:127'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/British Pound<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:128'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Canadian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:129'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Czech Koruna<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:130'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Hungarian Forint<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:131'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:132'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Norwegian <span class=SpellE>Krone</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:133'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Polish Zloty <o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:134'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Swedish <span class=SpellE>Krona</span><o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:135'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Euro FX/Swiss Franc<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:136'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar/Canadian Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:137'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar/New </span><st1:place><span
+   lang=EN-US style='font-family:Arial;color:#555555'>Zealand</span></st1:place><span
+  lang=EN-US style='font-family:Arial;color:#555555'> Dollar<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:138'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Australian Dollar/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:139'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>British Pound/Swiss Franc<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:140'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>British Pound/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:141'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Canadian Dollar/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:142'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Swiss Franc/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:143;height:7.5pt'>
+  <td colspan=2 style='padding:0cm 0cm 0cm 0cm;height:7.5pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:#555555'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:144'>
+  <td colspan=2 valign=bottom style='background:#7D94AA;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><b><span lang=EN-US
+  style='font-family:Arial;color:white'>Other<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:145'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Canadian Dollar/Japanese Yen<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:146'>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>Volatility Index (VIX)<o:p></o:p></span></p>
+  </td>
+  <td style='background:#DDDDDD;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a
+  href="http://www.cboe.com/cfe/index.asp" target="_blank">CBOE Futures
+  Exchange (CFE)</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:147;mso-yfti-lastrow:yes'>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'>CPI Futures<o:p></o:p></span></p>
+  </td>
+  <td style='background:whitesmoke;padding:3.75pt 0cm 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  11.25pt;margin-left:0cm;line-height:12.75pt'><span lang=EN-US
+  style='font-family:Arial;color:#555555'><a href="http://www.cme.com/"
+  target="_blank">CME</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+                                                
+                      </td>
+                    </tr>
+                  </table>
+                  <p>&nbsp;</p>
+                </center>
+              </div></td>
+          </tr>
+        </table></TD>
+      <TD width="3" height="451" background="images/line2.gif"> <IMG SRC="images/line2.gif" width=3 height=238 ALT=""></TD>
+      <TD valign="top" height="451" width="306"> 
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td valign="top" width="100%"> </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td width="100%" rowspan="3" valign="top">
+              
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%" height="41"></td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%">&nbsp;</td>
+            <td width="100%" valign="top"></td>
+          </tr>
+        </table>
+      </TD>
+      <TD width="2" height="451" background="images/line3.gif"> <IMG SRC="images/line3.gif" width=2 height=238 ALT=""></TD>
+      <TD width="166" align="center" valign="top" bgcolor="F8FBFE"> 
+        <div align="left">
+          <table width="100%" border="0">
+            <tr> 
+              <td align="center"><div align="left"><strong></strong></div></td>
+            </tr>
+          </table>
+        </div>
+        
+      </TD>
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" bgcolor="#E6F1FE">&nbsp; </TD>
+      <TD COLSPAN=5 bgcolor="#E6F1FE" height="1"> <table width="119%" border="0" cellspacing="0" cellpadding="0" height="24">
+          <tr> 
+            <td width="81%" height="24"> <div align="center"> 
+                <center>
+                  <table width="315" border="0" cellspacing="2" cellpadding="2">
+                    <tr> 
+                      <td width="305"> <p align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#003366">©2019                              
+                          ADFC&nbsp;</font></p></td>                             
+                    </tr>
+                  </table>
+                </center>
+              </div></td>
+            <td width="19%" height="24"> <div align="right"></div></td>                      
+          </tr>
+        </table></TD>
+      <TD width="166"></TD>
+    </TR>
+    <TR> 
+      <TD COLSPAN=7 height="1"> </TD>
+      <TD width="166"></TD>
+    </TR>
+  </TABLE>
+</div>
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)">
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,107 @@
+  
+
+    .morehl {
+
+        font-family: Arial, geneva, sans-serif !important;
+
+        font-size: 11px !important;
+
+        color: #000000 !important;
+
+        font-weight: bold !important;
+
+        font-style: normal !important;
+
+        text-decoration: underline !important;
+
+    }   
+
+    
+
+    A:link.morehl, A:vlink.morehl, A:alink.morehl {
+
+        color: #000000 !important;
+
+    }
+
+    
+
+    .moresrc {
+
+        font-family: Arial, geneva, sans-serif !important;
+
+        font-size: 9px !important;
+
+        color: #CC0000 !important;
+
+        font-weight: normal !important;
+
+        font-style: normal !important;
+
+        text-decoration: none !important;
+
+    }
+
+    
+
+    A:link.moresrc, A:vlink.moresrc, A:alink.moresrc {
+
+        color: #CC0000 !important;
+
+    }
+
+    
+
+    .moreti {
+
+        font-family: Arial, geneva, sans-serif;
+
+        font-size: 9px;
+
+        color: #CC0000;
+
+        font-weight: normal;
+
+        font-style: normal;
+
+        text-decoration: none;
+
+    }
+
+    
+
+    .morehlt {
+
+        font-family: Arial, geneva, sans-serif;
+
+        font-size: 11px;
+
+        color: #000000 !important;
+
+        font-weight: bold;
+
+        font-style: normal;
+
+        text-decoration: none;
+
+    }   
+
+
+body    {
+
+         SCROLLBAR-FACE-COLOR:#B7C7FF;
+
+         SCROLLBAR-HIGHLIGHT-COLOR:#000000;
+
+         SCROLLBAR-SHADOW-COLOR:#000000;
+
+         SCROLLBAR-3DLIGHT-COLOR:#ffffff;
+
+         SCROLLBAR-ARROW-COLOR:#000000;
+
+         SCROLLBAR-TRACK-COLOR:#dddddd;
+
+         SCROLLBAR-DARKSHADOW-COLOR:#dddddd;
+
+         }
+

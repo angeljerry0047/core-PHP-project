@@ -1,0 +1,19 @@
+HI , PLEASE FIND DETAILS BELOW https://drive.google.com/open?id=1i3pJc8j4cB3PlLjvJ08iXuucTCfu1bIL
+This is a link shows u the mecanism of the site , i would like to know if u can handle it
+these are the things that i want to do, maybe 1 or 2 small issues are missed will remeber later
+The previous developer left errors, so now some pages and the admin page show error when click on it, need to be fixed.
+I want to change the font of the site. fix the size of logo on all pages.
+i have the research page that I want to update it always, i need to be able to post text,images and links and can control where i can put text and where i can put images , i can manipulate the layout of the text,images and links
+the research page which is a protected page accessed by id and psw, i need to be able to update it from the admin page.
+fix all errors so that site will work smoothly , in harmony and fast.
+Errors also including the menu in some sub- pages, now some pages when click on them the menu become smaller
+same for the logo, some page logo looks good and others looks smaller
+
+i need to remove some pages and add risk disclosure and one page to my app with link to google play
+i need to be able to change the admin password, currently the pasw of the admin is including in the code.
+For the advisory page, I want to fix the time stamp to reflect the current server time , now it shows different time and also I want to make sender ADFC .
+Make sure that all emails send from the system are working and changed to the new domain name.
+I WANT TO KNOW IF YOU CAN HANDLE IT
+
+
+https://ad-fc.net/testadfc/

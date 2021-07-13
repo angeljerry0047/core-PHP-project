@@ -1,0 +1,1401 @@
+<HTML>
+<HEAD>
+<TITLE>Options Strategies</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<STYLE TYPE="TEXT/CSS">
+<!--
+
+A { text-decoration: none }
+
+
+A {color:#003366; font-family: Helvetica, Arial; font-size: 12px; text-decoration: none;}
+A:hover {color:#FF6600; font-family: Helvetica, Arial; font-size: 12px; text-decoration: underline;}
+
+td {font-family: Helvetica, Arial; font-size: 11px;}
+.linkcell { padding-left: 10px; font-family: Helvetica, Arial; font-size: 10px;}
+hr {  color: #000000}
+
+//.unnamed1 {  font-family: Arial, Helvetica, sans-serif; font-size: small}
+-->
+
+
+</STYLE>
+<script language="JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function checkAll(myForm)
+{
+   if (myForm==1)
+       setTimeout("myClear(1)",5000); 
+   if (myForm==2)
+       setTimeout("myClear(2)",5000); 
+   if (myForm==3)
+       setTimeout("myClear(3)",5000); 
+   return true;
+}
+
+function myClear(myForm)
+{
+   if (myForm==1)
+   {
+      document.myRedirect.acct.value='';
+   }
+   if (myForm==2)
+   {
+      document.formLOGON.userid.value='';document.formLOGON.password.value='';   
+   }
+   if (myForm==3)
+   {
+      document.LOGON.client_id.value='';document.LOGON.password.value='';
+   }
+   return true;
+}
+//-->
+</script>
+<script language="JavaScript">
+document.oncontextmenu = function(){return false}
+if(document.layers) {
+    window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = function(e){
+        if(e.target==document)return false;
+    }
+}
+else {
+    document.onmousedown = function(){return false}
+}
+
+document.onmouseup = document.selection.empty;
+
+
+function change(){
+document.getElementById('cal').src="http://www.thectr.com/2004/multi.php?req="+document.form1.information.value;
+window.status="Finance";
+}
+
+</script>
+<style>
+<!--
+
+.menuskin{
+position:absolute;
+width:230px;
+background-color:FFFFFF;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+visibility:hidden;
+}
+
+.menuskin a{
+text-decoration:none;
+color:black;
+padding-left:5px;
+padding-right:5px;
+}
+
+#mouseoverstyle{
+background-color:014684;
+}
+
+#mouseoverstyle a{
+color:white;
+}
+-->
+</style>
+
+<script language="JavaScript1.2">
+
+//Pop-it menu- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var linkset=new Array()
+//SPECIFY MENU SETS AND THEIR LINKS. FOLLOW SYNTAX LAID OUT
+
+/*linkset[0]='<div class="menuitems"><a href="calendar.php">Calendar</a></div>';
+linkset[0]+='<div class="menuitems"><a href="margin.php">Margin</a></div>';
+linkset[0]+='<div class="menuitems"><a href="fin_news.php">Financial News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_news.php">Futures News</a></div>';
+linkset[0]+='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="usda.php">USDA Reports</a></div>';
+linkset[0]+='<div class="menuitems"><a href="futures_charts.php">Futures Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+linkset[0]+='<div class="menuitems"><a href="open.php">Opening Call</a></div>';*/
+
+linkset[0]='<div class="menuitems"><a href="cftccotreports.php">Commitments of traders report</a></div>';
+linkset[0]+='<div class="menuitems"><a href="forex_charts.php">Forex Charts</a></div>';
+
+linkset[1]='<div class="menuitems"><a href="afcs.html">Active Futures Contrcats Specifications</a></div>';
+linkset[1]+='<div class="menuitems"><a href="fnltd.html">First Notice and Last Trading Day</a></div>';
+linkset[1]+='<div class="menuitems"><a href="uf.html">Understandind futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="os.html">Options Strategies</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ot.html">Order Types</a></div>';
+linkset[1]+='<div class="menuitems"><a href="oae.html">Orders Accepted by exchanges</a></div>';
+linkset[1]+='<div class="menuitems"><a href="ff.html">Financial Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cf.html">Commodities Futures</a></div>';
+linkset[1]+='<div class="menuitems"><a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/analysis_publications/oil_market_basics/default.htm" target="_blank">Oil Market Basics</a></div>';
+linkset[1]+='<div class="menuitems"><a href="indices.php">US Economic indices</a></div>';
+linkset[1]+='<div class="menuitems"><a href="principles.php">Elliott Waves Principles</a></div>';
+linkset[1]+='<div class="menuitems"><a href="cfg.html">Commodity Futures Glossary</a></div>';
+
+
+////No need to edit beyond here
+
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var ns6=document.getElementById&&!document.all
+var ns4=document.layers
+
+function showmenu(e,which){
+
+if (!document.all&&!document.getElementById&&!document.layers)
+return
+
+clearhidemenu()
+
+menuobj=ie4? document.all.popmenu : ns6? document.getElementById("popmenu") : ns4? document.popmenu : ""
+menuobj.thestyle=(ie4||ns6)? menuobj.style : menuobj
+
+if (ie4||ns6)
+menuobj.innerHTML=which
+else{
+menuobj.document.write('<layer name=gui bgColor=#E6E6E6 width=165 onmouseover="clearhidemenu()" onmouseout="hidemenu()">'+which+'</layer>')
+menuobj.document.close()
+}
+
+menuobj.contentwidth=(ie4||ns6)? menuobj.offsetWidth : menuobj.document.gui.document.width
+menuobj.contentheight=(ie4||ns6)? menuobj.offsetHeight : menuobj.document.gui.document.height
+eventX=ie4? event.clientX : ns6? e.clientX : e.x
+eventY=ie4? event.clientY : ns6? e.clientY : e.y
+
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie4? document.body.clientWidth-eventX : window.innerWidth-eventX
+var bottomedge=ie4? document.body.clientHeight-eventY : window.innerHeight-eventY
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<menuobj.contentwidth)
+//move the horizontal position of the menu to the left by it's width
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX-menuobj.contentwidth : ns6? window.pageXOffset+eventX-menuobj.contentwidth : eventX-menuobj.contentwidth
+else
+//position the horizontal position of the menu where the mouse was clicked
+menuobj.thestyle.left=ie4? document.body.scrollLeft+eventX : ns6? window.pageXOffset+eventX : eventX
+
+//same concept with the vertical position
+if (bottomedge<menuobj.contentheight)
+menuobj.thestyle.top=ie4? document.body.scrollTop+eventY-menuobj.contentheight : ns6? window.pageYOffset+eventY-menuobj.contentheight : eventY-menuobj.contentheight
+else
+menuobj.thestyle.top=ie4? document.body.scrollTop+event.clientY : ns6? window.pageYOffset+eventY : eventY
+menuobj.thestyle.visibility="visible"
+return false
+}
+
+function contains_ns6(a, b) {
+//Determines if 1 element in contained in another- by Brainjar.com
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function hidemenu(){
+if (window.menuobj)
+menuobj.thestyle.visibility=(ie4||ns6)? "hidden" : "hide"
+}
+
+function dynamichide(e){
+if (ie4&&!menuobj.contains(e.toElement))
+hidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+hidemenu()
+}
+
+function delayhidemenu(){
+if (ie4||ns6||ns4)
+delayhide=setTimeout("hidemenu()",500)
+}
+
+function clearhidemenu(){
+if (window.delayhide)
+clearTimeout(delayhide)
+}
+
+function highlightmenu(e,state){
+if (document.all)
+source_el=event.srcElement
+else if (document.getElementById)
+source_el=e.target
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+else{
+while(source_el.id!="popmenu"){
+source_el=document.getElementById? source_el.parentNode : source_el.parentElement
+if (source_el.className=="menuitems"){
+source_el.id=(state=="on")? "mouseoverstyle" : ""
+}
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=hidemenu
+
+</script>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;
+    mso-font-charset:2;
+    mso-generic-font-family:auto;
+    mso-font-pitch:variable;
+    mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+    {font-family:Verdana;
+    panose-1:2 11 6 4 3 5 4 4 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-parent:"";
+    margin:0cm;
+    margin-bottom:.0001pt;
+    line-height:normal;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman";
+    mso-fareast-font-family:"Times New Roman";
+    color:windowtext;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+h3
+    {mso-margin-top-alt:auto;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    margin-bottom:.0001pt;
+    line-height:normal;
+    mso-pagination:widow-orphan;
+    mso-outline-level:3;
+    font-size:10.5pt;
+    font-family:Arial;
+    color:#333399;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;
+    font-weight:bold;}
+p
+    {mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    line-height:130%;
+    mso-pagination:widow-orphan;
+    font-size:9.0pt;
+    font-family:Arial;
+    mso-fareast-font-family:"Times New Roman";
+    color:black;
+    mso-ansi-language:EN-US;
+    mso-fareast-language:EN-US;}
+span.text12b-blue1
+    {mso-style-name:text12b-blue1;
+    mso-ansi-font-size:10.0pt;
+    mso-bidi-font-size:10.0pt;
+    font-family:Arial;
+    mso-ascii-font-family:Arial;
+    mso-hansi-font-family:Arial;
+    mso-bidi-font-family:Arial;
+    color:#333399;
+    font-weight:bold;}
+span.text121
+    {mso-style-name:text121;
+    mso-ansi-font-size:10.0pt;
+    mso-bidi-font-size:10.0pt;
+    font-family:Arial;
+    mso-ascii-font-family:Arial;
+    mso-hansi-font-family:Arial;
+    mso-bidi-font-family:Arial;}
+span.SpellE
+    {mso-style-name:"";
+    mso-spl-e:yes;}
+@page Section1
+    {size:612.0pt 792.0pt;
+    margin:72.0pt 90.0pt 72.0pt 90.0pt;
+    mso-header-margin:36.0pt;
+    mso-footer-margin:36.0pt;
+    mso-paper-source:0;}
+div.Section1
+    {page:Section1;}
+ /* List Definitions */
+ @list l0
+    {mso-list-id:265624924;
+    mso-list-template-ids:-164608600;}
+@list l0:level1
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0B7;
+    mso-level-tab-stop:36.0pt;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    mso-ansi-font-size:10.0pt;
+    font-family:Symbol;}
+ol
+    {margin-bottom:0cm;}
+ul
+    {margin-bottom:0cm;}
+-->
+</style>
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<div align="left">
+  <TABLE WIDTH=985 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR> 
+      <TD COLSPAN=8 height="23" width="972"> <IMG SRC="images/top_bar.gif" WIDTH=100% HEIGHT=23 ALT=""></TD>
+    </TR>
+    <!--<TR> 
+      <TD width="1" ROWSPAN=3 valign="top" height="464"> <p align="right"> </TD>
+      <TD width="153" valign="middle" height="183"> <p align="center"><img src="images/adf.jpg" width="145" height="90"> 
+      </TD>
+      <TD COLSPAN=5 height="183"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="662" height="177">
+          <param name="movie" value="images/movie2.swf">
+          <param name="quality" value="high">
+          <embed src="images/movie2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="662" height="177"></embed></object></TD>
+      <TD valign="middle" height="183">&nbsp; </TD>
+    </TR>-->
+    <TR> 
+      <TD width="1" ROWSPAN=3 valign="top"> <p align="right"> </TD>
+      <TD width="145" valign="middle"> 
+        <p align="center"><img src="images/adfc-white.png" width="150" height="215"> 
+      </TD>
+      <TD COLSPAN=5 height="177" width="100%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="662" height="177">
+          <img src="images/adfc-banner.jpg" width="100%" />
+      </TD>
+   <!--   <TD width="178" valign="middle"> <img src="images/adfc-white.png" width="" height="90"></TD> -->
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" BGCOLOR=#FFFFFF> 
+        <div align="right"> 
+          <table width="153" border="0" cellpadding="0" height="140" cellspacing="0">
+            
+            <tr> 
+              <td valign="middle" background="images/cell_bg_home.gif" width="177" height="16"> 
+                <div align="right">
+                  <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                  <a href="index.html"><font color="#FFFFFF">Home</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_about.gif" width="143" height="16"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="about.html"><font color="#FFFFFF">About ADFC</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_clients.gif" width="143" height="17"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                  </font><a href="#" onMouseover="showmenu(event,linkset[0])" onMouseout="delayhidemenu()"><font color="#FFFFFF">Clients Area</font></a></div></td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="research.php"><font color="#FFFFFF">Research</font></a></div></td>
+            </tr>
+<tr> 
+              <td valign="middle" background="images/cell_bg_research.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="trading.html"><font color="#FFFFFF">Trading</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_resources.gif" width="143" height="14"> 
+                <div align="right">
+                  <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    </font><a href="#" onMouseover="showmenu(event,linkset[1])" onMouseout="delayhidemenu()"><font color="#fff">Resources</font></a></div></td>
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_contact.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
+                </font><a href="contact.html"><font color="#FFFFFF">Contact Us</font></a> </td>           
+            </tr>
+            <tr> 
+              <td valign="middle" background="images/cell_bg_links.gif" width="143" height="17"> 
+                <p align="left"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                  </font><a href="links.html"><font color="#FFFFFF">Links   
+                  </font></a> </td>
+            </tr>
+          </table>
+          <br>
+          <p align="left">&nbsp;</p>
+        </div></TD>
+      <!--<TD width="2" height="451" background="images/line1.gif"> <IMG SRC="images/line1.gif" width=2 height=238 ALT=""></TD>-->
+      <TD valign="top" height="451" bgcolor="F8FBFE" width="352"> 
+        <table width="100%" border="0" cellspacing="2" cellpadding="2" height="65">
+          <tr> 
+            <td width="" valign="top"> <div align="right"> </div>
+              <div align="center"> 
+                <center>
+                  <table border="0" cellpadding="0" cellspacing="0" >
+                    <tr> 
+                      <td >
+
+
+<div class=Section1>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+line-height:120%;mso-outline-level:3'><b><span lang=EN-US style='font-size:
+16.0pt;line-height:120%;font-family:Arial;color:#333399'><span
+style='mso-spacerun:yes'></span>Option Strategies<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+line-height:120%;mso-outline-level:3'><b><span lang=EN-US style='font-size:
+10.5pt;line-height:120%;font-family:Arial;color:#333399'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+line-height:120%;mso-outline-level:3'><b><span lang=EN-US style='font-size:
+10.5pt;line-height:120%;font-family:Arial;color:#333399'>Bullish Market
+Strategies<o:p></o:p></span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 
+ style='width:100%'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Option Strategy<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Description<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Reason to use<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>When to use<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy a call<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Strongest bullish option position.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Loss limited to premium.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Undervalued option with volatility
+  increasing.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Sell a put<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Neutral bullish option position.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Collect premium.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Large credit bullish market. High or
+  increasing volatility.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Vertical Bull Calls<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy call, sell call of higher strike
+  price.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Loss limited to net debt.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Small debit, bullish market.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Vertical Bull Puts<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy put, sell put of higher strike
+  price.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Loss limited to price difference minus
+  credit.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Large credit, bullish market.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+line-height:120%;mso-outline-level:3'><b><span lang=EN-US style='font-size:
+10.5pt;line-height:120%;font-family:Arial;color:#333399'><br>
+Bearish Market Strategies<o:p></o:p></span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=100%'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Option Strategy<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Description<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Reason to use<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>When to use<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy a put<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Strongest bearish option position.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Loss limited to premium.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Undervalued option with volatility
+  increasing.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Sell a call<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Neutral bearish option position.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Collect premium.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Option overvalued, market flat,
+  bearish.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Vertical Bear Puts<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy at the money put, sell out of the
+  money put.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Loss limited to debit.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Small debit, bearish market.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Vertical Bear Calls<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Sell call, buy call of higher strike
+  price.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Loss limited to strike price <span
+  class=SpellE>differnce</span> <span class=SpellE>minu</span> credit.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Large credit, bearish market.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+line-height:120%;mso-outline-level:3'><b><span lang=EN-US style='font-size:
+10.5pt;line-height:120%;font-family:Arial;color:#333399'><br>
+Neutral Market Strategies<o:p></o:p></span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=100%'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=87 style='width:65.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Option <br>
+  Strategy<o:p></o:p></span></b></p>
+  </td>
+  <td width=139 style='width:104.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Description<o:p></o:p></span></b></p>
+  </td>
+  <td width=132 style='width:99.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Reason to use<o:p></o:p></span></b></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>When to use<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=87 style='width:65.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Strangle<o:p></o:p></span></p>
+  </td>
+  <td width=139 style='width:104.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Sell out <span class=SpellE>fo</span>
+  the money put and call.<o:p></o:p></span></p>
+  </td>
+  <td width=132 style='width:99.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Maximum use of time value decay.<o:p></o:p></span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Trading range market w/ volatility
+  peaking.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=87 style='width:65.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Butterfly<o:p></o:p></span></p>
+  </td>
+  <td width=139 style='width:104.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy at the money call (put), sell 2 out
+  of the money calls (puts), and buy farther out of the money call (put).<o:p></o:p></span></p>
+  </td>
+  <td width=132 style='width:99.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Profit certain if done at credit.<o:p></o:p></span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Any time credit received.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=87 style='width:65.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span class=SpellE><span
+  lang=EN-US style='font-family:Arial;color:black'>Calender</span></span><span
+  lang=EN-US style='font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=139 style='width:104.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Sell near month, buy far month, same
+  strike price.<o:p></o:p></span></p>
+  </td>
+  <td width=132 style='width:99.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Near month time value decays faster.<o:p></o:p></span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Small debit, trading range market.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=87 style='width:65.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Box<o:p></o:p></span></p>
+  </td>
+  <td width=139 style='width:104.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Sell calls and puts same strike price.<o:p></o:p></span></p>
+  </td>
+  <td width=132 style='width:99.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Profit certain if done at credit.<o:p></o:p></span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Any time credit received.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=87 style='width:65.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Ratio<o:p></o:p></span></p>
+  </td>
+  <td width=139 style='width:104.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy call, sell calls of higher strike
+  price.<o:p></o:p></span></p>
+  </td>
+  <td width=132 style='width:99.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Neutral, slightly bullish.<o:p></o:p></span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Large credit and difference between
+  strike prices of options bought and sold.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td width=87 style='width:65.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Conversion<o:p></o:p></span></p>
+  </td>
+  <td width=139 style='width:104.25pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy futures, buy at the money put and
+  sell out of the money call.<o:p></o:p></span></p>
+  </td>
+  <td width=132 style='width:99.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Profit certain if done at credit.<o:p></o:p></span></p>
+  </td>
+  <td width=128 style='width:96.0pt;border:inset #CCCCCC 1.0pt;mso-border-alt:
+  inset #CCCCCC .75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Any time credit received.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:12.0pt;
+line-height:120%;mso-outline-level:3'><b><span lang=EN-US style='font-size:
+10.5pt;line-height:120%;font-family:Arial;color:#333399'><br>
+Special Market Situations<o:p></o:p></span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=100%'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Option Strategy<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Description<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>Reason to use<o:p></o:p></span></b></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  background:#333399;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:110%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:110%;font-family:Arial;
+  color:white'>When to use<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Straddle <span class=SpellE>Purshase</span><o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy put and call at or near the money.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>One option will go in the money.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Options under-valued and market likely
+  to make a big move. <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Covered call<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy future, sell call.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Collect premium on calls sold.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Neutral, slightly bullish.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Covered puts<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Sell future, sell put.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Collect premium on <span class=SpellE>uts</span>
+  sold.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Neutral, slightly bearish.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Synthetic futures position.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Buy call (put), sell put (call).<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>Neutral, slightly trending market.<o:p></o:p></span></p>
+  </td>
+  <td style='border:inset #CCCCCC 1.0pt;mso-border-alt:inset #CCCCCC .75pt;
+  padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='line-height:110%'><span lang=EN-US
+  style='font-family:Arial;color:black'>When the net positions is better than
+  futures.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'><br>
+<a name=selling-options></a>Option Selling or &quot;Writing&quot;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>Many traders opt to buy options in an effort to
+maximize gains and limit losses to the purchase price of the option. On the
+surface this seems ideal, except for one major flaw: time decay. The Chicago
+Mercantile Exchange estimates that over 80% of all options expire worthless.
+Those who sell these options to the buyers are known as option writers or sellers.
+Their objective is to collect the premium paid by the option buyer. Option
+writing can also be used for hedging purposes and reducing risk. The writer has
+unlimited risk and a limited profit potential: the premium of the option minus
+commissions. In appropriate situations you should consider selling
+out-of-the-money options instead of buying them. Here are some reasons why: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'>Benefits of Option Selling<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;margin-bottom:
+     12.0pt;line-height:130%;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='font-family:Arial;color:#333399'>Time Value:</span></b><span
+     lang=EN-US style='font-family:Arial'> When selling out-of-the-money
+     options, time value works for you instead of against you. The buyer of the
+     option pays you a premium for that option. The longer the buyer holds the
+     option, the more time decay works against him, especially as the option
+     nears expiration. As time passes, the option will lose 100% of its time
+     value.<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;margin-bottom:
+     12.0pt;line-height:130%;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='font-family:Arial;color:#333399'>Overvaluation: </span></b><span
+     lang=EN-US style='font-family:Arial'>Besides time decay, another reason we
+     have found option selling so attractive is that small traders most often
+     purchase options. Historically, small traders, as opposed to the large
+     commercial or fund traders, are almost always on the losing side of the
+     trade. Statistics bear out that the small trader tends to buy options,
+     especially call options. Often these options get bid up at exaggerated,
+     overbought prices and when the rally ends the option buyer is often left
+     holding a deteriorating asset which was gladly sold to him or her by the
+     professional trader. <o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;line-height:130%;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='font-family:Arial;color:#333399'>Three Ways To Win:</span></b><span
+     lang=EN-US style='font-family:Arial'> There are three ways to win as an
+     option writer: The market can move in the opposite direction from the
+     option sold, it can trade sideways, or it can even go against you but not
+     through your strike price. The advantage is time decay.<br>
+     &nbsp;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;margin-bottom:
+     12.0pt;line-height:130%;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='font-family:Arial;color:#333399'>Taking Profits:</span></b><span
+     lang=EN-US style='font-family:Arial'> One of the hardest parts of futures
+     trading is deciding when to take profits. With option selling, if the
+     market behaves favorably towards your position, you won't need to make
+     this decision. As time value decays your option, the market will gradually
+     take profits for you. Upon expiration, if the option still has not reached
+     your strike price, the entire premium for which you sold the option will
+     be in your account. At this time, your position automatically closes out.<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;margin-bottom:
+     12.0pt;line-height:130%;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='font-family:Arial;color:#333399'>Less Stressful Trading:</span></b><span
+     lang=EN-US style='font-family:Arial'> Selling out-of -the money options
+     removes much of the stress and emotional decision-making that is common in
+     futures trading. Option selling usually places your position in the market
+     far enough away that short term swings in the market may not dramatically
+     affect your position. <o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;margin-bottom:
+     12.0pt;line-height:130%;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='font-family:Arial;color:#333399'>You Don't Have To
+     Predict Prices:</span></b><span lang=EN-US style='font-family:Arial'>
+     Instead of trying to predict where prices will go, you are projecting
+     where you think prices won't go. We have found that most of the time
+     prices tend to stay in a trading range. <o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;line-height:120%;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     lang=EN-US style='font-family:Arial;color:#333399'>Favorable Statistics:</span></b><span
+     lang=EN-US style='font-family:Arial'> The fair market value of an option
+     is a statistical value based on the volatility of the underlying asset and
+     is calculated to give the seller of the option approximately an 85% chance
+     of making consistent gains. This means that a buyer of an option has an
+     85% chance of experiencing consistent losses over the life of the option. <o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'>The Option Selling Strategy<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>As an option seller, you do not have to be
+concerned so much as to where the price will go, but more importantly where the
+price will not go. The objective is to select options with the highest
+probability of expiring worthless. Heritage West uses both fundamental and
+technical analysis to project the general direction of the underlying futures
+market on which options will be sold. Then, far out of the money options with
+1-1/2 to 4 months time remaining until expiration are selected for
+consideration. Strike prices are selected that could only be achieved through a
+dramatic change in the fundamentals of the market. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>This gives the market plenty of room to make
+short-term moves against your positions, thus avoiding the &quot;noise&quot;
+that forces futures traders to be stopped out of the market. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'>Time Value<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>An option's value is made up of intrinsic value
+and extrinsic, or time, value. The intrinsic value is how far the option is "in
+the money." For example, if July silver were at 5.50, the July silver 5.25 call
+option would have 25 cents of intrinsic value. The balance of the option's
+value would consist of time value - how much time remained until the option's
+expiration. If a trader sold a July silver 6.00 call option, that option would
+be 50 cents out of the money and therefore have no intrinsic value. The full
+value of the option would consist of solely time value. July silver would have
+to move a full 50 cents before the option would be in the money and have any
+intrinsic value at all. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>As a seller of options, you are selling time
+value. As long as July silver stays below 6.00, the option will have no
+intrinsic value. Its only value is time value; as time passes, the option's
+time value will erode, slowly at first, then accelerating towards the end. The
+movement in the futures market can temporarily affect the value of the option
+as well. A move higher can temporarily propel the value of the option higher,
+but it will still have no intrinsic value if the futures price is below 6.00.
+Futures prices moving lower will accelerate the deterioration of the option. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>In conclusion, if you are bearish silver and you
+sell a July 6.00 call, the market can move lower as you predicted, stay the
+same, or even move higher. As long as the price is below 6.00 at expiration,
+the option will have no intrinsic value and expire worthless, allowing you, the
+seller, to keep all premium collected as profit.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>The graph below illustrates an option's eroding
+time value. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="Options Time Value"
+ style='width:186.75pt;height:122.25pt'>
+ <v:imagedata src="Option%20Strategies_files/image001.gif" o:href="http://www.heritagewestfutures.com/img/inside/time-value.gif"/>
+</v:shape><![endif]--><![if !vml]><img width=249 height=163
+src="Option%20Strategies_files/image001.gif" alt="Options Time Value" v:shapes="_x0000_i1025"><![endif]><br>
+<br>
+Volatility<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>Volatility is the most important factor when
+determining which options to write. Volatility is the measure of the rate and
+magnitude of change in the price of an option in relation to the change of the
+underlying futures contract. If volatility is high, the premium on the option
+will be relatively high, and vice versa. Many option traders fail to understand
+how volatility affects the price of options and how to utilize volatility to
+capture profits.&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'>Sell Overvalued Options; Buy Undervalued Options<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>The following graph shows the volatility levels
+of soybeans options over a six-year period. Notice the consistent pattern.
+Volatility is lowest in the inactive post-harvest to pre-planting period
+November to May. As the growing season gets underway volatility increases,
+usually peaking in July when extreme summer temperatures pose the greatest
+threat to soybean yields. Taking into account fundamental and technical
+criteria, you would look to buy options when they are undervalued (cheap), and
+sell them when overvalued (expensive). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" alt="Soybeans (CBT) Volatilities" style='width:390pt;
+ height:196.5pt'>
+ <v:imagedata src="Option%20Strategies_files/image002.jpg" o:href="http://www.heritagewestfutures.com/img/inside/soybean-volatility.jpg"/>
+</v:shape><![endif]--><![if !vml]><img width=520 height=262
+src="Option%20Strategies_files/image002.jpg" alt="Soybeans (CBT) Volatilities"
+v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'><br>
+A Word About Risk<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>Heritage West Financial believes in the prudent
+writing of options as part of a disciplined overall futures and options trading
+program. However, we advise against selling options without the advice and
+expertise of a knowledgeable specialist. Remember, writing options carries the
+same risks as trading futures, and although the percentages are in your favor,
+these risks should be treated with the same respect. In addition, if the market
+moves against your short option position, your margin requirements may increase
+as well. We also believe in using stops based on the underlying futures price,
+not on the value of the option. Once a market trades through an area perceived as
+strong support or resistance we recommend exiting positions. At Heritage West,
+your broker will work with you in analyzing the risk parameters of each trade
+and which positions may be suitable for you. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><a name=buying-options></a><b><span lang=EN-US style='font-size:10.5pt;
+line-height:120%;font-family:Arial;color:#333399'>Option Buying &amp; Spreads<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'>Most options expire out of the money and
+worthless; therefore most traders lose when buying options. Heritage West still
+believes there is opportunity in buying options; however, you must be very
+selective. We don't believe in buying options just because a market is
+extremely high or low. One must consider the fundamental and technical
+conditions of the market, along with historic and statistical option volatility
+and all other significant trading factors. Remember, though, the key factor is
+still going to be picking the correct market direction. There are usually
+several different trading scenarios and strategies to take advantage of an
+emerging profit opportunity. We will help you implement the correct strategies
+to suit your objectives and risk parameters. There are strategies that combine
+both futures and options designed to mitigate risk while still providing
+significant profit potential.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;line-height:120%;mso-outline-level:
+3'><b><span lang=EN-US style='font-size:10.5pt;line-height:120%;font-family:
+Arial;color:#333399'>Here are a few examples often used:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><b><span lang=EN-US style='font-family:Arial;color:#333399'>Bull
+call or bear put spreads</span></b><span lang=EN-US style='font-size:9.0pt;
+line-height:130%;font-family:Arial;color:black'> involve the writing and buying
+of options at the same time. If corn were trading at 240, we could buy one corn
+240 call and write one 280 call with the anticipation of corn trending higher.
+The 280 call sold would subsidize the 240 call, and likely produce a much
+better risk to reward ratio. The profit is limited to the difference between
+the 240 and 280 strike prices, less the net premium debit.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:130%'><b><span lang=EN-US style='font-family:Arial;color:#333399'>Ratio
+spreads</span></b><span lang=EN-US style='font-size:9.0pt;line-height:130%;
+font-family:Arial;color:black'> involve buying calls or puts and writing
+multiple calls or puts that subsidize or even pay in full for the options
+purchased. If corn were trading at 240, we could buy one corn 240 call and
+write two 280 calls with the same expiration date. This would be in
+anticipation of corn trending higher, but not above 280 before option
+expiration. We'd be collecting the same amount of premium as the option
+purchased, so even if corn continued lower we'd lose nothing. Our highest
+profit would be attained at 280 based on option expiration. We would have 40
+cents or $2,000 gross profit on the one 240 corn call we purchased and the two
+280 calls sold would expire worthless. Above 240 we would give back our profit
+penny for penny up to 320, our break-even point based on option expiration.
+There is risk on the one uncovered 280 call above 320, based on expiration.
+Above that point we would lose penny for penny.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+lang=EN-US style='font-family:Verdana;color:red'>*&nbsp;Please note: </span></b><span
+lang=EN-US style='font-family:Verdana;color:red'>The above information is
+believed to be reliable. There is no expressed or implied warranty as to the
+accuracy or completeness of this information. </span><span lang=EN-US
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+                                                
+                      </td>
+                    </tr>
+                  </table>
+                  <p>&nbsp;</p>
+                </center>
+              </div></td>
+          </tr>
+        </table></TD>
+      <!--<TD width="3" height="451" background="images/line2.gif"> <IMG SRC="images/line2.gif" width=3 height=238 ALT=""></TD>
+      <TD valign="top" height="451" width="306"> 
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td valign="top" width="100%"> </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+            <td width="100%" rowspan="3" valign="top">
+              
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%" height="41"></td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%"></td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="2" valign="top">
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" width="0%">&nbsp;</td>
+            <td width="100%" valign="top"></td>
+          </tr>
+        </table>
+      </TD>-->
+      <TD width="2" height="451" background="images/line3.gif"> <IMG SRC="images/line3.gif" width=2 height=238 ALT=""></TD>
+     <!-- <TD width="166" align="center" valign="top" bgcolor="F8FBFE"> 
+        <div align="left">
+          <table width="100%" border="0">
+            <tr> 
+              <td align="center"><div align="left"><strong></strong></div></td>
+            </tr>
+          </table>
+        </div>
+        
+      </TD>-->
+    </TR>
+    <TR> 
+      <TD width="153" valign="top" bgcolor="#E6F1FE">&nbsp; </TD>
+      <TD COLSPAN=5 bgcolor="#E6F1FE" height="1"> <table width="119%" border="0" cellspacing="0" cellpadding="0" height="24">
+          <tr> 
+            <td width="81%" height="24"> <div align="center"> 
+                <center>
+                  <table width="315" border="0" cellspacing="2" cellpadding="2">
+                    <tr> 
+                      <td width="305"> <p align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#003366">©2019                              
+                          ADFC&nbsp;</font></p></td>                             
+                    </tr>
+                  </table>
+                </center>
+              </div></td>
+            <td width="19%" height="24"> <div align="right"></div></td>                      
+          </tr>
+        </table></TD>
+      <TD width="166"></TD>
+    </TR>
+    <TR> 
+      <TD COLSPAN=7 height="1"> </TD>
+      <TD width="166"></TD>
+    </TR>
+  </TABLE>
+</div>
+<div id="popmenu" class="menuskin" onMouseover="clearhidemenu();highlightmenu(event,'on')" onMouseout="highlightmenu(event,'off');dynamichide(event)">
+</div>
+</BODY>
+</HTML>
